@@ -5,6 +5,7 @@
   <title>MDN 따라하기</title>
   <meta name="subject" content="HTML, CSS basic">
   <meta name="description" content="이 프로젝트는 MDN을 그대로 따라그리면서 기본 지식을 연습합니다.">
+  <link rel="styleSheet" href="base.css">
   <link rel="styleSheet" href="mdn.css">
 </head>
 
@@ -71,22 +72,335 @@
     <section id="toolbar">
       <h1 class="fl">JavaScript</h1>
       <div id="tools" class="fr">
-        <div id="language">
-
+        <div id="language" class="inline-block">
+          <svg class="icon icon-language" xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 24 28"
+            aria-hidden="true">
+            <path d="M10.219 16.844c-.031.109-.797-.25-1-.328-.203-.094-1.125-.609-1.359-.766s-1.125-.891-1.234-.938a28.275 28.275 0 0 1-2.094 2.828c-.281.328-1.125 1.391-1.641 1.719-.078.047-.531.094-.594.063.25-.187.969-1.078 1.281-1.437.391-.453 2.25-3.047 2.562-3.641.328-.594 1.312-2.562 1.359-2.75-.156-.016-1.391.406-1.719.516-.313.094-1.172.297-1.234.344-.063.063-.016.25-.047.313s-.313.203-.484.234a1.647 1.647 0 0 1-.734 0c-.203-.047-.391-.25-.438-.328 0 0-.063-.094-.078-.359.187-.063.5-.078.844-.172s1.188-.344 1.641-.5 1.328-.484 1.594-.547c.281-.047.984-.516 1.359-.641s.641-.281.656-.203 0 .422-.016.516c-.016.078-.766 1.547-.875 1.781-.063.125-.5.953-1.203 2.047.25.109.781.328 1 .438.266.125 2.125.906 2.219.938s.266.75.234.875zM7.016 9.25c.047.266-.031.375-.063.438-.156.297-.547.5-.781.594s-.625.187-.938.187c-.141-.016-.422-.063-.766-.406-.187-.203-.328-.75-.266-.688s.516.125.719.078.688-.187.906-.25c.234-.078.703-.203.859-.219.156 0 .281.063.328.266zm10.906 2.016l.984 3.547-2.172-.656zM.609 23.766l10.844-3.625V4.016L.609 7.657v16.109zM20 18.813l1.594.484-2.828-10.266-1.563-.484-3.375 8.375 1.594.484.703-1.719 3.297 1.016zM12.141 3.781l8.953 2.875V.718zM17 24.453l2.469.203-.844 2.5L18 26.125c-1.266.812-2.828 1.437-4.312 1.687-.453.094-.969.187-1.422.187h-1.313c-1.656 0-4.672-.984-5.984-1.937-.094-.078-.125-.141-.125-.25 0-.172.125-.297.281-.297.141 0 .875.453 1.078.547 1.406.703 3.375 1.344 4.953 1.344 1.953 0 3.281-.25 5.063-1.016.516-.234.969-.531 1.453-.797zm7-16.859v16.859c-12.078-3.844-12.094-3.844-12.094-3.844C11.656 20.718.453 24.5.297 24.5a.3.3 0 0 1-.281-.203c0-.016-.016-.031-.016-.047V7.406c.016-.047.031-.125.063-.156.094-.109.219-.141.313-.172.047-.016 1-.328 2.328-.781v-6l8.719 3.094C11.532 3.36 21.251 0 21.392 0c.172 0 .313.125.313.328v6.531z"></path>
+          </svg>
+          <span>Languages
+            <ul class="nav_submenu">
+              <li><a>Afrikaans (af)</a></li>
+              <li><a>عربي (ar)</a></li>
+              <li><a>Azərbaycanca (az)</a></li>
+              <li><a>Български (bg)</a></li>
+              <li><a>Bamanankan (bm)</a></li>
+              <li><a>Bengali (Bangladesh)</a></li>
+              <li><a>বাংলা (ভারত) (bn-IN)</a></li>
+              <li><a>Català (ca)</a></li>
+              <li><a>Čeština (cs)</a></li>
+              <li><a>Deutsch (de)</a></li>
+              <li><a>Ελληνικά (el)</a></li>
+              <li><a>Español (es)</a></li>
+              <li><a>فارسی (fa)</a></li>
+              <li><a>Français (fr)</a></li>
+              <li><a>עברית (he)</a></li>
+              <li><a>हिन्दी (भारत) (hi-IN)</a></li>
+              <li><a>Hrvatski (hr)</a></li>
+              <li><a>magyar (hu)</a></li>
+              <li><a>Bahasa Indonesia (id)</a></li>
+              <li><a>Italiano (it)</a></li>
+              <li><a>日本語 (ja)</a></li>
+            </ul>
+          </span>
         </div>
-        <div id="edit"></div>
-        <div id="setting"></div>
+        <button id="edit" class="inline-block">
+          <svg class="icon icon-pencil" xmlns="http://www.w3.org/2000/svg" width="18px" height="18px" viewBox="0 0 24 28"
+            aria-hidden="true">
+            <path d="M5.672 24l1.422-1.422-3.672-3.672L2 20.328V22h2v2h1.672zm8.172-14.5a.329.329 0 0 0-.344-.344.368.368 0 0 0-.266.109l-8.469 8.469a.366.366 0 0 0-.109.266c0 .203.141.344.344.344a.368.368 0 0 0 .266-.109l8.469-8.469a.366.366 0 0 0 .109-.266zM13 6.5l6.5 6.5-13 13H0v-6.5zM23.672 8c0 .531-.219 1.047-.578 1.406L20.5 12 14 5.5l2.594-2.578c.359-.375.875-.594 1.406-.594s1.047.219 1.422.594l3.672 3.656c.359.375.578.891.578 1.422z"></path>
+          </svg> Edit</button>
+        <div id="setting_wrapper" class="inline-block">
+          <button id="setting">
+            <svg class="icon icon-gear" xmlns="http://www.w3.org/2000/svg" width="1rem" height="1rem" viewBox="0 0 24 28"
+              aria-hidden="true">
+              <path d="M16 14c0-2.203-1.797-4-4-4s-4 1.797-4 4 1.797 4 4 4 4-1.797 4-4zm8-1.703v3.469c0 .234-.187.516-.438.562l-2.891.438a8.86 8.86 0 0 1-.609 1.422c.531.766 1.094 1.453 1.672 2.156.094.109.156.25.156.391s-.047.25-.141.359c-.375.5-2.484 2.797-3.016 2.797a.795.795 0 0 1-.406-.141l-2.156-1.687a9.449 9.449 0 0 1-1.422.594c-.109.953-.203 1.969-.453 2.906a.573.573 0 0 1-.562.438h-3.469c-.281 0-.531-.203-.562-.469l-.438-2.875a9.194 9.194 0 0 1-1.406-.578l-2.203 1.672c-.109.094-.25.141-.391.141s-.281-.063-.391-.172c-.828-.75-1.922-1.719-2.578-2.625a.607.607 0 0 1 .016-.718c.531-.719 1.109-1.406 1.641-2.141a8.324 8.324 0 0 1-.641-1.547l-2.859-.422A.57.57 0 0 1 0 15.705v-3.469c0-.234.187-.516.422-.562l2.906-.438c.156-.5.359-.969.609-1.437a37.64 37.64 0 0 0-1.672-2.156c-.094-.109-.156-.234-.156-.375s.063-.25.141-.359c.375-.516 2.484-2.797 3.016-2.797.141 0 .281.063.406.156L7.828 5.94a9.449 9.449 0 0 1 1.422-.594c.109-.953.203-1.969.453-2.906a.573.573 0 0 1 .562-.438h3.469c.281 0 .531.203.562.469l.438 2.875c.484.156.953.344 1.406.578l2.219-1.672c.094-.094.234-.141.375-.141s.281.063.391.156c.828.766 1.922 1.734 2.578 2.656a.534.534 0 0 1 .109.344c0 .141-.047.25-.125.359-.531.719-1.109 1.406-1.641 2.141.266.5.484 1.016.641 1.531l2.859.438a.57.57 0 0 1 .453.562z"></path>
+            </svg>
+          </button>
+          <ul class="nav_submenu">
+            <li><a>Advanced</a></li>
+            <li><a>History</a></li>
+            <li><a>Print the article</a></li>
+          </ul>
+        </div>
         <div></div>
       </div>
     </section>
   </header>
-  <main>
-    <article>
-      <h1>이 프로젝트는 MDN을 그대로 따라그리면서 기본 지식을 연습합니다.</h1>
-    </article>
-    <aside>
-
+  <main style="height: 100rem;">
+    <aside class="fl">
+      <div id="aside_topic">
+        <a class="link">
+          <span class="">Web technology for developers</span>
+          <span style="font-weight: 800; color: black;">&gt;</span>
+        </a>
+        <p>JavaScript</p>
+        <hr>
+      </div>
+      <div id="related_topics">
+        <p>Relacted Topics</p>
+        <p class="link italic bold">JavaScript</p>
+        <div class="topics">
+          <p class="topic link bold">Tutorials:</p>
+          <div class="subject">
+            <input type="checkbox" id="complete_begginers" class="aside_menu">
+            <label for="complete_begginers" class="aside_menu_label">Complete
+              beginners</label>
+            <ul class="related_topics_submenu">
+              <li><a class="link">JavaScript basics</a></li>
+              <li><a class="link">JavaScript first steps</a></li>
+              <li><a class="link">JavaScript building blocks</a></li>
+              <li><a class="link">introducing JavaScript objects</a></li>
+            </ul>
+          </div>
+          <div class="subject">
+            <input type="checkbox" id="expressions_n_operators" class="aside_menu">
+            <label for="expressions_n_operators" class="aside_menu_label">Expressions & operators</label>
+            <ul class="related_topics_submenu">
+              <li><a class="link">Introduction</a></li>
+              <li><a class="link">Grammar and types</a></li>
+              <li><a class="link">Control flow and error handling</a></li>
+              <li><a class="link">Loops and iteration</a></li>
+              <li><a class="link">Functions</a></li>
+              <li><a class="link">Expressions and operators</a></li>
+              <li><a class="link">Numbers and dates</a></li>
+              <li><a class="link">Text formatting</a></li>
+              <li><a class="link">Regular expressions</a></li>
+              <li><a class="link">Indexed collections</a></li>
+              <li><a class="link">Keyed collections</a></li>
+              <li><a class="link">Working with objects</a></li>
+              <li><a class="link">Details of the object model</a></li>
+              <li><a class="link">Using promises</a></li>
+              <li><a class="link">Iterators and generators</a></li>
+              <li><a class="link">Meta programming</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="topics">
+          <p class="topic link bold">References:</p>
+          <div class="subject">
+            <input type="checkbox" id="built_in_objects" class="aside_menu">
+            <label for="built_in_objects" class="aside_menu_label">Built-in objects</label>
+            <ul class="related_topics_submenu">
+              <li><a class="link">JavaScript basics</a></li>
+              <li><a class="link">JavaScript first steps</a></li>
+              <li><a class="link">JavaScript building blocks</a></li>
+              <li><a class="link">introducing JavaScript objects</a></li>
+            </ul>
+          </div>
+          <div class="subject">
+            <input type="checkbox" id="javaScript_guide" class="aside_menu">
+            <label for="javaScript_guide" class="aside_menu_label">JavaScript Guide</label>
+            <ul class="related_topics_submenu">
+              <li><a class="link">Introduction</a></li>
+              <li><a class="link">Grammar and types</a></li>
+              <li><a class="link">Control flow and error handling</a></li>
+              <li><a class="link">Loops and iteration</a></li>
+              <li><a class="link">Functions</a></li>
+              <li><a class="link">Expressions and operators</a></li>
+              <li><a class="link">Numbers and dates</a></li>
+              <li><a class="link">Text formatting</a></li>
+              <li><a class="link">Regular expressions</a></li>
+              <li><a class="link">Indexed collections</a></li>
+              <li><a class="link">Keyed collections</a></li>
+              <li><a class="link">Working with objects</a></li>
+              <li><a class="link">Details of the object model</a></li>
+              <li><a class="link">Using promises</a></li>
+              <li><a class="link">Iterators and generators</a></li>
+              <li><a class="link">Meta programming</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </aside>
+    <div id="content" class="fl">
+      <article>
+        <p id="summay">
+          <b>JavaScript (JS) </b>is a lightweight interpreted or JIT-compiled programming language with
+          <span class="under_dashed"> first-class functions</span>
+          . While it is most well-known as the scripting language for Web pages, <span class="link">many non-browser
+            environments</span>
+          also use it, such as <span class="link">Node.js</span>, <span class="link">Apache CouchDB</span> and <span
+            class="link">Adobe Acrobat</span>. JavaScript is a <span class="under_dashed">prototype-based</span>,
+          multi-paradigm, dynamic language, supporting object-oriented, imperative, and declarative (e.g. functional
+          programming) styles. Read more <span class="link">about JavaScript</span>.
+        </p>
+        <hr>
+        <p>
+          This section is dedicated to the JavaScript language itself, and not the parts that are specific to Web pages
+          or other host environments. For information about <span class="under_dashed">APIs</span> specific to Web
+          pages, please see <span class="link">Web APIs</span> and <span class="link">DOM</span>.
+        </p>
+        <p>The standard for JavaScript is <span class="link">ECMAScript</span>. As of 2012, all <span class="ECMAScript">modern
+            browsers</span> fully support ECMAScript 5.1.
+          Older browsers support at least ECMAScript 3. On June 17, 2015, <span class="link">ECMA International</span>
+          published the sixth major
+          version of ECMAScript, which is officially called ECMAScript 2015, and was initially referred to as
+          ECMAScript 6 or ES6. Since then, ECMAScript standards are on yearly release cycles. This documentation refers
+          to the latest draft version, which is currently <span class="link">ECMAScript 2019</span>.</p>
+        <p>Do not confuse JavaScript with the <span class="link">Java programming language</span>. Both "Java" and
+          "JavaScript" are trademarks or
+          registered trademarks of Oracle in the U.S. and other countries. However, the two programming languages have
+          very different syntax, semantics, and uses.</p>
+      </article>
+      <div id="parallel">
+        <div id="parallel_left" class="fl">
+          <p class="content_topic"><span>Tutorials</span><span class="clip">§</span></p>
+          Learn how to program in JavaScript with guides and tutorials.
+          <p class="content_label_wapper"><span class="content_label">For complete beginners</span><span class="clip">§</span></p>
+          <p style="padding-top: 1.5rem;">Head over to our <span class="link">Learning Area JavaScript topic</span> if
+            you want to learn JavaScript
+            but have no previous
+            experience of JavaScript or programming. The complete modules available there are as follows:</p>
+
+          <p class="content_subject">JavaScript first steps</p>
+          <p class="content_summay">Answers some fundamental questions such as "what is JavaScript?", "what does it
+            look like?", and "what can it
+            do?", along with discussing key JavaScript features such as variables, strings, numbers, and arrays.</p>
+
+          <p class="content_subject">JavaScript building blocks</p>
+          <p class="content_summay">Continues our coverage of JavaScript's key fundamental features, turning our
+            attention to
+            commonly-encountered types of code block such as conditional statements, loops, functions, and events.</p>
+
+          <p class="content_subject">Introducing JavaScript objects</p>
+          <p class="content_summay">The object-oriented nature of JavaScript is important to understand if you want to
+            go further with your
+            knowledge of the language and write more efficient code, therefore we've provided this module to help you.</p>
+
+          <p class="content_label_wapper"><span class="content_label">JavaScript guide</span><span class="clip">§</span></p>
+
+          <p class="content_subject">JavaScript Guide</p>
+          <p class="content_summay">A much more detailed guide to the JavaScript language, aimed at those with previous
+            programming experience either in JavaScript or another language.</p>
+
+          <p class="content_label_wapper"><span class="content_label">IntermediateSection</span><span class="clip">§</span></p>
+
+          <p class="content_subject">Client-side web APIs</p>
+          <p class="content_summay">When writing client-side JavaScript for web sites or applications, you won't go
+            very far before you start to
+            use APIs — interfaces for manipulating different aspects of the browser and operating system the site is
+            running on, or even data from other web sites or services. In this module we will explore what APIs are,
+            and
+            how to use some of the most common APIs you'll come across often in your development work.</p>
+
+          <p class="content_subject">A re-introduction to JavaScript</p>
+          <p class="content_summay">An overview for those who think they know about JavaScript.</p>
+
+
+
+          <p class="content_subject">JavaScript data structures</p>
+          <p class="content_summay">Overview of available data structures in JavaScript.</p>
+
+
+          <p class="content_subject">Equality comparisons and sameness</p>
+          <p class="content_summay">JavaScript provides three different value-comparison operations: strict equality
+            using <span class="code">===</span>, loose equality
+            using ==, and the Object.is() method.</p>
+
+          <p class="content_subject">Closures</p>
+          <p class="content_summay">A closure is the combination of a function and the lexical environment within which
+            that function was
+            declared.</p>
+
+
+          <p class="content_label_wapper"><span class="content_label">Advanced</span><span class="clip">§</span></p>
+
+          <p class="content_subject">Inheritance and the prototype chain</p>
+          <p class="content_summay">Explanation of the widely misunderstood and under-estimated prototype-based
+            inheritance.</p>
+
+          <p class="content_subject">Strict mode</p>
+          <p class="content_summay">Strict mode defines that you can not use any variable before initializing it. It is
+            a restricted variant of ECMAScript 5, for faster performance and easier debugging.</p>
+
+          <p class="content_subject">JavaScript typed arrays</p>
+          <p class="content_summay">JavaScript typed arrays provide a mechanism for accessing raw binary data.</p>
+
+          <p class="content_subject">Memory Management</p>
+          <p class="content_summay">Memory life cycle and garbage collection in JavaScript.</p>
+
+          <p class="content_subject">Concurrency model and Event Loop</p>
+          <p class="content_summay">JavaScript has a concurrency model based on an "event loop".</p>
+
+
+
+        </div>
+        <div id="parallel_right" class="fl">
+          <p class="content_topic"><span>ReferenceSection</span><span class="clip">§</span></p>
+          <p>Browse the complete <span class="link">JavaScript reference</span> documentation.</p>
+
+
+          <p class="content_subject">Standard objects</p>
+          <p class="content_summay">Get to know standard built-in objects Array, Boolean, Date, Error, Function, JSON,
+            Math, Number, Object, RegExp, String, Map, Set, WeakMap, WeakSet, and others.</p>
+
+
+          <p class="content_subject">Expressions and operators</p>
+          <p class="content_summay">Learn more about the behavior of JavaScript's operators instanceof, typeof, new,
+            this, the operator precedence, and more.</p>
+
+          <p class="content_subject">Statements and declarations</p>
+          <p class="content_summay">Learn how do-while, for-in, for-of, try-catch, let, var, const, if-else, switch,
+            and more JavaScript statements and keywords work.</p>
+
+          <p class="content_subject">Functions</p>
+          <p class="content_summay">Learn how to work with JavaScript's functions to develop your applications.</p>
+
+
+
+          <h1 class="content_topic">Tools & resources</h1>
+          <p>Helpful tools for writing and debugging your <strong>JavaScript</strong> code.</p>
+
+
+          <p class="content_subject">Firefox Developer Tools</p>
+          <p class="content_summay">Scratchpad, Web Console, JavaScript Profiler, Debugger, and more.</p>
+
+          <p class="content_subject">JavaScript Shells</p>
+          <p class="content_summay">A JavaScript shell allows you to quickly test snippets of JavaScript code.</p>
+
+          <p class="content_subject">TogetherJS</p>
+          <p class="content_summay">Collaboration made easy. By adding TogetherJS to your site, your users can help
+            each other out on a website in real time!</p>
+
+          <p class="content_subject">Stack Overflow</p>
+          <p class="content_summay">Stack Overflow questions tagged with "JavaScript".</p>
+
+          <p class="content_subject">JavaScript versions and release notes</p>
+          <p class="content_summay">Browse JavaScript's feature history and implementation status.</p>
+
+          <p class="content_subject">JSFiddle</p>
+          <p class="content_summay">Edit JavaScript, CSS, HTML and get live results. Use external resources and
+            collaborate with your team online.</p>
+
+          <p class="content_subject">Plunker</p>
+          <p class="content_summay">Plunker is an online community for creating, collaborating on and sharing your web
+            development ideas. Edit your JavaScript, CSS, HTML files and get live results and file structure.</p>
+
+          <p class="content_subject">JSBin</p>
+          <p class="content_summay">JS Bin is an open source collaborative web development debugging tool. </p>
+
+          <p class="content_subject"></p>
+          <p class="content_summay"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+
   </main>
   <footer>
 
