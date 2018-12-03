@@ -135,5 +135,8 @@ input, select {
 
 .code {
   background: #eee;
-  padding: 0 2px;
+}
+
+#community_join_box {
+    background: #E4F0F5;
 }

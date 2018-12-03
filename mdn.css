@@ -326,3 +326,8 @@ article p + p {
   display: inline-block;
   -webkit-transform: rotate(45deg); 
 }
+
+
+#community_join_box {
+  background: #E4F0F5;
+}
