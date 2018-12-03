@@ -23,6 +23,7 @@ time, mark, audio, video {
 
 body {
     line-height:1;
+    font-family: Arial,x-locale-body,sans-serif;
 }
 
 article,aside,details,figcaption,figure,
@@ -130,10 +131,29 @@ input, select {
 }
 
 .bold {
-  font-weight: 600; 
+  font-weight: 500; 
 }
 
 .code {
   background: #eee;
-  padding: 0 2px;
+}
+
+.content_label_wapper {
+  padding: 1.5rem 0 0 0;
+}
+.content_label {
+  background: #333333;
+  color: white;
+  padding: 4px 4px 0 4px;
+  font-size: 1.rem;
+}
+
+.clip {
+  vertical-align: top;
+  padding-left: .6rem;
+  font-size: 1.3rem;
+  color: #327E98;
+  cursor: pointer;
+  display: inline-block;
+  -webkit-transform: rotate(45deg); 
 }

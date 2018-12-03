@@ -4,7 +4,7 @@
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 header {
@@ -58,7 +58,7 @@ header nav {
 }
 
 .nav_submenu a {
-  font-size: 1.1rem;
+  font-size: 1rem;
   color: #327E98;
   display: block;
   width: max-content;
@@ -105,7 +105,7 @@ header nav {
 #login {
   height: 5.5rem;
   display: inline;
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-right: 0.3rem;
 }
 
@@ -125,7 +125,7 @@ header nav {
 
 #tools {
   font-size:1.1rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 #tools ul {
   line-height: 1rem;
@@ -162,7 +162,7 @@ header nav {
 }
 #setting_wrapper li:first-child a {
   color: black;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.3rem;
 }
 
@@ -181,7 +181,7 @@ aside {
   /* background: cornflowerblue; */
   width: 77%;
   padding: .5rem .3rem 1rem 2rem;
-  font-size: 1.1rem;
+  font-size: 1rem;
   line-height: 1.6rem;
   font-weight: 200;
 }
@@ -248,18 +248,18 @@ article p + p {
 
 .subject {
   padding: .6rem 0; 
-  font-size: .9rem;
+  font-size: .8rem;
 }
 
 .topic {
-  font-size: .9rem;
+  font-size: .8rem;
   padding-bottom: 1rem;
 }
 
 .subject input[type=checkbox]:before {
   content: "►";
   color: #327E98;
-  font-size: .3rem;
+  font-size: .25rem;
   border: 2px solid white;
   display: inline-block;
   background: white;
@@ -271,9 +271,7 @@ article p + p {
 }
 
 #parallel {
-  /* background: red; */
   padding: 2rem 0;
-  height: 20rem;
 }
 
 #parallel_left,
@@ -287,8 +285,8 @@ article p + p {
 
 .content_subject {
   color: #327E98;
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 1.0rem;
+  font-weight: 500;
   padding-top: 1.4rem;
 }
 
@@ -303,26 +301,73 @@ article p + p {
 
 .content_topic {
   padding: 1.6rem 0;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 600;
 }
 
-.content_label_wapper {
-  padding: 1.5rem 0 0 0;
-}
-.content_label {
-  background: black;
-  color: white;
-  padding: 4px 4px 0 4px;
-  font-size: 1.4rem;
+
+#community_join_box {
+  padding: 1.6rem .8rem;
+  background: #E4F0F5;
+  width: 75%;
+  height: 14rem;
+  font-weight: 600;
+  font-size: 15px;
+  font-family: x-locale-heading-primary,zillaslab,Palatino,"Palatino Linotype",x-locale-heading-secondary,serif;
 }
 
-.clip {
-  vertical-align: top;
-  padding-left: .6rem;
-  font-size: 1.4rem;
-  color: #327E98;
-  cursor: pointer;
+.community_title {
+  font-size: 2.2rem;
+  padding-bottom: 1.5rem;
+  font-family: x-locale-heading-primary,zillaslab,Palatino,"Palatino Linotype",x-locale-heading-secondary,serif;
+}
+#community_left {
+  width: 50%;
+}
+#community_right {
+  font-weight: 100;
+  padding-left: .5rem;
+  line-height: 2rem;
+}
+
+.community_round_btn {
   display: inline-block;
-  -webkit-transform: rotate(45deg); 
+  background: #327E98;
+  color: white;
+  font-weight: lighter;
+  padding: .2rem .4rem;
+  border-radius: 3px;
+  font-family: x-locale-heading-primary,zillaslab,Palatino,"Palatino Linotype",x-locale-heading-secondary,serif;
+}
+.community_round_btn + .community_round_btn {
+  margin-left: .2rem;
+}
+
+#community_mention {
+  padding-bottom: .8rem;
+}
+
+#content > hr {
+  background: #327E98;
+  border: 1px solid #327E98;
+  margin: 2.4rem 0;
+}
+
+.tag {
+  display: inline-block;
+  background: #EEEEEE;
+  border: 1px solid rgba(200, 230, 235, 1);
+  font-weight: lighter;
+  padding: 0 .3rem;
+  border-radius: 3px;
+  font-size: .8rem;
+  color: #285c76;
+  margin-right: .3rem;
+}
+
+#tag_contributor > p {
+  padding: 0.4rem 0;
+  font-size: .9rem;
+  font-weight: lighter;
+  color: RGBA(105, 105, 105, 1.00);
 }
