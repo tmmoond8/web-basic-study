@@ -1,3 +1,4 @@
 {
-  "liveServer.settings.multiRootWorkspaceName": "web_basic"
+  "liveServer.settings.multiRootWorkspaceName": "web_basic",
+  "liveServer.settings.port": 15500
 }
