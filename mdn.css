@@ -371,3 +371,34 @@ article p + p {
   font-weight: lighter;
   color: RGBA(105, 105, 105, 1.00);
 }
+
+footer {
+  color: white;
+  width: 100%;
+  display: inline-block;
+  background: RGBA(34, 34, 34, 1.00);
+  padding: 3.7rem 2.8rem;
+}
+
+footer #mdn_logo_white {
+  padding: 1.2rem 0;
+  display: block;
+  width: 13.7rem;
+  height: 3rem;
+  background: url(https://developer.mozilla.org/static/img/web-docs-sprite.22a6a085cf14.svg) 100% -58px no-repeat;
+}
+
+footer #mozilla_logo_white {
+  display: block;
+  width: 9rem;
+  height: 3rem;
+  background-image: url(https://developer.mozilla.org/static/img/web-docs-sprite.22a6a085cf14.svg);
+  background-repeat: no-repeat;;
+  background-position: 35% 110%;
+  background-size: 291%;
+}
+
+#footer_right {
+  display: inline-block;
+  width: 65%;
+}
