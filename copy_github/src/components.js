@@ -1,4 +1,5 @@
 require('./components/HeaderLogo');
+require('./components/HeaderDownButton');
 require('./styles/main.scss');
 
 function component() {
