@@ -1,0 +1,7 @@
+@function test($a) {
+  @return $a;
+}
+
+@function block-sizes-for($key) {
+  @return map-get($sizes, $key);
+}
