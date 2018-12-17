@@ -1,0 +1,20 @@
+@import '../../styles/utils.scss';
+$common-padding: .5rem;
+
+.header__downmenu {
+  background: white;
+  color: black;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  padding: 1.8rem;
+
+  .header__menuitem--mazor {
+    padding: $common-padding 0;
+    font-weight: 700;
+  }
+
+  .header__menuitem--minor {
+    padding: $common-padding 0;
+    color: $oc-gray-7;
+  }
+}

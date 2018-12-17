@@ -1,0 +1,18 @@
+@import '../../styles/utils';
+
+.header__downbutton {
+  color: #ffffff;
+  font-size: 1.3rem;
+
+  &:hover {
+    color: $oc-gray-2;
+  }
+}
+
+.header__buttonname::-webkit-details-marker {
+  display: none;
+}
+
+.header__downbutton--expand {
+  
+}
