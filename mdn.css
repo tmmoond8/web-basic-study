@@ -370,5 +370,48 @@ article p + p {
   font-size: .9rem;
   font-weight: lighter;
   color: RGBA(105, 105, 105, 1.00);
->>>>>>> 29f988822c149b5540984f463931c9db5eb2846b
+}
+
+footer {
+  color: white;
+  width: 100%;
+  display: inline-block;
+  background: RGBA(34, 34, 34, 1.00);
+  padding: 3.7rem 2.8rem;
+}
+
+#footer_left {
+  width: 25rem;
+  display: inline-block;
+}
+footer #mdn_logo_white {
+  padding: 1.2rem 0;
+  display: block;
+  width: 13.7rem;
+  height: 3rem;
+  background: url(https://developer.mozilla.org/static/img/web-docs-sprite.22a6a085cf14.svg) 100% -58px no-repeat;
+}
+
+footer #mozilla_logo_white {
+  display: block;
+  width: 9rem;
+  height: 3rem;
+  background-image: url(https://developer.mozilla.org/static/img/web-docs-sprite.22a6a085cf14.svg);
+  background-repeat: no-repeat;;
+  background-position: 35% 110%;
+  background-size: 291%;
+}
+
+#footer_right {
+  display: inline-block;
+  width: 65%;
+}
+
+#language_selector {
+  font-size: .9rem;
+  padding: 1.4rem 0;
+}
+#language_selector > select {
+  font-size: 1rem;
+  margin: .4rem 0;
 }
