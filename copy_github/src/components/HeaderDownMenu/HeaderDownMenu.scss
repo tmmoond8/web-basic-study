@@ -15,6 +15,11 @@ $common-padding: .5rem;
 
   .header__menuitem--minor {
     padding: $common-padding 0;
-    color: $oc-gray-7;
+    color: $oc-gray-6;
+  }
+
+  .header__menuitem--line {
+    margin: 1rem 0;
+    border-top: 1px solid $oc-gray-4;
   }
 }
