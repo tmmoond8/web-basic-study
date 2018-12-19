@@ -1,11 +1,17 @@
+require('./styles/main.scss');
 
-require('./components/HeaderLogo');
+import HeaderLogo from './components/HeaderLogo';
 import HeaderDownButton from './components/HeaderDownButton';
+import HeaderSearch from './components/HeaderSearch';
+import HeaderSignButton from './components/HeaderSignButton';
+
+HeaderLogo();
 HeaderDownButton(({ menuName: 'Why GitHub?'}));
 HeaderDownButton(({ menuName: 'Business Explore'}));
 HeaderDownButton(({ menuName: 'Marketplace Pricing'}));
-require('./components/HeaderSearch');
-require('./styles/main.scss');
+HeaderSearch();
+HeaderSignButton({ buttonName: 'Sign in', modifier: 'default'});
+HeaderSignButton({ buttonName: 'Sign up', modifier: 'outline'});
 
 function component() {
   let element = document.createElement('div');

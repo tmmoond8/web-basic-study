@@ -1,7 +1,35 @@
+@import 'utils';
+
+$inputPadding: .7rem;
+$inputRadius: 5px;
 .header__search {
-  
+  position: relative;
+  background: #404448;
+  border-radius: $inputRadius;
 }
 
-.header__search--focus {
+.header__search__input {
+  height: 2.25rem;
+  width: 15rem;
+  position: relative;
+  background: transparent;
+  color: white;
+  font-size: 1rem;
+  padding: $inputPadding*2 $inputPadding;
+  border: initial;
+  border-radius: $inputRadius;
+  outline: none;
+}
 
+.header__search__input:focus {
+  background: white;
+  color: black;
+}
+
+.header__search_keyslash {
+  width: px(24);
+  height: 100%;
+  margin: auto $inputPadding;
+  position: absolute;
+  right: 0;
 }

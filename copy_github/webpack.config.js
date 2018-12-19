@@ -14,7 +14,13 @@ module.exports = {
     rules: [
       {
         test: /\.(s*)css$/,
-        use: ['style-loader', 'css-loader', 'sass-loader']
+        use: ['style-loader', 'css-loader', 
+        {
+          loader: require.resolve('sass-loader'),
+          options: {
+            includePaths: [path.resolve(__dirname, 'src', 'styles')]
+          }
+        }]
       },
       {
         test: /\.html$/,

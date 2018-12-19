@@ -1,5 +1,6 @@
 import HeaderDownButton from './HeaderDownButton.html';
 import HeaderDownMenu from '../HeaderDownMenu';
+import renderUtils from '../../renderUtils';
 require('./HeaderDownButton.scss');
 
 const menuModel = {
@@ -43,7 +44,7 @@ const menuModel = {
 
 export default function(props) {
   const element =  document.querySelector('.HeaderDownButton');
-  element.innerHTML = Object.keys(props).reduce((accum, key) => accum.replace('${' + key + '}', props[key]), HeaderDownButton)
+  element.innerHTML = renderUtils.template(HeaderDownButton, props);
   HeaderDownMenu(menuModel[props.menuName]);
   element.className = "header__downbutton__wrapper";
 }
