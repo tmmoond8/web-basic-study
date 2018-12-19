@@ -1,19 +1,23 @@
-$inputPadding: .5rem;
+@import 'utils';
+
+$inputPadding: .7rem;
+$inputRadius: 5px;
 .header__search {
   position: relative;
   background: #404448;
-  border-radius: 3px;
+  border-radius: $inputRadius;
 }
 
 .header__search__input {
   height: 2.25rem;
   width: 15rem;
   position: relative;
-  color: white;
   background: transparent;
-  padding: $inputPadding;
+  color: white;
+  font-size: 1rem;
+  padding: $inputPadding*2 $inputPadding;
   border: initial;
-  outline: none;
+  border-radius: $inputRadius;
 }
 
 .header__search__input:focus {
@@ -21,15 +25,10 @@ $inputPadding: .5rem;
   color: black;
 }
 
-.header__search__placeholder {
-  margin: $inputPadding;
-  position: absolute;
-  left: 0;
-  color: RGBA(255, 255, 255, 0.4);
-}
-
 .header__search_keyslash {
-  margin: $inputPadding;
+  width: px(24);
+  height: 100%;
+  margin: auto $inputPadding;
   position: absolute;
   right: 0;
 }

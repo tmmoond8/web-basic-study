@@ -5,3 +5,7 @@
 @function block-sizes-for($key) {
   @return map-get($sizes, $key);
 }
+@function px($px) {
+  $remSize: $px / 16;
+  @return #{$remSize}rem;
+}

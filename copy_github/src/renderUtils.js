@@ -3,6 +3,11 @@ const el = (tag, attr = {}) => Object.entries(attr).reduce((accum, v) => {
   return accum;
 }, document.createElement(tag));
 
+const template = (template, model) => {
+  if(!model) return template;
+  return Object.keys(model).reduce((accum, key) => accum.replace('${' + key + '}', model[key]), template)
+}
+
 export default {
-  el
+  el, template
 }

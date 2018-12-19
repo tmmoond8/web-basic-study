@@ -1,0 +1,21 @@
+@import 'utils';
+
+@mixin common() {
+  color: white;
+  font-size: 1.3rem;
+  padding: .5rem .7rem;
+  cursor: pointer;
+  &:hover {
+    color: $oc-gray-4;
+  }
+}
+
+.header__signbutton--default {
+  @include common();
+}
+
+.header__signbutton--outline {
+  @include common();
+  border: 1px solid white;
+  border-radius: 3px;
+}
