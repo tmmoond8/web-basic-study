@@ -1,4 +1,4 @@
-body {
+body, p {
   margin: 0;
   box-sizing: border-box;
 }
@@ -14,4 +14,8 @@ a {
 
 ul {
   list-style-type: none;
+}
+
+input {
+  outline: none;
 }
