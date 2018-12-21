@@ -1,0 +1,20 @@
+@import 'utils';
+
+@mixin common() {
+  color: $oc-blue-7;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.form__helper {
+  font-size: .8rem;
+}
+
+.form__helper__terms {
+  @include common();
+}
+.form__helper__privacy {
+  @include common();
+}
