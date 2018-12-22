@@ -1,6 +1,8 @@
 @mixin common() {
   border-radius: 3px;
   cursor: pointer;
+  color: white;
+  font-weight: 500;
 }
 
 .button--green {
@@ -11,11 +13,30 @@
   @include common();
 }
 
+.button--blue {
+  @include common();
+  background-color: RGBA(17, 108, 232, 1.00);
+  &:hover {
+    background-color: RGBA(17, 108, 212, 1.00);
+  }
+}
+.button--blue-outline {
+  @include common();
+  color: RGBA(17, 108, 242, 1.00);
+  border: 1px solid rgba(18,119,235,.5);
+  &:hover {
+    border: 1px solid RGBA(17, 108, 212, 1.00);
+    color: RGBA(17, 108, 212, 1.00);
+  }
+}
+
+
 .button__text--white {
   color: white;
 }
 
 .button__content {
-  padding: 1.3rem;
+  display: block;
+  padding: 1.3rem 1.8rem;
   text-align: center;
 }

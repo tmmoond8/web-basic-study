@@ -1,0 +1,16 @@
+.cl {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  & > label {
+    margin-bottom: 1rem;
+    background: #dddddd;
+    font-size: 2rem;
+    display: block;
+  }
+
+  & > div {
+    width: fit-content;
+    display: inline-block;
+    vertical-align: top;
+  }
+}

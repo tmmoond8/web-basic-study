@@ -1,0 +1,35 @@
+@import 'utils';
+@mixin common() {
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+@mixin link() {
+  color: white;
+  border-bottom: 1px solid $oc-gray-7;
+  &:hover {
+    border-bottom: 1px solid $oc-gray-5;
+  }
+}
+
+$keywordSize: 5rem;
+
+.intro__phrase__keyword {
+  color: white;
+  font-weight: 500;
+  font-size: $keywordSize;
+  line-height: $keywordSize;
+  padding-bottom: 1.4rem;
+}
+.intro__phrase__contents {
+  color: $oc-gray-5;
+  @include common();
+}
+.intro__phrase__opensource {
+  @include common();
+  @include link();
+
+}
+.intro__phrase__business {
+  @include common();
+  @include link();
+}
