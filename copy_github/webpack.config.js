@@ -8,7 +8,8 @@ module.exports = {
   },
   output: {
     filename: '[name].js',
-    path: path.resolve(__dirname, 'dist')
+    path: path.resolve(__dirname, 'dist'),
+    publicPath: '/', //path.resolve(__dirname, 'src', 'static')
   },
   module: {
     rules: [
@@ -30,7 +31,14 @@ module.exports = {
             attrs: [':data-src']
           }
         }
-      }
+      }, {
+        test: /\.(ico|png|jpg|jpeg|gif|svg|woff|owff2|ttf|eot)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+        loader: 'url-loader',
+        options: {
+          name: '[hash].[ext]',
+          limit: 10000,
+        }
+      },
     ]
   },
   plugins: [

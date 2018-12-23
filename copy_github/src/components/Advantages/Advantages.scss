@@ -1,0 +1,50 @@
+@import 'utils';
+@mixin common() {
+  display: none;
+  position: absolute;
+  height: px(200);
+  width: px(200);
+  top: 0;
+  left: 50%;
+  transform: translateX(-100%);
+  background-repeat: no-repeat;
+}
+
+.advantages {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+.advantages__mainimage {
+  height: px(640);
+  width: 48%;
+  float: left;
+  background: url(../../static/images/home-illo-team.svg) no-repeat;
+}
+
+.advantages__cards__container {
+  float: right;
+  width: 48%;
+}
+
+.advantages__image__code {
+  @include common();
+  background-image: url(../../static/images/home-illo-team-code.svg);
+}
+
+.advantages__image__chaos {
+  @include common();
+  background-image: url(../../static/images/home-illo-team-chaos.svg);
+}
+
+.advantages__image__tools {
+  @include common();
+  background-image: url(../../static/images/home-illo-team-tools.svg);
+}
+
+.arrow__card__wrapper:hover + .advantages__image__code,
+.arrow__card__wrapper:hover + .advantages__image__chaos,
+.arrow__card__wrapper:hover + .advantages__image__tools 
+{
+  display: block;
+}

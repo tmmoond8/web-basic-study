@@ -77,34 +77,199 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "/";
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/components.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/components/HeaderLogo/HeaderLogo.scss":
-/*!**********************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/components/HeaderLogo/HeaderLogo.scss ***!
-  \**********************************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components.scss":
+/*!**********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2!./src/components.scss ***!
+  \**********************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".header__logo__link {\\n  width: 1rem;\\n  height: 1rem;\\n  display: inline-block; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/components/HeaderLogo/HeaderLogo.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js");
+eval("exports = module.exports = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".cl {\\n  padding: 1rem;\\n  margin-bottom: 1rem; }\\n  .cl > label {\\n    margin-bottom: 1rem;\\n    background: #dddddd;\\n    font-size: 2rem;\\n    display: block; }\\n  .cl > div {\\n    display: inline-block;\\n    vertical-align: top; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/components.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2");
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/styles/main.scss":
-/*!*************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/styles/main.scss ***!
-  \*************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/Advantages/Advantages.scss":
+/*!********************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2!./src/components/Advantages/Advantages.scss ***!
+  \********************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"body {\\n  margin: 0;\\n  box-sizing: border-box; }\\n\\n*, *:before, *:after {\\n  box-sizing: inherit; }\\n\\na {\\n  text-decoration: inherit;\\n  color: inherit; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/styles/main.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/components/Advantages/Advantages.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/ArrowCard/ArrowCard.scss":
+/*!******************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2!./src/components/ArrowCard/ArrowCard.scss ***!
+  \******************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".arrow__card {\\n  display: inline-block;\\n  position: relative;\\n  padding: 1.6rem;\\n  border-radius: 3px;\\n  cursor: pointer; }\\n  .arrow__card:hover {\\n    box-shadow: -1px 0px 3px 1px #adb5bd; }\\n  .arrow__card:hover .arrow__card__arrow {\\n    color: RGBA(17, 108, 212, 1); }\\n  .arrow__card .arrow__card__container {\\n    float: left;\\n    width: 80%; }\\n  .arrow__card .arrow__card__subject {\\n    font-size: 1.6rem;\\n    font-weight: 400;\\n    padding-bottom: 1rem; }\\n  .arrow__card .arrow__card__contents {\\n    font-size: 1.1rem;\\n    line-height: 1.6rem; }\\n  .arrow__card .arrow__card__arrow {\\n    position: absolute;\\n    float: left;\\n    width: 20%;\\n    top: 50%;\\n    left: calc(80% + 1rem);\\n    transform: translateY(-50%); }\\n  .arrow__card .arrow__card__link {\\n    color: RGBA(17, 108, 212, 1);\\n    border-bottom: 1px solid RGBA(17, 108, 242, 0.5); }\\n    .arrow__card .arrow__card__link:hover {\\n      border-bottom: 1px solid RGBA(17, 108, 242, 0.8); }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/components/ArrowCard/ArrowCard.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/BusinessOrgs/BusinessOrgs.scss":
+/*!************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2!./src/components/BusinessOrgs/BusinessOrgs.scss ***!
+  \************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".business__orgs {\\n  text-align: center; }\\n  .business__orgs .business__orgs__keyword {\\n    font-size: 1.5rem;\\n    font-weight: 400;\\n    color: #495057; }\\n  .business__orgs .business__orgs__brands {\\n    display: inline-block;\\n    font-size: 3rem;\\n    color: #495057;\\n    padding: 1.2rem 3rem; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/components/BusinessOrgs/BusinessOrgs.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/Button/Button.scss":
+/*!************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2!./src/components/Button/Button.scss ***!
+  \************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".button__arrow {\\n  display: inline-block; }\\n\\n.button--green {\\n  background-color: #28c745;\\n  border-radius: 3px;\\n  cursor: pointer;\\n  color: white;\\n  font-weight: 500; }\\n  .button--green:hover {\\n    background-color: #28a745; }\\n\\n.button--blue {\\n  border-radius: 3px;\\n  cursor: pointer;\\n  color: white;\\n  font-weight: 500;\\n  background-color: RGBA(17, 108, 232, 1); }\\n  .button--blue:hover {\\n    background-color: RGBA(17, 108, 212, 1); }\\n\\n.button--blue-outline {\\n  border-radius: 3px;\\n  cursor: pointer;\\n  color: white;\\n  font-weight: 500;\\n  color: RGBA(17, 108, 242, 1);\\n  border: 1px solid rgba(18, 119, 235, 0.5); }\\n  .button--blue-outline:hover {\\n    border: 1px solid RGBA(17, 108, 212, 1);\\n    color: RGBA(17, 108, 212, 1); }\\n  .button--blue-outline:hover .button__arrow {\\n    transform: translate(0.3rem, 0);\\n    transition: 0.3s; }\\n\\n.button__text--white {\\n  color: white; }\\n\\n.button__contents {\\n  display: block;\\n  padding: 1.3rem 1.8rem;\\n  text-align: center; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/components/Button/Button.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/EnterprisePropose/EnterprisePropose.scss":
+/*!**********************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2!./src/components/EnterprisePropose/EnterprisePropose.scss ***!
+  \**********************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".enterprise__propose__subject {\\n  font-size: 2.4rem;\\n  font-weight: 500; }\\n\\n.enterprise__propose__contents {\\n  font-size: 1.2rem;\\n  line-height: 1.8rem;\\n  padding: .9rem 0; }\\n\\n.enterprise__propose {\\n  text-align: center;\\n  display: block;\\n  padding: 0 5rem; }\\n\\n.enterprise__propose .button__wrapper {\\n  display: inline-block; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/components/EnterprisePropose/EnterprisePropose.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/FormHelper/FormHelper.scss":
+/*!********************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2!./src/components/FormHelper/FormHelper.scss ***!
+  \********************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".form__helper {\\n  font-size: .8rem; }\\n\\n.form__helper__terms {\\n  color: #1c7ed6;\\n  cursor: pointer; }\\n  .form__helper__terms:hover {\\n    text-decoration: underline; }\\n\\n.form__helper__privacy {\\n  color: #1c7ed6;\\n  cursor: pointer; }\\n  .form__helper__privacy:hover {\\n    text-decoration: underline; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/components/FormHelper/FormHelper.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/HeaderDownButton/HeaderDownButton.scss":
+/*!********************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2!./src/components/HeaderDownButton/HeaderDownButton.scss ***!
+  \********************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".header__downbutton {\\n  color: #ffffff;\\n  font-size: 1.3rem; }\\n  .header__downbutton:hover {\\n    color: #ced4da; }\\n\\n.header__buttonname::-webkit-details-marker {\\n  display: none; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/components/HeaderDownButton/HeaderDownButton.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/HeaderDownMenu/HeaderDownMenu.scss":
+/*!****************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2!./src/components/HeaderDownMenu/HeaderDownMenu.scss ***!
+  \****************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".header__downmenu {\\n  background: white;\\n  color: black;\\n  font-size: 1.1rem;\\n  border-radius: 5px;\\n  padding: 1.8rem; }\\n  .header__downmenu .header__menuitem--mazor {\\n    padding: 0.5rem 0;\\n    font-weight: 700; }\\n  .header__downmenu .header__menuitem--minor {\\n    padding: 0.5rem 0;\\n    color: #868e96; }\\n  .header__downmenu .header__menuitem--line {\\n    margin: 1rem 0;\\n    border-top: 1px solid #ced4da; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/components/HeaderDownMenu/HeaderDownMenu.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/HeaderLogo/HeaderLogo.scss":
+/*!********************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2!./src/components/HeaderLogo/HeaderLogo.scss ***!
+  \********************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".header__logo__link {\\n  display: inline-block;\\n  width: 2.7rem;\\n  height: 2.7rem;\\n  font-size: 2.7rem;\\n  color: white; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/components/HeaderLogo/HeaderLogo.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/HeaderSearch/HeaderSearch.scss":
+/*!************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2!./src/components/HeaderSearch/HeaderSearch.scss ***!
+  \************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".header__search {\\n  position: relative;\\n  background: #404448;\\n  border-radius: 5px; }\\n\\n.header__search__input {\\n  height: 2.25rem;\\n  width: 15rem;\\n  position: relative;\\n  background: transparent;\\n  color: white;\\n  font-size: 1rem;\\n  padding: 1.4rem 0.7rem;\\n  border: initial;\\n  border-radius: 5px; }\\n\\n.header__search__input:focus {\\n  background: white;\\n  color: black; }\\n\\n.header__search_keyslash {\\n  width: 1.5rem;\\n  height: 100%;\\n  margin: auto 0.7rem;\\n  position: absolute;\\n  right: 0; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/components/HeaderSearch/HeaderSearch.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/HeaderSignButton/HeaderSignButton.scss":
+/*!********************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2!./src/components/HeaderSignButton/HeaderSignButton.scss ***!
+  \********************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".header__signbutton--default {\\n  color: white;\\n  font-size: 1.3rem;\\n  padding: .5rem .7rem;\\n  cursor: pointer; }\\n  .header__signbutton--default:hover {\\n    color: #ced4da; }\\n\\n.header__signbutton--outline {\\n  color: white;\\n  font-size: 1.3rem;\\n  padding: .5rem .7rem;\\n  cursor: pointer;\\n  border: 1px solid white;\\n  border-radius: 3px; }\\n  .header__signbutton--outline:hover {\\n    color: #ced4da; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/components/HeaderSignButton/HeaderSignButton.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/IntroPhrase/IntroPhrase.scss":
+/*!**********************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2!./src/components/IntroPhrase/IntroPhrase.scss ***!
+  \**********************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".intro__phrase__keyword {\\n  color: white;\\n  font-weight: 500;\\n  font-size: 5rem;\\n  line-height: 5rem;\\n  padding-bottom: 1.4rem; }\\n\\n.intro__phrase__contents {\\n  color: #adb5bd;\\n  font-size: 1.7rem;\\n  font-weight: 400; }\\n\\n.intro__phrase__opensource {\\n  font-size: 1.7rem;\\n  font-weight: 400;\\n  color: white;\\n  border-bottom: 1px solid #495057; }\\n  .intro__phrase__opensource:hover {\\n    border-bottom: 1px solid #adb5bd; }\\n\\n.intro__phrase__business {\\n  font-size: 1.7rem;\\n  font-weight: 400;\\n  color: white;\\n  border-bottom: 1px solid #495057; }\\n  .intro__phrase__business:hover {\\n    border-bottom: 1px solid #adb5bd; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/components/IntroPhrase/IntroPhrase.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/SignUpFormInput/SignUpFormInput.scss":
+/*!******************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2!./src/components/SignUpFormInput/SignUpFormInput.scss ***!
+  \******************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".signupform__input__label {\\n  font-size: 1.2rem;\\n  color: #495057;\\n  padding-top: .5rem; }\\n\\n.signupform__input {\\n  font-size: 1.3rem;\\n  width: 100%; }\\n\\n.signupform__input__input {\\n  width: 100%;\\n  font-size: 1.3rem;\\n  padding: 1rem 2.4rem 1rem .7rem;\\n  border-radius: 5px;\\n  border: 1px solid #ced4da;\\n  margin: .5rem 0;\\n  background-image: url(https://github.githubassets.com/images/modules/ajax/success.png);\\n  background-repeat: no-repeat;\\n  background-position: calc(100% - .6rem);\\n  background-size: 20px; }\\n  .signupform__input__input:focus {\\n    border: 1px solid #4dabf7; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/components/SignUpFormInput/SignUpFormInput.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/SignUpFormPassword/SignUpFormPassword.scss":
+/*!************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2!./src/components/SignUpFormPassword/SignUpFormPassword.scss ***!
+  \************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".signupform__password__label {\\n  font-size: 1.2rem;\\n  color: #495057;\\n  padding-top: .5rem; }\\n\\n.signupform__password {\\n  display: inline-block;\\n  font-size: 1.3rem;\\n  width: 100%; }\\n\\n.signupform__password__input {\\n  width: 100%;\\n  font-size: 1.3rem;\\n  padding: 1rem 2.4rem 1rem .7rem;\\n  border-radius: 5px;\\n  border: 1px solid #ced4da;\\n  margin: .5rem 0;\\n  background-image: url(https://github.githubassets.com/images/modules/ajax/success.png);\\n  background-repeat: no-repeat;\\n  background-position: calc(100% - .6rem);\\n  background-size: 20px; }\\n  .signupform__password__input:focus {\\n    border: 1px solid #4dabf7; }\\n\\n.signupform__password__helper {\\n  font-size: 1rem; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/components/SignUpFormPassword/SignUpFormPassword.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/TeamSignUp/TeamSignUp.scss":
+/*!********************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2!./src/components/TeamSignUp/TeamSignUp.scss ***!
+  \********************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \".team__signup {\\n  text-align: center; }\\n  .team__signup .team__signup__summay {\\n    font-size: 1.2rem;\\n    letter-spacing: 2px;\\n    padding: .6rem 0; }\\n  .team__signup .team__signup__keyword {\\n    font-size: 3.5rem;\\n    font-weight: 500;\\n    padding: 1rem 0 1rem 0; }\\n  .team__signup .team__signup__contents {\\n    font-size: 1.6rem;\\n    font-weight: 300; }\\n  .team__signup .button__wrapper {\\n    padding: 2rem 0;\\n    display: inline-block; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/components/TeamSignUp/TeamSignUp.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2");
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/styles/main.scss":
+/*!***********************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2!./src/styles/main.scss ***!
+  \***********************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"body {\\n  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol; }\\n\\nh1, h2, h3, h4, h5, p {\\n  margin: 0;\\n  box-sizing: border-box; }\\n\\n*, *:before, *:after {\\n  box-sizing: inherit; }\\n\\na {\\n  text-decoration: inherit;\\n  color: inherit; }\\n\\nul {\\n  list-style-type: none; }\\n\\ninput {\\n  outline: none; }\\n\", \"\"]);\n\n\n\n//# sourceURL=webpack:///./src/styles/main.scss?./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js??ref--4-2");
 
 /***/ }),
 
@@ -142,6 +307,397 @@ eval("\n/**\n * When source maps are enabled, `style-loader` uses a link element
 
 /***/ }),
 
+/***/ "./src/components.js":
+/*!***************************!*\
+  !*** ./src/components.js ***!
+  \***************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_HeaderLogo__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/HeaderLogo */ \"./src/components/HeaderLogo/index.js\");\n/* harmony import */ var _components_HeaderDownButton__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/HeaderDownButton */ \"./src/components/HeaderDownButton/index.js\");\n/* harmony import */ var _components_HeaderSearch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/HeaderSearch */ \"./src/components/HeaderSearch/index.js\");\n/* harmony import */ var _components_HeaderSignButton__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/HeaderSignButton */ \"./src/components/HeaderSignButton/index.js\");\n/* harmony import */ var _components_SignUpFormInput_SignUpFormInput__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/SignUpFormInput/SignUpFormInput */ \"./src/components/SignUpFormInput/SignUpFormInput.js\");\n/* harmony import */ var _components_SignUpFormPassword__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/SignUpFormPassword */ \"./src/components/SignUpFormPassword/index.js\");\n/* harmony import */ var _components_Button__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/Button */ \"./src/components/Button/index.js\");\n/* harmony import */ var _components_FormHelper__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/FormHelper */ \"./src/components/FormHelper/index.js\");\n/* harmony import */ var _components_IntroPhrase__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/IntroPhrase */ \"./src/components/IntroPhrase/index.js\");\n/* harmony import */ var _components_EnterprisePropose__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/EnterprisePropose */ \"./src/components/EnterprisePropose/index.js\");\n/* harmony import */ var _components_BusinessOrgs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/BusinessOrgs */ \"./src/components/BusinessOrgs/index.js\");\n/* harmony import */ var _components_TeamSignUp__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/TeamSignUp */ \"./src/components/TeamSignUp/index.js\");\n/* harmony import */ var _components_ArrowCard__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/ArrowCard */ \"./src/components/ArrowCard/index.js\");\n/* harmony import */ var _components_Advantages__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/Advantages */ \"./src/components/Advantages/index.js\");\n__webpack_require__(/*! ./styles/main.scss */ \"./src/styles/main.scss\");\n__webpack_require__(/*! ./components.scss */ \"./src/components.scss\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nObject(_components_HeaderLogo__WEBPACK_IMPORTED_MODULE_0__[\"default\"])();\nObject(_components_HeaderDownButton__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(({ menuName: 'Why GitHub?'}));\nObject(_components_HeaderDownButton__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(({ menuName: 'Business Explore'}));\nObject(_components_HeaderDownButton__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(({ menuName: 'Marketplace Pricing'}));\nObject(_components_HeaderSearch__WEBPACK_IMPORTED_MODULE_2__[\"default\"])();\nObject(_components_HeaderSignButton__WEBPACK_IMPORTED_MODULE_3__[\"default\"])({ buttonName: 'Sign in', modifier: 'default'});\nObject(_components_HeaderSignButton__WEBPACK_IMPORTED_MODULE_3__[\"default\"])({ buttonName: 'Sign up', modifier: 'outline'});\nObject(_components_SignUpFormInput_SignUpFormInput__WEBPACK_IMPORTED_MODULE_4__[\"default\"])({ label: 'Username', placeHolder: 'Pick username'});\nObject(_components_SignUpFormPassword__WEBPACK_IMPORTED_MODULE_5__[\"default\"])({ label: 'Password', placeHolder: 'Create a password'});\nObject(_components_Button__WEBPACK_IMPORTED_MODULE_6__[\"default\"])({ contents: 'Sign up for GitHub', modifier: 'green', link: '/link'});\nObject(_components_FormHelper__WEBPACK_IMPORTED_MODULE_7__[\"default\"])();\nObject(_components_IntroPhrase__WEBPACK_IMPORTED_MODULE_8__[\"default\"])();\nObject(_components_EnterprisePropose__WEBPACK_IMPORTED_MODULE_9__[\"default\"])();\nObject(_components_BusinessOrgs__WEBPACK_IMPORTED_MODULE_10__[\"default\"])();\nObject(_components_TeamSignUp__WEBPACK_IMPORTED_MODULE_11__[\"default\"])();\nObject(_components_ArrowCard__WEBPACK_IMPORTED_MODULE_12__[\"default\"])({ key: 'write_better_code'});\nObject(_components_Advantages__WEBPACK_IMPORTED_MODULE_13__[\"default\"])();\n\nfunction component() {\n  let element = document.createElement('div');\n  element.innerHTML = 'Components'\n  return element;\n}\n\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack:///./src/components.js?");
+
+/***/ }),
+
+/***/ "./src/components.scss":
+/*!*****************************!*\
+  !*** ./src/components.scss ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../node_modules/css-loader/dist/cjs.js!../node_modules/sass-loader/lib/loader.js??ref--4-2!./components.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/components.scss?");
+
+/***/ }),
+
+/***/ "./src/components/Advantages/Advantages.html":
+/*!***************************************************!*\
+  !*** ./src/components/Advantages/Advantages.html ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<div class=\\\"advantages\\\">\\n  <img src=\\\"images/home-illo-team.svg\\\">\\n</div>\";\n\n//# sourceURL=webpack:///./src/components/Advantages/Advantages.html?");
+
+/***/ }),
+
+/***/ "./src/components/Advantages/Advantages.js":
+/*!*************************************************!*\
+  !*** ./src/components/Advantages/Advantages.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Advantages_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Advantages.html */ \"./src/components/Advantages/Advantages.html\");\n/* harmony import */ var _Advantages_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Advantages_html__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _renderUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../renderUtils */ \"./src/renderUtils.js\");\n\n\n__webpack_require__(/*! ./Advantages.scss */ \"./src/components/Advantages/Advantages.scss\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function(props) {\n  const element =  document.querySelector('.Advantages');\n  element.innerHTML = _renderUtils__WEBPACK_IMPORTED_MODULE_1__[\"default\"].template(_Advantages_html__WEBPACK_IMPORTED_MODULE_0___default.a, props);\n  element.className = \"advantages__wrapper\";\n});;\n\n//# sourceURL=webpack:///./src/components/Advantages/Advantages.js?");
+
+/***/ }),
+
+/***/ "./src/components/Advantages/Advantages.scss":
+/*!***************************************************!*\
+  !*** ./src/components/Advantages/Advantages.scss ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/lib/loader.js??ref--4-2!./Advantages.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/Advantages/Advantages.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/components/Advantages/Advantages.scss?");
+
+/***/ }),
+
+/***/ "./src/components/Advantages/index.js":
+/*!********************************************!*\
+  !*** ./src/components/Advantages/index.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Advantages__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Advantages */ \"./src/components/Advantages/Advantages.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _Advantages__WEBPACK_IMPORTED_MODULE_0__[\"default\"]; });\n\n\n\n//# sourceURL=webpack:///./src/components/Advantages/index.js?");
+
+/***/ }),
+
+/***/ "./src/components/ArrowCard/ArrowCard.html":
+/*!*************************************************!*\
+  !*** ./src/components/ArrowCard/ArrowCard.html ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<a href=\\\"/card\\\" class=\\\"arrow__card\\\">\\n  <div class=\\\"arrow__card__container\\\"></div>\\n  <div class=\\\"arrow__card__arrow\\\">▶</div>\\n</a>\";\n\n//# sourceURL=webpack:///./src/components/ArrowCard/ArrowCard.html?");
+
+/***/ }),
+
+/***/ "./src/components/ArrowCard/ArrowCard.js":
+/*!***********************************************!*\
+  !*** ./src/components/ArrowCard/ArrowCard.js ***!
+  \***********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ArrowCard_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ArrowCard.html */ \"./src/components/ArrowCard/ArrowCard.html\");\n/* harmony import */ var _ArrowCard_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_ArrowCard_html__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _renderUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../renderUtils */ \"./src/renderUtils.js\");\n\n\n__webpack_require__(/*! ./ArrowCard.scss */ \"./src/components/ArrowCard/ArrowCard.scss\");\n\nconst cards = {\n  'write_better_code': `\n    <h3 class=\"arrow__card__subject\">Write better code</h3>\n    <p class=\"arrow__card__contents\">Collaboration makes perfect. The conversations and code reviews that happen in\n      Pull Requests help our team share\n      the weight of your work and improve the software you build.\n      <span class=\"arrow__card__link\">Learn about code reivew.</span>\n    </p>\n  `\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function(props) {\n  const element =  document.querySelector('.ArrowCard');\n  element.innerHTML = _renderUtils__WEBPACK_IMPORTED_MODULE_1__[\"default\"].template(_ArrowCard_html__WEBPACK_IMPORTED_MODULE_0___default.a, props);\n  element.querySelector('.arrow__card__container').insertAdjacentHTML('beforeend', cards[props.key]);\n  element.className = \"arrow__card__wrapper\";\n});;\n\n//# sourceURL=webpack:///./src/components/ArrowCard/ArrowCard.js?");
+
+/***/ }),
+
+/***/ "./src/components/ArrowCard/ArrowCard.scss":
+/*!*************************************************!*\
+  !*** ./src/components/ArrowCard/ArrowCard.scss ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/lib/loader.js??ref--4-2!./ArrowCard.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/ArrowCard/ArrowCard.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/components/ArrowCard/ArrowCard.scss?");
+
+/***/ }),
+
+/***/ "./src/components/ArrowCard/index.js":
+/*!*******************************************!*\
+  !*** ./src/components/ArrowCard/index.js ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _ArrowCard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ArrowCard */ \"./src/components/ArrowCard/ArrowCard.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _ArrowCard__WEBPACK_IMPORTED_MODULE_0__[\"default\"]; });\n\n\n\n//# sourceURL=webpack:///./src/components/ArrowCard/index.js?");
+
+/***/ }),
+
+/***/ "./src/components/BusinessOrgs/BusinessOrgs.html":
+/*!*******************************************************!*\
+  !*** ./src/components/BusinessOrgs/BusinessOrgs.html ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<div class=\\\"business__orgs\\\">\\n  <h1 class=\\\"business__orgs__keyword\\\">More than 2.1 milion businesses and organiations use GitHub</h1>\\n  <ul class=\\\"business__orgs__list\\\">\\n  </ul>\\n</div>\";\n\n//# sourceURL=webpack:///./src/components/BusinessOrgs/BusinessOrgs.html?");
+
+/***/ }),
+
+/***/ "./src/components/BusinessOrgs/BusinessOrgs.js":
+/*!*****************************************************!*\
+  !*** ./src/components/BusinessOrgs/BusinessOrgs.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _BusinessOrgs_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BusinessOrgs.html */ \"./src/components/BusinessOrgs/BusinessOrgs.html\");\n/* harmony import */ var _BusinessOrgs_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_BusinessOrgs_html__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _renderUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../renderUtils */ \"./src/renderUtils.js\");\n\n\n__webpack_require__(/*! ./BusinessOrgs.scss */ \"./src/components/BusinessOrgs/BusinessOrgs.scss\");\nconst Item = `<li class=\"business__orgs__brands\"><i class=\"\\${fa}\"></i></li>`;\n\nconst brands = [\n  { name: 'docker', fa: 'fab fa-docker'},\n  { name: 'apple', fa: 'fab fa-apple'},\n  { name: 'cc-visa', fa: 'fab fa-cc-visa'},\n  { name: 'codepen', fa: 'fab fa-codepen'},\n  { name: 'discord', fa: 'fab fa-discord'},\n  { name: 'facebook', fa: 'fab fa-facebook'},\n  { name: 'fedora', fa: 'fab fa-fedora'},\n  { name: 'glide', fa: 'fab fa-glide'},\n  { name: 'html5', fa: 'fab fa-html5'},\n  { name: 'linux', fa: 'fab fa-linux'},\n  { name: 'line', fa: 'fab fa-line'},\n  { name: 'nintendo-switch', fa: 'fab fa-nintendo-switch'},\n  { name: 'node', fa: 'fab fa-node'},\n  { name: 'react', fa: 'fab fa-react'},\n  { name: 'raspberry-pi', fa: 'fab fa-raspberry-pi'},\n  { name: 'reddit', fa: 'fab fa-reddit'},\n  { name: 'sketch', fa: 'fab fa-sketch'},\n  { name: 'soundcloud', fa: 'fab fa-soundcloud'},\n]\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function(props) {\n  const element =  document.querySelector('.BusinessOrgs');\n  element.innerHTML = _renderUtils__WEBPACK_IMPORTED_MODULE_1__[\"default\"].template(_BusinessOrgs_html__WEBPACK_IMPORTED_MODULE_0___default.a, props);\n  try {\n    brands.forEach(item => element.firstChild.insertAdjacentHTML('beforeend', _renderUtils__WEBPACK_IMPORTED_MODULE_1__[\"default\"].template(Item, item)))\n  } catch(e) {\n    console.log('empty list');\n  }\n  element.className = \"BusinessOrgs__wrapper\";\n});;\n\n//# sourceURL=webpack:///./src/components/BusinessOrgs/BusinessOrgs.js?");
+
+/***/ }),
+
+/***/ "./src/components/BusinessOrgs/BusinessOrgs.scss":
+/*!*******************************************************!*\
+  !*** ./src/components/BusinessOrgs/BusinessOrgs.scss ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/lib/loader.js??ref--4-2!./BusinessOrgs.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/BusinessOrgs/BusinessOrgs.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/components/BusinessOrgs/BusinessOrgs.scss?");
+
+/***/ }),
+
+/***/ "./src/components/BusinessOrgs/index.js":
+/*!**********************************************!*\
+  !*** ./src/components/BusinessOrgs/index.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _BusinessOrgs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BusinessOrgs */ \"./src/components/BusinessOrgs/BusinessOrgs.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _BusinessOrgs__WEBPACK_IMPORTED_MODULE_0__[\"default\"]; });\n\n\n\n//# sourceURL=webpack:///./src/components/BusinessOrgs/index.js?");
+
+/***/ }),
+
+/***/ "./src/components/Button/Button.html":
+/*!*******************************************!*\
+  !*** ./src/components/Button/Button.html ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<div class=\\\"button--${modifier}\\\">\\n  <a href=\\\"${link}\\\" class=\\\"button__contents\\\">\\n    <span class=\\\"button__text\\\">${contents}</span>\\n  </a>\\n</div>\";\n\n//# sourceURL=webpack:///./src/components/Button/Button.html?");
+
+/***/ }),
+
+/***/ "./src/components/Button/Button.js":
+/*!*****************************************!*\
+  !*** ./src/components/Button/Button.js ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Button_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Button.html */ \"./src/components/Button/Button.html\");\n/* harmony import */ var _Button_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_Button_html__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _renderUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../renderUtils */ \"./src/renderUtils.js\");\n\n\n__webpack_require__(/*! ./Button.scss */ \"./src/components/Button/Button.scss\");\n\nconst Arrow = `<span class=\"button__arrow\">→</span>`\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function(props) {\n  const element =  document.querySelector('.Button');\n  element.innerHTML = _renderUtils__WEBPACK_IMPORTED_MODULE_1__[\"default\"].template(_Button_html__WEBPACK_IMPORTED_MODULE_0___default.a, props);\n  if(props.arrow) element.querySelector('.button__contents').insertAdjacentHTML('beforeend', _renderUtils__WEBPACK_IMPORTED_MODULE_1__[\"default\"].template(Arrow, null))\n  element.className = \"button__wrapper\";\n});;\n\n//# sourceURL=webpack:///./src/components/Button/Button.js?");
+
+/***/ }),
+
+/***/ "./src/components/Button/Button.scss":
+/*!*******************************************!*\
+  !*** ./src/components/Button/Button.scss ***!
+  \*******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/lib/loader.js??ref--4-2!./Button.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/Button/Button.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/components/Button/Button.scss?");
+
+/***/ }),
+
+/***/ "./src/components/Button/index.js":
+/*!****************************************!*\
+  !*** ./src/components/Button/index.js ***!
+  \****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _Button_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Button.js */ \"./src/components/Button/Button.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _Button_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]; });\n\n\n\n//# sourceURL=webpack:///./src/components/Button/index.js?");
+
+/***/ }),
+
+/***/ "./src/components/EnterprisePropose/EnterprisePropose.html":
+/*!*****************************************************************!*\
+  !*** ./src/components/EnterprisePropose/EnterprisePropose.html ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<div class=\\\"enterprise__propose\\\">\\n  <h1 class=\\\"enterprise__propose__subject\\\">Try GitHub Enterprise</h1>\\n  <p class=\\\"enterprise__propose__contents\\\">\\n    Use GitHub on-premises with your own servers on in a private cloud with GitHub Enterprise.\\n    Improve your developer efficiency with flexible deployment options,\\n    centralized permissions, hundreds of intergrations, technical support, and more.</p>\\n  <div class=\\\"Button\\\"></div>&nbsp;\\n  <div class=\\\"Button\\\"></div>\\n</div>\";\n\n//# sourceURL=webpack:///./src/components/EnterprisePropose/EnterprisePropose.html?");
+
+/***/ }),
+
+/***/ "./src/components/EnterprisePropose/EnterprisePropose.js":
+/*!***************************************************************!*\
+  !*** ./src/components/EnterprisePropose/EnterprisePropose.js ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _EnterprisePropose_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./EnterprisePropose.html */ \"./src/components/EnterprisePropose/EnterprisePropose.html\");\n/* harmony import */ var _EnterprisePropose_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_EnterprisePropose_html__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _renderUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../renderUtils */ \"./src/renderUtils.js\");\n/* harmony import */ var _Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Button */ \"./src/components/Button/index.js\");\n\n\n\n__webpack_require__(/*! ./EnterprisePropose.scss */ \"./src/components/EnterprisePropose/EnterprisePropose.scss\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function(props) {\n  const element =  document.querySelector('.EnterprisePropose');\n  element.innerHTML = _renderUtils__WEBPACK_IMPORTED_MODULE_1__[\"default\"].template(_EnterprisePropose_html__WEBPACK_IMPORTED_MODULE_0___default.a, props);\n  element.className = \"enterprise__propose__wrapper\";\n  Object(_Button__WEBPACK_IMPORTED_MODULE_2__[\"default\"])({ contents: 'Contact Sales', modifier: 'blue', link: '/link'});\n  Object(_Button__WEBPACK_IMPORTED_MODULE_2__[\"default\"])({ contents: 'Start a free trial', modifier: 'blue-outline', link: '/link'});\n});;\n\n//# sourceURL=webpack:///./src/components/EnterprisePropose/EnterprisePropose.js?");
+
+/***/ }),
+
+/***/ "./src/components/EnterprisePropose/EnterprisePropose.scss":
+/*!*****************************************************************!*\
+  !*** ./src/components/EnterprisePropose/EnterprisePropose.scss ***!
+  \*****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/lib/loader.js??ref--4-2!./EnterprisePropose.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/EnterprisePropose/EnterprisePropose.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/components/EnterprisePropose/EnterprisePropose.scss?");
+
+/***/ }),
+
+/***/ "./src/components/EnterprisePropose/index.js":
+/*!***************************************************!*\
+  !*** ./src/components/EnterprisePropose/index.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _EnterprisePropose_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./EnterprisePropose.js */ \"./src/components/EnterprisePropose/EnterprisePropose.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _EnterprisePropose_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]; });\n\n\n\n//# sourceURL=webpack:///./src/components/EnterprisePropose/index.js?");
+
+/***/ }),
+
+/***/ "./src/components/FormHelper/FormHelper.html":
+/*!***************************************************!*\
+  !*** ./src/components/FormHelper/FormHelper.html ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<p class=\\\"form__helper\\\">\\n  By clicking \\\"Sign up for GitHub\\\", you agree to our\\n    <span class=\\\"form__helper__terms\\\"> terms of service</span>\\n    and\\n    <span class=\\\"form__helper__privacy\\\">privacy statement.</span>\\n     We'll occasionally send you account related emails.\\n</p>\";\n\n//# sourceURL=webpack:///./src/components/FormHelper/FormHelper.html?");
+
+/***/ }),
+
+/***/ "./src/components/FormHelper/FormHelper.js":
+/*!*************************************************!*\
+  !*** ./src/components/FormHelper/FormHelper.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _FormHelper_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./FormHelper.html */ \"./src/components/FormHelper/FormHelper.html\");\n/* harmony import */ var _FormHelper_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_FormHelper_html__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _renderUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../renderUtils */ \"./src/renderUtils.js\");\n\n\n__webpack_require__(/*! ./FormHelper.scss */ \"./src/components/FormHelper/FormHelper.scss\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function(props) {\n  const element =  document.querySelector('.FormHelper');\n  element.innerHTML = _renderUtils__WEBPACK_IMPORTED_MODULE_1__[\"default\"].template(_FormHelper_html__WEBPACK_IMPORTED_MODULE_0___default.a, props);\n  element.className = \"form__helper__wrapper\";\n});;\n\n//# sourceURL=webpack:///./src/components/FormHelper/FormHelper.js?");
+
+/***/ }),
+
+/***/ "./src/components/FormHelper/FormHelper.scss":
+/*!***************************************************!*\
+  !*** ./src/components/FormHelper/FormHelper.scss ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/lib/loader.js??ref--4-2!./FormHelper.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/FormHelper/FormHelper.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/components/FormHelper/FormHelper.scss?");
+
+/***/ }),
+
+/***/ "./src/components/FormHelper/index.js":
+/*!********************************************!*\
+  !*** ./src/components/FormHelper/index.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _FormHelper_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./FormHelper.js */ \"./src/components/FormHelper/FormHelper.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _FormHelper_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]; });\n\n\n\n//# sourceURL=webpack:///./src/components/FormHelper/index.js?");
+
+/***/ }),
+
+/***/ "./src/components/HeaderDownButton/HeaderDownButton.html":
+/*!***************************************************************!*\
+  !*** ./src/components/HeaderDownButton/HeaderDownButton.html ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<details class=\\\"header__downbutton\\\">\\n  <summary class=\\\"header__buttonname\\\">\\n    ${menuName}\\n  </summary>\\n  <div class=\\\"HeaderDownMenu\\\"></div>\\n</details>\";\n\n//# sourceURL=webpack:///./src/components/HeaderDownButton/HeaderDownButton.html?");
+
+/***/ }),
+
+/***/ "./src/components/HeaderDownButton/HeaderDownButton.js":
+/*!*************************************************************!*\
+  !*** ./src/components/HeaderDownButton/HeaderDownButton.js ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _HeaderDownButton_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HeaderDownButton.html */ \"./src/components/HeaderDownButton/HeaderDownButton.html\");\n/* harmony import */ var _HeaderDownButton_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_HeaderDownButton_html__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _HeaderDownMenu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../HeaderDownMenu */ \"./src/components/HeaderDownMenu/index.js\");\n/* harmony import */ var _renderUtils__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../renderUtils */ \"./src/renderUtils.js\");\n\n\n\n__webpack_require__(/*! ./HeaderDownButton.scss */ \"./src/components/HeaderDownButton/HeaderDownButton.scss\");\n\nconst menuModel = {\n  'Why GitHub?': {list: [\n    { modifier: 'mazor', subName: 'Features'},\n    { modifier: 'minor', subName: 'Code review'},\n    { modifier: 'minor', subName: 'project management'},\n    { modifier: 'minor', subName: 'Integrations'},\n    { modifier: 'minor', subName: 'Team management'},\n    { modifier: 'minor', subName: 'Social coding'},\n    { modifier: 'minor', subName: 'Documentation'},\n    { modifier: 'minor', subName: 'Code hosting'},\n    { modifier: 'line', subName: ''},\n    { modifier: 'mazor', subName: 'Case Studies'},\n    { modifier: 'mazor', subName: 'Security'},\n  ]},\n  'Business Explore': {list: [\n    { modifier: 'mazor', subName: 'Explore  GitHub'},\n    { modifier: 'line', subName: ''},\n    { modifier: 'minor', subName: 'Learn & contribute'},\n    { modifier: 'minor', subName: 'Topics'},\n    { modifier: 'minor', subName: 'Collections'},\n    { modifier: 'minor', subName: 'Trending'},\n    { modifier: 'minor', subName: 'Learning Lab'},\n    { modifier: 'minor', subName: 'Open source guides'},\n    { modifier: 'line', subName: ''},\n    { modifier: 'minor', subName: 'Connect with others'},\n    { modifier: 'minor', subName: 'Events'},\n    { modifier: 'minor', subName: 'Community forum'},\n    { modifier: 'minor', subName: 'GitHub Education'},\n  ]},\n  'Marketplace Pricing': {list: [\n    { modifier: 'mazor', subName: 'Plans'},\n    { modifier: 'minor', subName: 'Compare plans'},\n    { modifier: 'minor', subName: 'Contact Sales'},\n    { modifier: 'line', subName: ''},\n    { modifier: 'mazor', subName: 'Nonprofit'},\n    { modifier: 'mazor', subName: 'Education'},\n  ]}\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function(props) {\n  const element =  document.querySelector('.HeaderDownButton');\n  element.innerHTML = _renderUtils__WEBPACK_IMPORTED_MODULE_2__[\"default\"].template(_HeaderDownButton_html__WEBPACK_IMPORTED_MODULE_0___default.a, props);\n  Object(_HeaderDownMenu__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(menuModel[props.menuName]);\n  element.className = \"header__downbutton__wrapper\";\n});\n\n//# sourceURL=webpack:///./src/components/HeaderDownButton/HeaderDownButton.js?");
+
+/***/ }),
+
+/***/ "./src/components/HeaderDownButton/HeaderDownButton.scss":
+/*!***************************************************************!*\
+  !*** ./src/components/HeaderDownButton/HeaderDownButton.scss ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/lib/loader.js??ref--4-2!./HeaderDownButton.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/HeaderDownButton/HeaderDownButton.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/components/HeaderDownButton/HeaderDownButton.scss?");
+
+/***/ }),
+
+/***/ "./src/components/HeaderDownButton/index.js":
+/*!**************************************************!*\
+  !*** ./src/components/HeaderDownButton/index.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _HeaderDownButton_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HeaderDownButton.js */ \"./src/components/HeaderDownButton/HeaderDownButton.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _HeaderDownButton_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]; });\n\n\n\n//# sourceURL=webpack:///./src/components/HeaderDownButton/index.js?");
+
+/***/ }),
+
+/***/ "./src/components/HeaderDownMenu/HeaderDownMenu.html":
+/*!***********************************************************!*\
+  !*** ./src/components/HeaderDownMenu/HeaderDownMenu.html ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<ul class=\\\"header__downmenu\\\"></ul>\";\n\n//# sourceURL=webpack:///./src/components/HeaderDownMenu/HeaderDownMenu.html?");
+
+/***/ }),
+
+/***/ "./src/components/HeaderDownMenu/HeaderDownMenu.js":
+/*!*********************************************************!*\
+  !*** ./src/components/HeaderDownMenu/HeaderDownMenu.js ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _HeaderDownMenu_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HeaderDownMenu.html */ \"./src/components/HeaderDownMenu/HeaderDownMenu.html\");\n/* harmony import */ var _HeaderDownMenu_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_HeaderDownMenu_html__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _renderUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../renderUtils */ \"./src/renderUtils.js\");\n\n\n__webpack_require__(/*! ./HeaderDownMenu.scss */ \"./src/components/HeaderDownMenu/HeaderDownMenu.scss\");\n\nconst menuItem = `<li class=\"header__menuitem--\\${modifier}\">\\${subName}</li>`;\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function(props) {\n  const element =  document.querySelector('.HeaderDownMenu');\n  element.innerHTML = _HeaderDownMenu_html__WEBPACK_IMPORTED_MODULE_0___default.a;\n  try {\n    props.list.forEach(item => element.firstChild.insertAdjacentHTML('beforeend', _renderUtils__WEBPACK_IMPORTED_MODULE_1__[\"default\"].template(menuItem, item)))\n  } catch(e) {\n    console.log('empty list');\n  }\n  element.className = \"header__downmenu__wrapper\";\n});\n\n//# sourceURL=webpack:///./src/components/HeaderDownMenu/HeaderDownMenu.js?");
+
+/***/ }),
+
+/***/ "./src/components/HeaderDownMenu/HeaderDownMenu.scss":
+/*!***********************************************************!*\
+  !*** ./src/components/HeaderDownMenu/HeaderDownMenu.scss ***!
+  \***********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/lib/loader.js??ref--4-2!./HeaderDownMenu.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/HeaderDownMenu/HeaderDownMenu.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/components/HeaderDownMenu/HeaderDownMenu.scss?");
+
+/***/ }),
+
+/***/ "./src/components/HeaderDownMenu/index.js":
+/*!************************************************!*\
+  !*** ./src/components/HeaderDownMenu/index.js ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _HeaderDownMenu_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HeaderDownMenu.js */ \"./src/components/HeaderDownMenu/HeaderDownMenu.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _HeaderDownMenu_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]; });\n\n\n\n//# sourceURL=webpack:///./src/components/HeaderDownMenu/index.js?");
+
+/***/ }),
+
 /***/ "./src/components/HeaderLogo/HeaderLogo.html":
 /*!***************************************************!*\
   !*** ./src/components/HeaderLogo/HeaderLogo.html ***!
@@ -153,6 +709,18 @@ eval("module.exports = \"<a class=\\\"header__logo__link\\\" href=\\\"/\\\">\\n 
 
 /***/ }),
 
+/***/ "./src/components/HeaderLogo/HeaderLogo.js":
+/*!*************************************************!*\
+  !*** ./src/components/HeaderLogo/HeaderLogo.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _HeaderLogo_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HeaderLogo.html */ \"./src/components/HeaderLogo/HeaderLogo.html\");\n/* harmony import */ var _HeaderLogo_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_HeaderLogo_html__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _renderUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../renderUtils */ \"./src/renderUtils.js\");\n\n\n__webpack_require__(/*! ./HeaderLogo.scss */ \"./src/components/HeaderLogo/HeaderLogo.scss\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function(props) {\n  const element =  document.querySelector('.HeaderLogo');\n  element.innerHTML = _renderUtils__WEBPACK_IMPORTED_MODULE_1__[\"default\"].template(_HeaderLogo_html__WEBPACK_IMPORTED_MODULE_0___default.a, props);\n  element.className = \"header__logo__wrapper\";\n});\n\n//# sourceURL=webpack:///./src/components/HeaderLogo/HeaderLogo.js?");
+
+/***/ }),
+
 /***/ "./src/components/HeaderLogo/HeaderLogo.scss":
 /*!***************************************************!*\
   !*** ./src/components/HeaderLogo/HeaderLogo.scss ***!
@@ -160,7 +728,7 @@ eval("module.exports = \"<a class=\\\"header__logo__link\\\" href=\\\"/\\\">\\n 
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/lib/loader.js!./HeaderLogo.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/components/HeaderLogo/HeaderLogo.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/components/HeaderLogo/HeaderLogo.scss?");
+eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/lib/loader.js??ref--4-2!./HeaderLogo.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/HeaderLogo/HeaderLogo.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/components/HeaderLogo/HeaderLogo.scss?");
 
 /***/ }),
 
@@ -168,22 +736,287 @@ eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader/
 /*!********************************************!*\
   !*** ./src/components/HeaderLogo/index.js ***!
   \********************************************/
-/*! no exports provided */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _HeaderLogo_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HeaderLogo.html */ \"./src/components/HeaderLogo/HeaderLogo.html\");\n/* harmony import */ var _HeaderLogo_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_HeaderLogo_html__WEBPACK_IMPORTED_MODULE_0__);\n\n// import { faFacebookF } from '@fortawesome/fontawesome-free/svgs/brands';\n__webpack_require__(/*! ./HeaderLogo.scss */ \"./src/components/HeaderLogo/HeaderLogo.scss\");\n\ndocument.querySelectorAll('.HeaderLogo').forEach(element => element.innerHTML = _HeaderLogo_html__WEBPACK_IMPORTED_MODULE_0___default.a);\n\n//# sourceURL=webpack:///./src/components/HeaderLogo/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _HeaderLogo_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HeaderLogo.js */ \"./src/components/HeaderLogo/HeaderLogo.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _HeaderLogo_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]; });\n\n\n\n//# sourceURL=webpack:///./src/components/HeaderLogo/index.js?");
 
 /***/ }),
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./src/components/HeaderSearch/HeaderSearch.html":
+/*!*******************************************************!*\
+  !*** ./src/components/HeaderSearch/HeaderSearch.html ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<div class=\\\"header__search\\\">\\n  <img class=\\\"header__search_keyslash\\\" src=\\\"https://github.githubassets.com/images/search-key-slash.svg\\\" alt=\\\"\\\">\\n  <input class=\\\"header__search__input\\\" type=\\\"text\\\" placeholder=\\\"Search GitHub\\\">\\n</div>\";\n\n//# sourceURL=webpack:///./src/components/HeaderSearch/HeaderSearch.html?");
+
+/***/ }),
+
+/***/ "./src/components/HeaderSearch/HeaderSearch.js":
+/*!*****************************************************!*\
+  !*** ./src/components/HeaderSearch/HeaderSearch.js ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _HeaderSearch_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HeaderSearch.html */ \"./src/components/HeaderSearch/HeaderSearch.html\");\n/* harmony import */ var _HeaderSearch_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_HeaderSearch_html__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _renderUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../renderUtils */ \"./src/renderUtils.js\");\n\n\n__webpack_require__(/*! ./HeaderSearch.scss */ \"./src/components/HeaderSearch/HeaderSearch.scss\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function(props) {\n  const element =  document.querySelector('.HeaderSearch');\n  element.innerHTML = _renderUtils__WEBPACK_IMPORTED_MODULE_1__[\"default\"].template(_HeaderSearch_html__WEBPACK_IMPORTED_MODULE_0___default.a, props);\n  element.className = \"header__search__wrapper\";\n});\n\n//# sourceURL=webpack:///./src/components/HeaderSearch/HeaderSearch.js?");
+
+/***/ }),
+
+/***/ "./src/components/HeaderSearch/HeaderSearch.scss":
+/*!*******************************************************!*\
+  !*** ./src/components/HeaderSearch/HeaderSearch.scss ***!
+  \*******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("__webpack_require__(/*! ./components/HeaderLogo */ \"./src/components/HeaderLogo/index.js\");\n__webpack_require__(/*! ./styles/main.scss */ \"./src/styles/main.scss\");\n\nfunction component() {\n  let element = document.createElement('div');\n  element.innerHTML = 'Webpack'\n  return element;\n}\n\ndocument.body.appendChild(component());\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/lib/loader.js??ref--4-2!./HeaderSearch.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/HeaderSearch/HeaderSearch.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/components/HeaderSearch/HeaderSearch.scss?");
+
+/***/ }),
+
+/***/ "./src/components/HeaderSearch/index.js":
+/*!**********************************************!*\
+  !*** ./src/components/HeaderSearch/index.js ***!
+  \**********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _HeaderSearch_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HeaderSearch.js */ \"./src/components/HeaderSearch/HeaderSearch.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _HeaderSearch_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]; });\n\n\n\n//# sourceURL=webpack:///./src/components/HeaderSearch/index.js?");
+
+/***/ }),
+
+/***/ "./src/components/HeaderSignButton/HeaderSignButton.html":
+/*!***************************************************************!*\
+  !*** ./src/components/HeaderSignButton/HeaderSignButton.html ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<span class=\\\"header__signbutton--${modifier}\\\">${buttonName}</span>\";\n\n//# sourceURL=webpack:///./src/components/HeaderSignButton/HeaderSignButton.html?");
+
+/***/ }),
+
+/***/ "./src/components/HeaderSignButton/HeaderSignButton.js":
+/*!*************************************************************!*\
+  !*** ./src/components/HeaderSignButton/HeaderSignButton.js ***!
+  \*************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _HeaderSignButton_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HeaderSignButton.html */ \"./src/components/HeaderSignButton/HeaderSignButton.html\");\n/* harmony import */ var _HeaderSignButton_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_HeaderSignButton_html__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _renderUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../renderUtils */ \"./src/renderUtils.js\");\n\n\n__webpack_require__(/*! ./HeaderSignButton.scss */ \"./src/components/HeaderSignButton/HeaderSignButton.scss\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function(props) {\n  const element =  document.querySelector('.HeaderSignButton');\n  element.innerHTML = _renderUtils__WEBPACK_IMPORTED_MODULE_1__[\"default\"].template(_HeaderSignButton_html__WEBPACK_IMPORTED_MODULE_0___default.a, props);\n  element.className = \"header__signbutton__wrapper\";\n});;\n\n//# sourceURL=webpack:///./src/components/HeaderSignButton/HeaderSignButton.js?");
+
+/***/ }),
+
+/***/ "./src/components/HeaderSignButton/HeaderSignButton.scss":
+/*!***************************************************************!*\
+  !*** ./src/components/HeaderSignButton/HeaderSignButton.scss ***!
+  \***************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/lib/loader.js??ref--4-2!./HeaderSignButton.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/HeaderSignButton/HeaderSignButton.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/components/HeaderSignButton/HeaderSignButton.scss?");
+
+/***/ }),
+
+/***/ "./src/components/HeaderSignButton/index.js":
+/*!**************************************************!*\
+  !*** ./src/components/HeaderSignButton/index.js ***!
+  \**************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _HeaderSignButton_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HeaderSignButton.js */ \"./src/components/HeaderSignButton/HeaderSignButton.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _HeaderSignButton_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]; });\n\n\n\n//# sourceURL=webpack:///./src/components/HeaderSignButton/index.js?");
+
+/***/ }),
+
+/***/ "./src/components/IntroPhrase/IntroPhrase.html":
+/*!*****************************************************!*\
+  !*** ./src/components/IntroPhrase/IntroPhrase.html ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<h1 class=\\\"intro__phrase__keyword\\\">Built for developers</h1>\\n<p class=\\\"intro__phrase__contents\\\">\\n  GitHub is a development platform inspired by te wary you work. From\\n  <a href=\\\"#\\\" class=\\\"intro__phrase__opensource\\\">open source</a>\\n  to\\n  <a href=\\\"#\\\" class=\\\"intro__phrase__business\\\">business</a>\\n  , you can host and review code, manage projects, and build software alongside 31 million developers.\\n</p>\";\n\n//# sourceURL=webpack:///./src/components/IntroPhrase/IntroPhrase.html?");
+
+/***/ }),
+
+/***/ "./src/components/IntroPhrase/IntroPhrase.js":
+/*!***************************************************!*\
+  !*** ./src/components/IntroPhrase/IntroPhrase.js ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _IntroPhrase_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./IntroPhrase.html */ \"./src/components/IntroPhrase/IntroPhrase.html\");\n/* harmony import */ var _IntroPhrase_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_IntroPhrase_html__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _renderUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../renderUtils */ \"./src/renderUtils.js\");\n\n\n__webpack_require__(/*! ./IntroPhrase.scss */ \"./src/components/IntroPhrase/IntroPhrase.scss\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function(props) {\n  const element =  document.querySelector('.IntroPhrase');\n  element.innerHTML = _renderUtils__WEBPACK_IMPORTED_MODULE_1__[\"default\"].template(_IntroPhrase_html__WEBPACK_IMPORTED_MODULE_0___default.a, props);\n  element.className = \"IntroPhrase__wrapper\";\n});;\n\n//# sourceURL=webpack:///./src/components/IntroPhrase/IntroPhrase.js?");
+
+/***/ }),
+
+/***/ "./src/components/IntroPhrase/IntroPhrase.scss":
+/*!*****************************************************!*\
+  !*** ./src/components/IntroPhrase/IntroPhrase.scss ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/lib/loader.js??ref--4-2!./IntroPhrase.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/IntroPhrase/IntroPhrase.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/components/IntroPhrase/IntroPhrase.scss?");
+
+/***/ }),
+
+/***/ "./src/components/IntroPhrase/index.js":
+/*!*********************************************!*\
+  !*** ./src/components/IntroPhrase/index.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _IntroPhrase_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./IntroPhrase.js */ \"./src/components/IntroPhrase/IntroPhrase.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _IntroPhrase_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]; });\n\n\n\n//# sourceURL=webpack:///./src/components/IntroPhrase/index.js?");
+
+/***/ }),
+
+/***/ "./src/components/SignUpFormInput/SignUpFormInput.html":
+/*!*************************************************************!*\
+  !*** ./src/components/SignUpFormInput/SignUpFormInput.html ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<label class=\\\"signupform__input\\\">\\n  <p class=\\\"signupform__input__label\\\">${label}</p>\\n  <input type=\\\"text\\\" class=\\\"signupform__input__input\\\" placeholder=\\\"${placeHolder}\\\">\\n</label>\";\n\n//# sourceURL=webpack:///./src/components/SignUpFormInput/SignUpFormInput.html?");
+
+/***/ }),
+
+/***/ "./src/components/SignUpFormInput/SignUpFormInput.js":
+/*!***********************************************************!*\
+  !*** ./src/components/SignUpFormInput/SignUpFormInput.js ***!
+  \***********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _SignUpFormInput_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SignUpFormInput.html */ \"./src/components/SignUpFormInput/SignUpFormInput.html\");\n/* harmony import */ var _SignUpFormInput_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_SignUpFormInput_html__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _renderUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../renderUtils */ \"./src/renderUtils.js\");\n\n\n__webpack_require__(/*! ./SignUpFormInput.scss */ \"./src/components/SignUpFormInput/SignUpFormInput.scss\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function(props) {\n  const element =  document.querySelector('.SignUpFormInput');\n  element.innerHTML = _renderUtils__WEBPACK_IMPORTED_MODULE_1__[\"default\"].template(_SignUpFormInput_html__WEBPACK_IMPORTED_MODULE_0___default.a, props);\n  element.className = \"signupform__input__wrapper\";\n});;\n\n//# sourceURL=webpack:///./src/components/SignUpFormInput/SignUpFormInput.js?");
+
+/***/ }),
+
+/***/ "./src/components/SignUpFormInput/SignUpFormInput.scss":
+/*!*************************************************************!*\
+  !*** ./src/components/SignUpFormInput/SignUpFormInput.scss ***!
+  \*************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/lib/loader.js??ref--4-2!./SignUpFormInput.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/SignUpFormInput/SignUpFormInput.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/components/SignUpFormInput/SignUpFormInput.scss?");
+
+/***/ }),
+
+/***/ "./src/components/SignUpFormPassword/SignUpFormPassword.html":
+/*!*******************************************************************!*\
+  !*** ./src/components/SignUpFormPassword/SignUpFormPassword.html ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<label class=\\\"signupform__password\\\">\\n  <p class=\\\"signupform__password__label\\\">${label}</p>\\n  <input type=\\\"password\\\" class=\\\"signupform__password__input\\\" placeholder=\\\"${placeHolder}\\\">\\n  <p class=\\\"signupform__password__helper\\\">\\n    Make sure it's \\n    <span class=\\\"signupform__password__15\\\">more than 15 characters </span>\\n    OR\\n    <span class=\\\"signupform__password__8\\\">at least 8 characters</span>\\n    <span class=\\\"signupform__password__number\\\">including a number</span>\\n    <span class=\\\"signupform__password__lowercase\\\">and a lowercase letter</span>\\n    Read our documentation on\\n    <span class=\\\"signupform__password__safer\\\">safer password practices.</span>\\n  </p>\\n</label>\";\n\n//# sourceURL=webpack:///./src/components/SignUpFormPassword/SignUpFormPassword.html?");
+
+/***/ }),
+
+/***/ "./src/components/SignUpFormPassword/SignUpFormPassword.js":
+/*!*****************************************************************!*\
+  !*** ./src/components/SignUpFormPassword/SignUpFormPassword.js ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _SignUpFormPassword_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SignUpFormPassword.html */ \"./src/components/SignUpFormPassword/SignUpFormPassword.html\");\n/* harmony import */ var _SignUpFormPassword_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_SignUpFormPassword_html__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _renderUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../renderUtils */ \"./src/renderUtils.js\");\n\n\n__webpack_require__(/*! ./SignUpFormPassword.scss */ \"./src/components/SignUpFormPassword/SignUpFormPassword.scss\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function(props) {\n  const element =  document.querySelector('.SignUpFormPassword');\n  element.innerHTML = _renderUtils__WEBPACK_IMPORTED_MODULE_1__[\"default\"].template(_SignUpFormPassword_html__WEBPACK_IMPORTED_MODULE_0___default.a, props);\n  element.className = \"signupform__password__wrapper\";\n});;\n\n//# sourceURL=webpack:///./src/components/SignUpFormPassword/SignUpFormPassword.js?");
+
+/***/ }),
+
+/***/ "./src/components/SignUpFormPassword/SignUpFormPassword.scss":
+/*!*******************************************************************!*\
+  !*** ./src/components/SignUpFormPassword/SignUpFormPassword.scss ***!
+  \*******************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/lib/loader.js??ref--4-2!./SignUpFormPassword.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/SignUpFormPassword/SignUpFormPassword.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/components/SignUpFormPassword/SignUpFormPassword.scss?");
+
+/***/ }),
+
+/***/ "./src/components/SignUpFormPassword/index.js":
+/*!****************************************************!*\
+  !*** ./src/components/SignUpFormPassword/index.js ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _SignUpFormPassword_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./SignUpFormPassword.js */ \"./src/components/SignUpFormPassword/SignUpFormPassword.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _SignUpFormPassword_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]; });\n\n\n\n//# sourceURL=webpack:///./src/components/SignUpFormPassword/index.js?");
+
+/***/ }),
+
+/***/ "./src/components/TeamSignUp/TeamSignUp.html":
+/*!***************************************************!*\
+  !*** ./src/components/TeamSignUp/TeamSignUp.html ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+eval("module.exports = \"<div class=\\\"team__signup\\\">\\n  <p class=\\\"team__signup__summay\\\">GitHub for teams</p>\\n  <h1 class=\\\"team__signup__keyword\\\">A better way to work together</h1>\\n  <p class=\\\"team__signup__contents\\\">GitHub brings teams together to work through problems, move ideas forward, and\\n    learn form each other along the way.</p>\\n  <div class=\\\"Button\\\"></div>\\n</div>\";\n\n//# sourceURL=webpack:///./src/components/TeamSignUp/TeamSignUp.html?");
+
+/***/ }),
+
+/***/ "./src/components/TeamSignUp/TeamSignUp.js":
+/*!*************************************************!*\
+  !*** ./src/components/TeamSignUp/TeamSignUp.js ***!
+  \*************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _TeamSignUp_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TeamSignUp.html */ \"./src/components/TeamSignUp/TeamSignUp.html\");\n/* harmony import */ var _TeamSignUp_html__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_TeamSignUp_html__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var _renderUtils__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../renderUtils */ \"./src/renderUtils.js\");\n/* harmony import */ var _Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../Button */ \"./src/components/Button/index.js\");\n\n\n\n__webpack_require__(/*! ./TeamSignUp.scss */ \"./src/components/TeamSignUp/TeamSignUp.scss\");\n\n/* harmony default export */ __webpack_exports__[\"default\"] = (function(props) {\n  const element =  document.querySelector('.TeamSignUp');\n  element.innerHTML = _renderUtils__WEBPACK_IMPORTED_MODULE_1__[\"default\"].template(_TeamSignUp_html__WEBPACK_IMPORTED_MODULE_0___default.a, props);\n  element.className = \"team__signup__wrapper\";\n  Object(_Button__WEBPACK_IMPORTED_MODULE_2__[\"default\"])({ contents: 'Sign up your team', modifier: 'blue-outline', link: '/link', arrow: true});\n});;\n\n//# sourceURL=webpack:///./src/components/TeamSignUp/TeamSignUp.js?");
+
+/***/ }),
+
+/***/ "./src/components/TeamSignUp/TeamSignUp.scss":
+/*!***************************************************!*\
+  !*** ./src/components/TeamSignUp/TeamSignUp.scss ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+eval("\nvar content = __webpack_require__(/*! !../../../node_modules/css-loader/dist/cjs.js!../../../node_modules/sass-loader/lib/loader.js??ref--4-2!./TeamSignUp.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/components/TeamSignUp/TeamSignUp.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/components/TeamSignUp/TeamSignUp.scss?");
+
+/***/ }),
+
+/***/ "./src/components/TeamSignUp/index.js":
+/*!********************************************!*\
+  !*** ./src/components/TeamSignUp/index.js ***!
+  \********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _TeamSignUp__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./TeamSignUp */ \"./src/components/TeamSignUp/TeamSignUp.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"default\", function() { return _TeamSignUp__WEBPACK_IMPORTED_MODULE_0__[\"default\"]; });\n\n\n\n//# sourceURL=webpack:///./src/components/TeamSignUp/index.js?");
+
+/***/ }),
+
+/***/ "./src/renderUtils.js":
+/*!****************************!*\
+  !*** ./src/renderUtils.js ***!
+  \****************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\nconst el = (tag, attr = {}) => Object.entries(attr).reduce((accum, v) => {\n  typeof accum[v[0]] === 'function' ? accum[v[0]](v[1]) : (accum[v[0]] = v[1]);\n  return accum;\n}, document.createElement(tag));\n\nconst template = (template, model) => {\n  if(!model) return template;\n  return Object.keys(model).reduce((accum, key) => accum.replace('${' + key + '}', model[key]), template)\n}\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  el, template\n});\n\n//# sourceURL=webpack:///./src/renderUtils.js?");
 
 /***/ }),
 
@@ -194,7 +1027,7 @@ eval("__webpack_require__(/*! ./components/HeaderLogo */ \"./src/components/Head
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/lib/loader.js!./main.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js!./src/styles/main.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/styles/main.scss?");
+eval("\nvar content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/lib/loader.js??ref--4-2!./main.scss */ \"./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/lib/loader.js?!./src/styles/main.scss\");\n\nif(typeof content === 'string') content = [[module.i, content, '']];\n\nvar transform;\nvar insertInto;\n\n\n\nvar options = {\"hmr\":true}\n\noptions.transform = transform\noptions.insertInto = undefined;\n\nvar update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ \"./node_modules/style-loader/lib/addStyles.js\")(content, options);\n\nif(content.locals) module.exports = content.locals;\n\nif(false) {}\n\n//# sourceURL=webpack:///./src/styles/main.scss?");
 
 /***/ })
 

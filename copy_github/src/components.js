@@ -13,6 +13,8 @@ import IntroPhrase from './components/IntroPhrase';
 import EnterprisePropose from './components/EnterprisePropose';
 import BusinessOrgs from './components/BusinessOrgs';
 import TeamSignUp from './components/TeamSignUp';
+import ArrowCard from './components/ArrowCard';
+import Advantages from './components/Advantages';
 
 HeaderLogo();
 HeaderDownButton(({ menuName: 'Why GitHub?'}));
@@ -29,6 +31,8 @@ IntroPhrase();
 EnterprisePropose();
 BusinessOrgs();
 TeamSignUp();
+ArrowCard({ key: 'write_better_code'});
+Advantages();
 
 function component() {
   let element = document.createElement('div');
