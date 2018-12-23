@@ -5,6 +5,13 @@
   font-weight: 500;
 }
 
+@mixin arrowAnim() {
+
+}
+.button__arrow {
+  display: inline-block;
+}
+
 .button--green {
   background-color: #28c745;
   &:hover {
@@ -28,14 +35,17 @@
     border: 1px solid RGBA(17, 108, 212, 1.00);
     color: RGBA(17, 108, 212, 1.00);
   }
+  &:hover .button__arrow {
+    transform: translate(.3rem, 0);
+    transition: 0.3s
+  }
 }
-
 
 .button__text--white {
   color: white;
 }
 
-.button__content {
+.button__contents {
   display: block;
   padding: 1.3rem 1.8rem;
   text-align: center;

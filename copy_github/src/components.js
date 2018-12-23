@@ -11,6 +11,8 @@ import Button from './components/Button';
 import FormHelper from './components/FormHelper';
 import IntroPhrase from './components/IntroPhrase';
 import EnterprisePropose from './components/EnterprisePropose';
+import BusinessOrgs from './components/BusinessOrgs';
+import TeamSignUp from './components/TeamSignUp';
 
 HeaderLogo();
 HeaderDownButton(({ menuName: 'Why GitHub?'}));
@@ -21,10 +23,12 @@ HeaderSignButton({ buttonName: 'Sign in', modifier: 'default'});
 HeaderSignButton({ buttonName: 'Sign up', modifier: 'outline'});
 SignUpFormInput({ label: 'Username', placeHolder: 'Pick username'});
 SignUpFormPassword({ label: 'Password', placeHolder: 'Create a password'});
-Button({ content: 'Sign up for GitHub', modifier: 'green', link: '/link'});
+Button({ contents: 'Sign up for GitHub', modifier: 'green', link: '/link'});
 FormHelper();
 IntroPhrase();
 EnterprisePropose();
+BusinessOrgs();
+TeamSignUp();
 
 function component() {
   let element = document.createElement('div');
