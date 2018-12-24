@@ -12,9 +12,10 @@ import FormHelper from './components/FormHelper';
 import IntroPhrase from './components/IntroPhrase';
 import EnterprisePropose from './components/EnterprisePropose';
 import BusinessOrgs from './components/BusinessOrgs';
-import TeamSignUp from './components/TeamSignUp';
+import Article from './components/Article';
 import ArrowCard from './components/ArrowCard';
 import Advantages from './components/Advantages';
+import Security from './components/Security';
 
 HeaderLogo();
 HeaderDownButton(({ menuName: 'Why GitHub?'}));
@@ -30,9 +31,10 @@ FormHelper();
 IntroPhrase();
 EnterprisePropose();
 BusinessOrgs();
-TeamSignUp();
+Article({key: 'github_for_teams'});
 ArrowCard({ key: 'write_better_code'});
 Advantages();
+Security();
 
 function component() {
   let element = document.createElement('div');
