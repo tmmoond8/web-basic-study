@@ -1,0 +1,35 @@
+@import 'utils';
+
+.security {
+  display: inline-block;
+}
+.security__container {
+  float: left;
+  width: 50%;
+  padding: 2rem 4rem;
+}
+
+.security__subject {
+  font-size: 1.1rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: .7rem 0;
+}
+
+.security__contents {
+  font-size: .9rem;
+  font-weight: 100;
+  color: $oc-gray-7;
+}
+.security__contents + .security__subject {
+  padding-top: 2.4rem;
+}
+
+.security__image {
+  float: right;
+  width: 50%;
+  height: px(280);
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-image: url(../../static/images/home-illo-business.png);
+}
