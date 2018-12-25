@@ -16,6 +16,7 @@ import Article from './components/Article';
 import ArrowCard from './components/ArrowCard';
 import Advantages from './components/Advantages';
 import Security from './components/Security';
+import EffectBox from './components/EffectBox';
 
 HeaderLogo();
 HeaderDownButton(({ menuName: 'Why GitHub?'}));
@@ -35,6 +36,7 @@ Article({key: 'github_for_teams'});
 ArrowCard({ key: 'write_better_code'});
 Advantages();
 Security();
+EffectBox();
 
 function component() {
   let element = document.createElement('div');
