@@ -19,6 +19,7 @@ import Security from './components/Security';
 import EffectBox from './components/EffectBox';
 import Badges from './components/Badges';
 import Marketplace from './components/Marketplace';
+import Slider from './components/Slider';
 
 Article({key: 'community'});
 HeaderLogo();
@@ -42,6 +43,7 @@ Security();
 EffectBox();
 Badges();
 Marketplace();
+Slider();
 
 function component() {
   let element = document.createElement('div');

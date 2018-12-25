@@ -1,0 +1,61 @@
+.slider {
+  display: block;
+  padding: 1rem;
+  overflow-x: scroll;
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+.slider__card {
+  display: inline-block;
+  position: relative;
+  width: 19rem;
+  height: 10rem;
+  box-shadow: 0 0 30px 1px rgba(100, 100, 100, 0.2);
+  margin: 1rem 0;
+  border-radius: 3px;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: .4s;
+  }
+}
+
+.slider__card + .slider__card {
+  margin-left: .7rem;
+}
+
+.slider__card:nth-child(odd) {
+  top: 1rem;
+}
+.slider__card:hover .slider__name {
+  color: RGBA(17, 108, 212, 1.00);
+  text-decoration: underline;
+}
+
+.slider__image {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  background: url(../../static/images/nayeon.jpg) no-repeat ;
+  background-size: cover;
+}
+
+.slider__profile__container {
+  display: inline-block;
+  width: 50%;
+  height: 100%;
+  vertical-align: top;
+}
+
+.slider__profile {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  text-align: center;
+}
+
+.slider__name {
+  font-weight: 500;
+  padding-bottom: .6rem;
+}
