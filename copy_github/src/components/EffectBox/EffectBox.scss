@@ -1,0 +1,126 @@
+@import 'utils';
+
+@mixin dotted() {
+  $dottedSize: 1rem;
+  $dottedPosition: 0px;
+  background:
+        -moz-radial-gradient($oc-gray-3 15%, transparent 16%),
+        -moz-radial-gradient($oc-gray-3 15%, transparent 16%),
+        transparent;
+  background:
+      -webkit-radial-gradient($oc-gray-3 15%, transparent 16%),
+      -webkit-radial-gradient($oc-gray-3 15%, transparent 16%),
+      transparent;
+  background-position: $dottedPosition $dottedPosition, $dottedPosition $dottedPosition;
+  
+  -webkit-background-size:$dottedSize $dottedSize;
+  -moz-background-size:$dottedSize $dottedSize;
+  background-size:$dottedSize $dottedSize;
+}
+
+@mixin imageCommon() {
+  display: block;
+  font-size: 2.5rem;
+  color: $oc-gray-8;
+}
+@mixin effectCommon() {
+  @include dotted();
+  display: inline-block;
+  position: absolute;
+  width: 12rem;
+  height: 12rem;
+}
+
+.effectbox:hover {
+
+}
+
+.effectbox:hover > .effectbox__effect__left {
+  transform: translate(-2rem, -2rem);
+  transition: 0.4s;
+}
+
+.effectbox:hover > .effectbox__effect__right {
+  transform: translate(2rem, 2rem);
+  transition: 0.4s;
+}
+
+.effectbox {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  background: white;
+  width: px(681);
+  height: 17rem;
+  border: 1px solid $oc-gray-3;
+  border-radius: 3px;
+  margin: 2rem;
+}
+
+.effectbox__container {
+  margin: 1px 0;
+  position: absolute;
+  background:white;
+  padding: 2rem 0;
+  z-index: 1;
+}
+
+.effectbox__image {
+  width: 20%;
+  float: left;
+  text-align: center;
+}
+
+.effectbox__text {
+  float: right;
+  width: 80%;
+}
+
+.effectbox__contents {
+  font-size: 1.1rem;
+  line-height: 1.6rem;
+  padding: .4rem 7% 1rem 0;
+}
+
+.effectbox__image__server {
+  @include imageCommon();
+}
+
+.effectbox__image__cloud {
+  @include imageCommon();
+  position: relative;
+  top: -.6rem;
+}
+
+.effectbox__subject {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.effectbox__link {
+  display: block;
+  color: RGBA(17, 108, 232, 1);
+  font-size: 1.2rem;
+  cursor: pointer;
+  &:hover > .effectbox__effectbox__link__arrow {
+    display: inline-block;
+    transform: translateX(6px);
+    transition: 0.1s;
+  }
+}
+
+.effectbox__link + .effectbox__link {
+  padding-top: .4rem;
+}
+
+.effectbox__effect__left {
+  @include effectCommon();
+  top: 0;
+  left: 0;
+}
+
+.effectbox__effect__right {
+  @include effectCommon();
+  bottom: 0;
+  right: 0;
+}
