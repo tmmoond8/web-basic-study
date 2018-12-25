@@ -1,0 +1,31 @@
+.badges {
+  display: inline-block;
+}
+
+.badges__item {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+
+  .badges__image {
+    display: inline-block;
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    padding: 2rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.badges__item + .badges__item {
+  margin-left: 2rem;
+}
+
+.badges__item:nth-child(even) {
+  margin-top: 3.5rem;
+}
