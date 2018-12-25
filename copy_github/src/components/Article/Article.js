@@ -11,6 +11,11 @@ const model = {
     button: {
       contents: 'Sign up your team', modifier: 'blue-outline', link: '/link', arrow: true
     }
+  },
+  'community': {
+    summay: 'Community',
+    keyword: 'Welcome home, <br>developers',
+    contents: 'GitHub is home to the world’s largest community of developers and their projects...',
   }
 }
 
@@ -18,5 +23,9 @@ export default function(props) {
   const element =  document.querySelector('.Article');
   element.innerHTML = renderUtils.template(Article, model[props.key]);
   element.className = "articlep__wrapper";
-  Button(model[props.key].button);
+  if(model[props.key].button) {
+    Button(model[props.key].button);
+  } else {
+    element.querySelector('.Button').remove();
+  }
 };

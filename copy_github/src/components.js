@@ -18,7 +18,9 @@ import Advantages from './components/Advantages';
 import Security from './components/Security';
 import EffectBox from './components/EffectBox';
 import Badges from './components/Badges';
+import Marketplace from './components/Marketplace';
 
+Article({key: 'community'});
 HeaderLogo();
 HeaderDownButton(({ menuName: 'Why GitHub?'}));
 HeaderDownButton(({ menuName: 'Business Explore'}));
@@ -39,6 +41,7 @@ Advantages();
 Security();
 EffectBox();
 Badges();
+Marketplace();
 
 function component() {
   let element = document.createElement('div');

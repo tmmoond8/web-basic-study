@@ -1,0 +1,21 @@
+@import 'utils';
+
+.marketplace {
+  width: 20rem;
+  text-align: center;
+}
+.marketplace__contents {
+  font-size: .9rem;
+  color: $oc-gray-7;
+  padding-bottom: 1rem;
+}
+
+.marketplace__link {
+  color: RGBA(17, 108, 212, 1.00);
+}
+
+.marketplace__link:hover > .marketplace__arrow {
+  display: inline-block;
+  transform: translate(.3rem, 0);
+  transition: .4s;
+}
