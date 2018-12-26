@@ -1,5 +1,5 @@
 @import 'utils';
-
+$aaa: #333333;
 .arrow__card {
   display: inline-block;
   position: relative;
@@ -8,10 +8,6 @@
   cursor: pointer;
   &:hover {
     box-shadow: -1px 0px 3px 1px $oc-gray-5;
-  }
-
-  &:hover .arrow__card__arrow {
-    color: RGBA(17, 108, 212, 1.00);
   }
 
   .arrow__card__container {
@@ -28,9 +24,27 @@
   .arrow__card__contents {
     font-size: 1.1rem;
     line-height: 1.6rem;
+
+    .arrow__card__link {
+      color: RGBA(17, 108, 212, 1.00);
+      border-bottom: 1px solid RGBA(17, 108, 242, .5);
+      &:hover {
+        border-bottom: 1px solid RGBA(17, 108, 242, 1);
+      }
+    }
+    .arrow__card__repositories {
+      color: #FB8532;
+    }
+    .arrow__card__developers {
+      color: #0366D6;
+    }
+    .arrow__card__businesses {
+      color: #6F42C1;
+    }
   }
 
   .arrow__card__arrow {
+    display: inline-block;
     position: absolute;
     float: left;
     width: 15%;
@@ -39,11 +53,19 @@
     transform: translateY(-50%);
   }
 
-  .arrow__card__link {
+  &:hover .arrow__card__arrow {
     color: RGBA(17, 108, 212, 1.00);
-    border-bottom: 1px solid RGBA(17, 108, 242, .5);
-    &:hover {
-      border-bottom: 1px solid RGBA(17, 108, 242, 1);
-    }
+  }
+
+  &:hover .arrow__card__repositories + .arrow__card__arrow {
+    color: #FB8532;
+  }
+
+  &:hover .arrow__card__developers + .arrow__card__arrow {
+    color: #0366D6;
+  }
+
+  &:hover .arrow__card__businesses + .arrow__card__arrow {
+    color: #6F42C1;
   }
 }
