@@ -15,7 +15,7 @@
   position: relative;
   width: 50%;
   left: 50%;
-
+  cursor: pointer;
   .worldwide__circle__repositories {
     @include common();
     left: -30rem;
@@ -69,8 +69,8 @@
 .arrow__card__wrapper:hover + .worldwide__circle__repositories,
 .arrow__card__wrapper:hover + .worldwide__circle__developers,
 .arrow__card__wrapper:hover + .worldwide__circle__businesses,
-.worldwide__circle__repositories,
-.worldwide__circle__developers,
-.worldwide__circle__businesses {
+.worldwide__circle__repositories:hover,
+.worldwide__circle__developers:hover,
+.worldwide__circle__businesses:hover {
   @include scaleUp();
 }
