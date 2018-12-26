@@ -34,7 +34,7 @@ const models = [
   { name: '정채연', belong: 'MBK엔터테인먼트', image: `url(${jcy}) no-repeat; background-size: cover;"`},
   { name: '제니', belong: 'YG엔터테인먼트', image: `url(${jenny}) no-repeat; background-size: cover;"`},
   { name: '조이', belong: 'SM엔터테인먼트', image: `url(${joy}) no-repeat; background-size: cover;"`},
-  { name: 'nayeon', belong: 'JYP엔터테인먼트', image: `url(${nayeon}) no-repeat; background-size: cover;"`},
+  { name: '나연', belong: 'JYP엔터테인먼트', image: `url(${nayeon}) no-repeat; background-size: cover;"`},
 ]
 
 export default function(props) {

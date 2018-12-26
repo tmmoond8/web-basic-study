@@ -1,0 +1,77 @@
+@import 'utils';
+
+@mixin common() {
+  position: absolute;
+  display: inline-block;
+  border-radius: 50%;
+}
+
+@mixin scaleUp() {
+  transform: scale(1.06);
+  transition: .4s;
+}
+
+.worldwide__cards__container {
+  position: relative;
+  width: 50%;
+  left: 50%;
+  cursor: pointer;
+
+  .worldwide__circle__repositories {
+    @include common();
+    left: -30rem;
+    top: 1rem;
+    width: 15rem;
+    height: 15rem;
+    background: #FB8532;
+  }
+  .worldwide__circle__developers {
+    @include common();
+    left: -13.2rem;
+    top: 4.2rem;
+    width: 11rem;
+    height: 11rem;
+    background: #0366D6;
+  }
+
+  .worldwide__circle__businesses {
+    @include common();
+    left: -19rem;
+    top: 16rem;
+    width: 9rem;
+    height: 9rem;
+    padding: 1rem;
+    background: #6F42C1;
+  }
+
+  .worldwide__years {
+    font-size: .8rem;
+    color: $oc-gray-7;
+    padding-top: 2.4rem;
+  }
+}
+.worldwide__circle__container {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: .8rem;
+  color: white;
+
+  .worldwide__circle__m {
+    font-size: 2.4rem;
+    font-weight: 400;
+    padding-bottom: .6rem;
+  }
+}
+
+.arrow__card__wrapper:hover + .worldwide__circle__repositories,
+.arrow__card__wrapper:hover + .worldwide__circle__developers,
+.arrow__card__wrapper:hover + .worldwide__circle__businesses,
+.worldwide__circle__repositories:hover,
+.worldwide__circle__developers:hover,
+.worldwide__circle__businesses:hover {
+  @include scaleUp();
+}

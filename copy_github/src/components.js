@@ -20,6 +20,7 @@ import EffectBox from './components/EffectBox';
 import Badges from './components/Badges';
 import Marketplace from './components/Marketplace';
 import Slider from './components/Slider';
+import WorldWide from './components/WorldWide';
 
 Article({key: 'community'});
 HeaderLogo();
@@ -44,6 +45,7 @@ EffectBox();
 Badges();
 Marketplace();
 Slider();
+WorldWide();
 
 function component() {
   let element = document.createElement('div');
