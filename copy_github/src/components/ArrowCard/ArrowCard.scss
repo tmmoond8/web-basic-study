@@ -1,5 +1,5 @@
 @import 'utils';
-$aaa: #333333;
+
 .arrow__card {
   display: inline-block;
   position: relative;
@@ -26,10 +26,10 @@ $aaa: #333333;
     line-height: 1.6rem;
 
     .arrow__card__link {
-      color: RGBA(17, 108, 212, 1.00);
+      color: color('blue');
       border-bottom: 1px solid RGBA(17, 108, 242, .5);
       &:hover {
-        border-bottom: 1px solid RGBA(17, 108, 242, 1);
+        color: color('blue');
       }
     }
     .arrow__card__repositories {
@@ -54,7 +54,7 @@ $aaa: #333333;
   }
 
   &:hover .arrow__card__arrow {
-    color: RGBA(17, 108, 212, 1.00);
+    color: $oc-blue-8;
   }
 
   &:hover .arrow__card__repositories + .arrow__card__arrow {

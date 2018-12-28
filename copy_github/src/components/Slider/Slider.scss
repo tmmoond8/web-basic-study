@@ -1,3 +1,5 @@
+@import 'utils';
+
 .slider {
   display: block;
   padding: 1.4rem;
@@ -29,7 +31,7 @@
   top: 1rem;
 }
 .slider__card:hover .slider__name {
-  color: RGBA(17, 108, 212, 1.00);
+  color: $oc-blue-8;
   text-decoration: underline;
 }
 
