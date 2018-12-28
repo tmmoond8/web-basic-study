@@ -1,3 +1,5 @@
+@import 'utils';
+
 @mixin common() {
   border-radius: 3px;
   cursor: pointer;
@@ -24,16 +26,16 @@
   @include common();
   background-color: RGBA(17, 108, 232, 1.00);
   &:hover {
-    background-color: RGBA(17, 108, 212, 1.00);
+    background-color: $oc-blue-8;
   }
 }
 .button--blue-outline {
   @include common();
-  color: RGBA(17, 108, 242, 1.00);
+  color: $oc-blue-7;
   border: 1px solid rgba(18,119,235,.5);
   &:hover {
-    border: 1px solid RGBA(17, 108, 212, 1.00);
-    color: RGBA(17, 108, 212, 1.00);
+    border: 1px solid $oc-blue-8;
+    color: $oc-blue-8;
   }
   &:hover .button__arrow {
     transform: translate(.3rem, 0);

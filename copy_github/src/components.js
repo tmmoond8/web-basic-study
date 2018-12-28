@@ -21,6 +21,7 @@ import Badges from './components/Badges';
 import Marketplace from './components/Marketplace';
 import Slider from './components/Slider';
 import WorldWide from './components/WorldWide';
+import TopSignUp from './components/TopSignUp';
 
 Article({key: 'community'});
 HeaderLogo();
@@ -46,6 +47,7 @@ Badges();
 Marketplace();
 Slider();
 WorldWide();
+TopSignUp();
 
 function component() {
   let element = document.createElement('div');
