@@ -1,0 +1,27 @@
+@import 'utils';
+
+.footer {
+  display: block;
+  width: 68rem;
+  margin: 0 auto;
+}
+
+.footer__logo__container {
+  display: inline-block;
+  width: 22rem;
+  vertical-align: top;
+  .footer__logo {
+    display: inline-block;
+    background: url('../../static/images/text_logo.svg') no-repeat;
+    background-size: contain;
+    width: 6rem;
+    height: 2rem;
+  }
+}
+
+.footer__list__container {
+  display: inline-block;
+  .footer__list__wrapper {
+    display: inline-block;
+  }
+}

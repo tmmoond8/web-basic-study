@@ -23,6 +23,8 @@ import Slider from './components/Slider';
 import WorldWide from './components/WorldWide';
 import TopSignUp from './components/TopSignUp';
 import BottomSignUp from './components/BottomSignUp';
+import Footer from './components/Footer';
+import FooterList from './components/FooterList';
 
 Article({key: 'community'});
 HeaderLogo();
@@ -50,6 +52,8 @@ Slider();
 WorldWide();
 TopSignUp();
 BottomSignUp();
+Footer();
+FooterList({ key: 'Product'});
 
 function component() {
   let element = document.createElement('div');

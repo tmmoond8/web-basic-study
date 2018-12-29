@@ -1,0 +1,22 @@
+@import 'utils';
+
+.footer__list {
+  display: inline-block;
+  width: 10rem;
+  vertical-align: top;
+  .footer__list__head {
+    color: $oc-gray-6;
+    letter-spacing: 1px;
+    line-height: 2.4rem;
+  }
+  .footer__list__item {
+    color: $oc-gray-7;
+    font-size: .84rem;
+    line-height: 2rem;
+    &:hover {
+      color: $oc-blue-7;
+      text-decoration: underline;
+      text-decoration-color: $oc-blue-7;
+    }
+  }
+}
