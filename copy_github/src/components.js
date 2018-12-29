@@ -54,11 +54,3 @@ TopSignUp();
 BottomSignUp();
 Footer();
 FooterList({ key: 'Product'});
-
-function component() {
-  let element = document.createElement('div');
-  element.innerHTML = 'Components'
-  return element;
-}
-
-document.body.appendChild(component());

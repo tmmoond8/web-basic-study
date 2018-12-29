@@ -4,12 +4,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 module.exports = {
   mode: 'development',
   entry: {
-    main: './src/components.js',
+    main: './src/main.js',
+    components: './src/components.js',
   },
   output: {
     filename: '[name].js',
     path: path.resolve(__dirname, 'dist/'),
-    // publicPath: '/'//path.resolve(__dirname, 'dist')
   },
   module: {
     rules: [
@@ -47,15 +47,16 @@ module.exports = {
         collapseWhitespace: true
       },
       hash: true,
-      template: './src/components_books.html'
+      template: './src/components_books.html',
+      filename: 'components.html'
     }),
-    // new HtmlWebpackPlugin({
-    //   minify: {
-    //     collapseWhitespace: true
-    //   },
-    //   hash: true,
-    //   template: './src/copy_github.html'
-    // })
+    new HtmlWebpackPlugin({
+      minify: {
+        collapseWhitespace: true
+      },
+      hash: true,
+      template: './src/copy_github.html'
+    })
   ],
   resolve: {
     modules: ['node_modules'],
