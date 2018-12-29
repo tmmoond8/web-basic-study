@@ -1,0 +1,42 @@
+@import 'utils';
+
+.bottom__signup {
+  font-size: 0;
+  text-align: center;
+  .bottom__signup__head {
+    width: px(980);
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 1rem 1rem 4rem 1rem;
+    margin: 0 auto;
+  }
+
+  .signupform__input__wrapper,
+  .signupform__password__wrapper,
+  .button__wrapper,
+  {
+    display: inline-block;
+    width: 25%;
+  }
+  .signupform__input__wrapper + .signupform__input__wrapper, 
+  .signupform__input__wrapper + .signupform__password__wrapper,
+  .signupform__password__wrapper + .button__wrapper 
+  {
+    padding-left: 2rem;
+  }
+  .bottom__signup__footer {
+    color: $oc-gray-6;
+    font-size: .8rem;
+    padding-top: 1.4 rem;
+    .bottom__signup__whitelink {
+      color: white;
+      text-decoration-color: white;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+}

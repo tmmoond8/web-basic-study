@@ -22,6 +22,7 @@ import Marketplace from './components/Marketplace';
 import Slider from './components/Slider';
 import WorldWide from './components/WorldWide';
 import TopSignUp from './components/TopSignUp';
+import BottomSignUp from './components/BottomSignUp';
 
 Article({key: 'community'});
 HeaderLogo();
@@ -48,6 +49,7 @@ Marketplace();
 Slider();
 WorldWide();
 TopSignUp();
+BottomSignUp();
 
 function component() {
   let element = document.createElement('div');
