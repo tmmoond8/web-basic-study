@@ -1,0 +1,43 @@
+@import 'utils';
+
+
+.footer__siteinfo {
+  background: #FAFBFC;
+  line-height: 4.4rem;
+  height: 4.4rem;
+  
+  .footer__siteinfo__container {
+    width: 60rem;
+    margin: 0 auto;
+  }
+  
+  .footer__siteinfo__policy {
+    float: left;
+    color: $oc-gray-7;
+    font-size: .8rem;
+
+    .footer__siteinfo__terms,
+    .footer__siteinfo__privacy {
+      padding-left: 1rem;
+      &:hover {
+        color: $oc-blue-7;
+        text-decoration: underline;
+        text-decoration-color: $oc-blue-7;
+      }
+    }
+  }
+
+  .footer__siteinfo__links {
+    float: right;
+    .footer___link__container {
+      display: inline-block;
+    }
+    .footer__siteinfo__link {
+      color: $oc-gray-6;
+      font-size: 1.3rem;
+    }
+    .footer___link__container + .footer___link__container {
+      padding-left: .8rem;
+    }
+  }
+}
