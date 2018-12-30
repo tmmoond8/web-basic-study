@@ -9,5 +9,5 @@ export default function(props) {
   ArrowCard({ key: 'open_source_community'});
   ArrowCard({ key: 'developers'});
   ArrowCard({ key: 'businesses'});
-  element.className = "WorldWide__wrapper";
+  element.className = "worldwide__wrapper";
 };

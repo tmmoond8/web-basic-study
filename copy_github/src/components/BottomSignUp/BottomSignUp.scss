@@ -3,6 +3,7 @@
 .bottom__signup {
   font-size: 0;
   text-align: center;
+  padding: 4.4rem 1rem 7.5rem 1rem;
   .bottom__signup__head {
     width: px(980);
     color: white;
@@ -19,6 +20,7 @@
   {
     display: inline-block;
     width: 25%;
+    max-width: 17.5rem;
   }
   .signupform__input__wrapper + .signupform__input__wrapper, 
   .signupform__input__wrapper + .signupform__password__wrapper,
@@ -38,5 +40,7 @@
       }
     }
   }
-
+  .button__contents {
+    padding: .9rem;
+  }
 }

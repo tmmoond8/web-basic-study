@@ -12,5 +12,5 @@ export default function(props) {
   SignUpFormInput({ label: '', placeHolder: 'Your email address'});
   SignUpFormPassword({ label: '', placeHolder: 'Create a password', noHelper: true});
   Button({ contents: 'Sign up for GitHub', link: '/signup', modifier: 'green'});
-  element.className = "bottom_signup__wrapper";
+  element.className = "bottom__signup__wrapper";
 };
