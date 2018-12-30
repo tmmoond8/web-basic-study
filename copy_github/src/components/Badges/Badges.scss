@@ -6,8 +6,8 @@
   display: inline-block;
   position: relative;
   vertical-align: top;
-  width: 7rem;
-  height: 7rem;
+  width: 6rem;
+  height: 6rem;
   border-radius: 50%;
 
   .badges__image {
@@ -23,7 +23,7 @@
 }
 
 .badges__item + .badges__item {
-  margin-left: 2.4rem;
+  margin-left: 1.9rem;
 }
 
 .badges__item:nth-child(even) {

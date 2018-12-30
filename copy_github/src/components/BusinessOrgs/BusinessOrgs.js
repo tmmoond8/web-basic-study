@@ -32,5 +32,5 @@ export default function(props) {
   } catch(e) {
     console.log('empty list');
   }
-  element.className = "BusinessOrgs__wrapper";
+  element.className = "business__orgs__wrapper";
 };

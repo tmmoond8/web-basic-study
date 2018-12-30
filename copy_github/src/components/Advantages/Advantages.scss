@@ -2,10 +2,10 @@
 @mixin common() {
   display: none;
   position: absolute;
-  height: px(200);
-  width: px(200);
+  height: px(180);
+  width: px(180);
   top: 0;
-  left: 50%;
+  left: 53%;
   transform: translateX(-100%);
   background-repeat: no-repeat;
 }
@@ -17,14 +17,14 @@
 }
 .advantages__mainimage {
   height: px(640);
-  width: 48%;
+  width: 55%;
   float: left;
   background: url(../../static/images/home-illo-team.svg) no-repeat;
 }
 
 .advantages__cards__container {
   float: right;
-  width: 48%;
+  width: 41%;
 }
 
 .advantages__image__code {

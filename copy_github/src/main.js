@@ -1,4 +1,24 @@
 require('./styles/main.scss');
+require('./main.scss');
 require('./components.scss');
 import Header from './components/Header';
+import Intro from './components/Intro';
+import EnterprisePropose from './components/EnterprisePropose';
+import BusinessOrgs from './components/BusinessOrgs';
+import Article from './components/Article';
+import Advantages from './components/Advantages';
+import Security from './components/Security';
+import EffectBox from './components/EffectBox';
+import Badges from './components/Badges';
+
 Header();
+Intro();
+EnterprisePropose();
+BusinessOrgs();
+Article({key: 'github_for_teams'});
+Advantages();
+Article({key: 'security'});
+Security();
+EffectBox();
+Article({key: 'integrations'});
+Badges();

@@ -1,0 +1,65 @@
+@import 'utils';
+
+@mixin dotted() {
+  $dottedSize: 4.4rem;
+  $dottedPosition: 0px;
+  $before-percentage: 6%;
+  $after-percentage: 6%;
+  background:
+        -moz-radial-gradient($oc-gray-3 $before-percentage, transparent $after-percentage),
+        -moz-radial-gradient($oc-gray-3 $before-percentage, transparent $after-percentage),
+        transparent;
+  background:
+      -webkit-radial-gradient($oc-gray-3 $before-percentage, transparent $after-percentage),
+      -webkit-radial-gradient($oc-gray-3 $before-percentage, transparent $after-percentage),
+      transparent;
+  background-position: $dottedPosition $dottedPosition, $dottedPosition $dottedPosition;
+  
+  -webkit-background-size:$dottedSize $dottedSize;
+  -moz-background-size:$dottedSize $dottedSize;
+  background-size:$dottedSize $dottedSize;
+}
+
+.enterprise__propose {
+  background: white;
+  width: 54rem;
+  padding: 3rem 5rem;
+  margin: 0 auto;
+}
+
+.enterprise__propose__wrapper {
+  @include dotted();
+}
+
+.business__orgs__wrapper {
+  width: 74rem;
+  margin: 0 auto;
+  padding: 4rem 5rem;
+}
+.articlep__wrapper {
+  width: 54rem;
+  margin: 0 auto;
+  padding: 4rem 5rem;
+}
+
+.advantages__wrapper {
+  width: 84rem;
+  margin: 0 auto;
+  padding: 0rem 5rem;
+}
+
+.security__wrapper {
+  position: relative;
+  width: 71rem;
+  left: 2rem;
+  margin: 0 auto;
+}
+.effectbox__wrapper {
+  width: 81rem;
+  margin: 1.4rem auto 6rem auto;
+}
+
+.badges__wrapper {
+  width: 54rem;
+  margin: 0 auto;
+}
