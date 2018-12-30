@@ -2,7 +2,12 @@ import HeaderDownMenu from './HeaderDownMenu.html';
 import renderUtils from '../../renderUtils';
 require('./HeaderDownMenu.scss');
 
-const menuItem = `<li class="header__menuitem--\${modifier}">\${subName}</li>`;
+const menuItem = `
+  <li class="header__menuitem__wrapper">
+    <a class="header__menuitem--\${modifier}" href="\${link}">\${subName}</a>
+    <span class="header__menu__arrow">→</span>
+  </li>
+`;
 
 export default function(props) {
   const element =  document.querySelector('.HeaderDownMenu');

@@ -48,14 +48,16 @@ module.exports = {
       },
       hash: true,
       template: './src/components_books.html',
-      filename: 'components.html'
+      filename: 'components.html',
+      chunks: ['components']
     }),
     new HtmlWebpackPlugin({
       minify: {
         collapseWhitespace: true
       },
       hash: true,
-      template: './src/copy_github.html'
+      template: './src/copy_github.html',
+      chunks: ['main']
     })
   ],
   resolve: {

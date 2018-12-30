@@ -1,9 +1,10 @@
-$size: 2.7rem;
+@import 'utils';
+$size: 2.1rem;
 
 .header__logo__link {
   display: inline-block;
   width: $size;
   height: $size;
   font-size: $size;
-  color: white;
+  color: $oc-gray-2;
 }

@@ -25,6 +25,7 @@ import TopSignUp from './components/TopSignUp';
 import BottomSignUp from './components/BottomSignUp';
 import Footer from './components/Footer';
 import FooterList from './components/FooterList';
+import Header from './components/Header';
 
 Article({key: 'community'});
 HeaderLogo();
@@ -54,3 +55,4 @@ TopSignUp();
 BottomSignUp();
 Footer();
 FooterList({ key: 'Product'});
+Header();

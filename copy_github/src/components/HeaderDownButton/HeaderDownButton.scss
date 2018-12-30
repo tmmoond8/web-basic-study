@@ -1,14 +1,39 @@
-@import '../../styles/utils';
+@import 'utils';
 
 .header__downbutton {
-  color: #ffffff;
-  font-size: 1.3rem;
-
+  position: relative;
+  padding: 1rem 0;
+  color: $oc-gray-2;
+  font-size: 1rem;
+  @include selectNone();
+  outline: none;
   &:hover {
     color: $oc-gray-4;
   }
-}
+  &:hover .header__downmenu__wrapper, {
+    visibility: visible;
+  }
 
-.header__buttonname::-webkit-details-marker {
-  display: none;
+  &:hover .header__button__arrow {
+    color: $oc-gray-2;
+  }
+  .header__button__arrow {
+    color: $oc-gray-6;
+  }
+
+  .header__downmenu__wrapper {
+    visibility: hidden;
+    position: absolute;
+    top: 3.2rem;
+    left: -1.4rem;
+    &:hover {
+      visibility: visible;
+    }
+  }
+  .header__buttonname {
+    font-size: 1rem;
+    font-weight: 400;
+    outline: none;
+  }
+  
 }

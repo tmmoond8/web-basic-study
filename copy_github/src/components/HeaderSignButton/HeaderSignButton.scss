@@ -2,8 +2,8 @@
 
 @mixin common() {
   color: white;
-  font-size: 1.3rem;
-  padding: .5rem .7rem;
+  font-size: 1rem;
+  padding: .4rem;
   cursor: pointer;
   &:hover {
     color: $oc-gray-4;

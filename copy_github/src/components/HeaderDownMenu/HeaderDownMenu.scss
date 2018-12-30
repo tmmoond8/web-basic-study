@@ -2,24 +2,53 @@
 $common-padding: .5rem;
 
 .header__downmenu {
+  padding: 1.8rem;
+  width: px(300);
   background: white;
   color: black;
-  font-size: 1.1rem;
+  font-size: .9rem;
   border-radius: 5px;
-  padding: 1.8rem;
+  
+  .header__menuitem__wrapper {
+    position: relative;
+  }
 
   .header__menuitem--mazor {
+    display: block;
     padding: $common-padding 0;
-    font-weight: 700;
+    font-weight: 600;
+    &:hover {
+      color: $oc-blue-7;
+    }
+    &:hover + .header__menu__arrow {
+      visibility: visible;
+      transform: translateX(5px);
+      transition: 0.2s;
+    }
   }
 
   .header__menuitem--minor {
+    display: block;
     padding: $common-padding 0;
     color: $oc-gray-6;
+    cursor: pointer;
+    &:hover {
+      color: $oc-blue-5;
+    }
   }
 
   .header__menuitem--line {
-    margin: 1rem 0;
+    display: block;
+    margin-top: 1rem;
     border-top: 1px solid $oc-gray-4;
+    cursor: none;
+  }
+
+  .header__menu__arrow {
+    visibility: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: $oc-gray-6;
   }
 }

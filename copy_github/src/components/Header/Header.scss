@@ -1,0 +1,39 @@
+@import 'utils';
+
+.header {
+  background: RGBA(32, 36, 40, 1.00); 
+  padding: 1rem;
+
+  .header__container {
+    width: 63rem;
+    margin: 0 auto;
+  }
+
+  .header__logo__wrapper {
+    display: inline-block;
+    position: relative;
+    top: .3rem;
+    padding: 0 .8rem;
+  }
+  .header__downbutton__wrapper {
+    display: inline-block;
+    padding: 0 .4rem;
+  }
+
+  .header__search__wrapper {
+    display: inline-block;
+    padding-left: 2.4rem;
+  }
+  .header__link__button {
+    color: white;
+    padding: 0 .4rem;
+    &:hover {
+      color: $oc-gray-4;
+    }
+  }
+
+  .header__signbutton__wrapper {
+    display: inline-block;
+    padding-left: .3rem;
+  }
+}
