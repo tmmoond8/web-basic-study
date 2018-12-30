@@ -5,5 +5,5 @@ require('./IntroPhrase.scss');
 export default function(props) {
   const element =  document.querySelector('.IntroPhrase');
   element.innerHTML = renderUtils.template(IntroPhrase, props);
-  element.className = "IntroPhrase__wrapper";
+  element.className = "intro__phrase__wrapper";
 };

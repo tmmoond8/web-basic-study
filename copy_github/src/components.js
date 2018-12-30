@@ -26,6 +26,7 @@ import BottomSignUp from './components/BottomSignUp';
 import Footer from './components/Footer';
 import FooterList from './components/FooterList';
 import Header from './components/Header';
+import Intro from './components/Intro';
 
 Article({key: 'community'});
 HeaderLogo();
@@ -56,3 +57,4 @@ BottomSignUp();
 Footer();
 FooterList({ key: 'Product'});
 Header();
+Intro();

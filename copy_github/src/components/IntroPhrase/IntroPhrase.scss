@@ -1,6 +1,6 @@
 @import 'utils';
 @mixin common() {
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 400;
 }
 @mixin link() {
@@ -11,7 +11,7 @@
   }
 }
 
-$keywordSize: 5rem;
+$keywordSize: 4rem;
 
 .intro__phrase__keyword {
   color: white;

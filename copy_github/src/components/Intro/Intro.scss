@@ -1,0 +1,23 @@
+.intro {
+  display: block;
+  background: #2b3137 url(../../static/images/intro.svg);
+  background-size: 85rem;
+  background-position: center;
+  padding: 4rem 0;
+
+  .intro__container {
+    width: 64rem;
+    margin: 0 auto;
+  }
+
+  .intro__phrase__wrapper {
+    display: inline-block;
+    width: 33.4rem;
+    vertical-align: top;
+    padding-top: 7rem;
+  }
+  .top__signup__wrapper {
+    display: inline-block;
+    width: 24rem;
+  }
+}
