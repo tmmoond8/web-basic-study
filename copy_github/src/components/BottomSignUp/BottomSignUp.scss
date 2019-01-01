@@ -19,7 +19,7 @@
   .button__wrapper,
   {
     display: inline-block;
-    width: 25%;
+    width: calc(25% - .5rem);
     max-width: 17.5rem;
   }
   .signupform__input__wrapper + .signupform__input__wrapper, 
@@ -42,5 +42,13 @@
   }
   .button__contents {
     padding: .9rem;
+  }
+}
+
+@media only screen and (max-width: 1011px) {
+  .bottom__signup {
+    .bottom__signup__head {
+      width: 100%;
+    }
   }
 }

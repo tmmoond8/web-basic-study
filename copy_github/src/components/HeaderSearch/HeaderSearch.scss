@@ -34,3 +34,14 @@ $inputWidth: 15rem;
   position: absolute;
   right: 0;
 }
+
+@media only screen and (max-width: 1011px) {
+  .header__search {
+    width: 100%;
+    background: white;
+    border: 1px solid $oc-gray-2;
+  }
+  .header__search__input {
+    width: 100%;
+  }
+}
