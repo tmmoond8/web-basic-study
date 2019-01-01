@@ -69,6 +69,7 @@
     .header__downbutton__label {
       display: block;
       position: relative;
+      cursor: pointer;
     }
 
     .header__buttonname:checked  + .header__downmenu__wrapper {

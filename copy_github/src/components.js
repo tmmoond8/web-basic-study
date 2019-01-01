@@ -27,7 +27,7 @@ import Footer from './components/Footer';
 import FooterList from './components/FooterList';
 import Header from './components/Header';
 import Intro from './components/Intro';
-import FooterSiteInfo from './components/FooterSiteInfo';
+import SiteInfo from './components/SiteInfo';
 
 Article({key: 'community'});
 HeaderLogo();
@@ -59,4 +59,4 @@ Footer();
 FooterList({ key: 'Product'});
 Header();
 Intro();
-FooterSiteInfo();
+SiteInfo();

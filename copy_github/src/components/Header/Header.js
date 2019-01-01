@@ -17,5 +17,14 @@ export default function(props) {
   HeaderSignButton({ buttonName: 'Sign in', modifier: 'default'});
   HeaderSignButton({ buttonName: 'Sign up', modifier: 'outline'});
   HeaderSignButton({ buttonName: 'Sign up', modifier: 'outline'});
+
+  element.querySelector('.header__hambug').onclick = e => {
+    const menu = e.target.parentNode.parentNode.parentNode.querySelector('.header__menu');
+    menu.style.display = 'block'
+  }
+  element.querySelector('.header__close__button').onclick = e => {
+    const menu = e.target.parentNode.parentNode.parentNode.querySelector('.header__menu');
+    menu.style.display = 'none';
+  }
   element.className = "header__wrapper";
 };

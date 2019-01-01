@@ -1,10 +1,10 @@
-import FooterSiteInfo from './FooterSiteInfo.html';
+import SiteInfo from './SiteInfo.html';
 import renderUtils from '../../renderUtils';
-require('./FooterSiteInfo.scss');
+require('./SiteInfo.scss');
 
 const Link = `
-  <li class="footer___link__container">
-    <a class="footer__siteinfo__link" href="\${link}">
+  <li class="siteinfo__link__container">
+    <a class="siteinfo__link" href="\${link}">
       <i class="\${iconAF}"></i>
     </a>
   </li>
@@ -19,8 +19,8 @@ const models = [
 ]
 
 export default function(props) {
-  const element =  document.querySelector('.FooterSiteInfo');
-  element.innerHTML = renderUtils.template(FooterSiteInfo, props);
-  models.forEach(item => element.querySelector('.footer__siteinfo__links').insertAdjacentHTML('beforeend', renderUtils.template(Link, item)));
-  element.className = "footer__siteinfo__wrapper";
+  const element =  document.querySelector('.SiteInfo');
+  element.innerHTML = renderUtils.template(SiteInfo, props);
+  models.forEach(item => element.querySelector('.siteinfo__links').insertAdjacentHTML('beforeend', renderUtils.template(Link, item)));
+  element.className = "siteinfo__wrapper";
 };

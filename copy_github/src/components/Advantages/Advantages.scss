@@ -16,14 +16,17 @@
   width: 100%;
 }
 .advantages__mainimage {
-  height: px(640);
+  display: inline-block;
+  position: relative;
+  height: 34rem;
   width: 55%;
-  float: left;
+  top: 2rem;
+  vertical-align: top;
   background: url(../../static/images/home-illo-team.svg) no-repeat;
 }
 
 .advantages__cards__container {
-  float: right;
+  display: inline-block;
   width: 41%;
 }
 
@@ -47,4 +50,28 @@
 .arrow__card__wrapper:hover + .advantages__image__tools 
 {
   display: block;
+}
+
+@media only screen and (max-width: 1011px) {
+  .advantages {
+    .advantages__mainimage {
+      width: 60%;
+      height: 30rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .advantages__cards__container {
+      width: 100%;
+      padding-top: 3rem;
+      .arrow__card__arrow {
+        left: 93%;
+      }
+      .advantages__image__code,
+      .advantages__image__chaos,
+      .advantages__image__tools {
+        left: calc(100% - 2rem);
+        top: 2rem;
+      }
+    }
+  }
 }

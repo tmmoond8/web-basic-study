@@ -1,23 +1,25 @@
 @import 'utils';
 
-
-.footer__siteinfo {
+.siteinfo {
+  display: block;
+  height: 4.4rem;
   background: #FAFBFC;
   line-height: 4.4rem;
-  height: 4.4rem;
   
-  .footer__siteinfo__container {
-    width: 60rem;
+  
+  .siteinfo__container {
+    max-width: 60rem;
     margin: 0 auto;
+    padding: 0 2.5rem;
   }
   
-  .footer__siteinfo__policy {
+  .siteinfo__policy {
     float: left;
     color: $oc-gray-7;
     font-size: .8rem;
 
-    .footer__siteinfo__terms,
-    .footer__siteinfo__privacy {
+    .siteinfo__terms,
+    .siteinfo__privacy {
       padding-left: 1rem;
       &:hover {
         color: $oc-blue-7;
@@ -27,16 +29,16 @@
     }
   }
 
-  .footer__siteinfo__links {
+  .siteinfo__links {
     float: right;
-    .footer___link__container {
+    .siteinfo__link__container {
       display: inline-block;
     }
-    .footer__siteinfo__link {
+    .siteinfo__link {
       color: $oc-gray-6;
       font-size: 1.3rem;
     }
-    .footer___link__container + .footer___link__container {
+    .siteinfo__link__container + .siteinfo__link__container {
       padding-left: .8rem;
     }
   }

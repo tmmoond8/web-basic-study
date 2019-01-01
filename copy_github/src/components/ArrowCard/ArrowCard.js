@@ -6,7 +6,7 @@ const cards = {
   'write_better_code': `
     <h3 class="arrow__card__subject">Write better code</h3>
     <p class="arrow__card__contents">Collaboration makes perfect. The conversations and code reviews that happen in
-      Pull Requests help our team share
+      Pull Requests help your team share
       the weight of your work and improve the software you build.
       <span class="arrow__card__link">Learn about code reivew.</span>
       <span class="arrow__card__arrow">▶</span>

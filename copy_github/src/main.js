@@ -15,8 +15,9 @@ import Slider from './components/Slider';
 import WorldWide from './components/WorldWide';
 import BottomSignUp from './components/BottomSignUp';
 import Footer from './components/Footer';
+import SiteInfo from './components/SiteInfo';
 
-// Header();
+Header();
 Intro();
 EnterprisePropose();
 BusinessOrgs();
@@ -32,4 +33,5 @@ Article({key: 'community'});
 Slider();
 WorldWide();
 BottomSignUp();
-// Footer();
+Footer();
+SiteInfo();

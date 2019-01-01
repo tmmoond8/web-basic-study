@@ -29,3 +29,9 @@
 .badges__item:nth-child(even) {
   margin-top: 3.5rem;
 }
+
+@media only screen and (max-width: 1011px) {
+  .badges .badges__item {
+    margin-top: 0;
+  }
+}

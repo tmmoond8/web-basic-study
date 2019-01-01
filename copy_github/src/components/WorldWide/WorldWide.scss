@@ -26,10 +26,10 @@
   cursor: pointer;
   .worldwide__circle__repositories {
     @include common();
-    left: -32rem;
+    left: -31rem;
     top: 1rem;
-    width: 15rem;
-    height: 15rem;
+    width: 14rem;
+    height: 14rem;
     background: #FB8532;
   }
   .worldwide__circle__developers {
@@ -81,4 +81,19 @@
 .worldwide__circle__developers:hover,
 .worldwide__circle__businesses:hover {
   @include scaleUp();
+}
+
+@media only screen and (max-width: 1011px) {
+  .worldwide__cards__container {
+    .worldwide__circle__repositories {
+      left: -29rem;
+    }
+    .worldwide__circle__developers {
+      left: -16.2rem;
+      top: 6.2rem;
+    }
+
+    .worldwide__circle__businesses {
+    }
+  }
 }

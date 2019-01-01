@@ -4,7 +4,7 @@
   display: inline-block;
 }
 .security__container {
-  float: left;
+  display: inline-block;
   width: 50%;
   padding: 2rem 4rem;
 }
@@ -26,10 +26,12 @@
 }
 
 .security__image {
-  float: right;
-  width: 50%;
+  display: inline-block;
+  width: 49%;
   height: px(280);
-  background-size: 80%;
+  margin-top: 1rem;
+  vertical-align: bottom;
+  background-size: 88%;
   background-repeat: no-repeat;
   background-image: url(../../static/images/home-illo-business.png);
 }
