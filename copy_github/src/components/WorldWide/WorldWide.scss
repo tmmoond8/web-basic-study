@@ -92,8 +92,13 @@
       left: -16.2rem;
       top: 6.2rem;
     }
+  }
+}
 
-    .worldwide__circle__businesses {
-    }
+@media only screen and (max-width: 768px) {
+  .worldwide__cards__container {
+    width: 100%;
+    left: 0;
+    padding: 0 2.6rem;
   }
 }

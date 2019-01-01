@@ -50,5 +50,22 @@
     .bottom__signup__head {
       width: 100%;
     }
+    .signupform__input__wrapper,
+    .signupform__password__wrapper,
+    .button__wrapper {
+      display: block;
+      width: 60%;
+      max-width: 60%;
+      margin: 0 auto;
+      padding-left: 0 !important;
+    }
+    .signupform__input__input,
+    .signupform__password__input {
+      margin: .2rem 0;
+      padding-bottom: .8rem;
+    }
+    .bottom__signup__footer {
+      padding: 3rem 2rem;
+    }
   }
 }

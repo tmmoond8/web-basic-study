@@ -19,7 +19,20 @@
 
 }
 
-
 .enterprise__propose .button__wrapper {
   display: inline-block;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .enterprise__propose {
+    padding: 3rem;
+    .button__wrapper {
+      display: block;
+    }
+    .button__wrapper + .button__wrapper {
+      position: relative;
+      top: -.5rem;
+    }
+  }
 }

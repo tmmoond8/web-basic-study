@@ -27,6 +27,7 @@
 
 .security__image {
   display: inline-block;
+  float: right;
   width: 49%;
   height: px(280);
   margin-top: 1rem;
@@ -34,4 +35,18 @@
   background-size: 88%;
   background-repeat: no-repeat;
   background-image: url(../../static/images/home-illo-business.png);
+}
+
+@media only screen and (max-width: 768px) {
+  .security__image {
+    position: relative;
+    float: none;
+    width: 100%;
+    height:23rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .security__container {
+    width: 100%;
+  }
 }

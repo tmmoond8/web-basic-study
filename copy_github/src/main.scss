@@ -98,3 +98,23 @@
     background: none;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .business__orgs__wrapper {
+    padding: 3rem;
+  }
+  .articlep__wrapper {
+    padding: 2.4rem 5rem;
+  }
+  .advantages {
+    .advantages__mainimage {
+      height: 23rem;
+    }
+  } 
+  .effectbox__wrapper {
+    margin: 1.4rem auto;
+  }
+  .marketplace__wrapper {
+    margin: 2rem auto;
+  }
+}
