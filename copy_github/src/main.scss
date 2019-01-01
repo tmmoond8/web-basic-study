@@ -32,7 +32,7 @@
 }
 
 .business__orgs__wrapper {
-  width: 74rem;
+  width: 100%;
   margin: 0 auto;
   padding: 4rem 5rem;
 }
@@ -43,19 +43,18 @@
 }
 
 .advantages__wrapper {
-  width: 84rem;
+  width: 100%;
   margin: 0 auto;
   padding: 0rem 5rem;
 }
 
 .security__wrapper {
   position: relative;
-  width: 71rem;
-  left: 2rem;
+  width: 100%;
   margin: 0 auto;
 }
 .effectbox__wrapper {
-  width: 81rem;
+  width: 100%;
   margin: 1.4rem auto 6rem auto;
 }
 
@@ -76,4 +75,7 @@
 
 .bottom__signup__wrapper {
   background: #23282D;
+}
+.slide__wrapper {
+  width: 100%;
 }

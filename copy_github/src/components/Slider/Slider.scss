@@ -1,6 +1,6 @@
 @import 'utils';
-
 .slider {
+  width: 100%;
   display: block;
   padding: 1.4rem;
   overflow-x: scroll;
@@ -9,7 +9,7 @@
 .slider__card {
   display: inline-block;
   position: relative;
-  width: 19rem;
+  width: 20rem;
   height: 10rem;
   box-shadow: 0 0 30px 1px rgba(100, 100, 100, 0.2);
   margin: 1rem 0;
@@ -59,4 +59,20 @@
 .slider__name {
   font-weight: 500;
   padding-bottom: .6rem;
+}
+
+@media only screen and (max-width: 1011px) {
+  .slider__card {
+    width: 16.5rem;
+    height: 23.5rem;
+    .slider__image {
+      width: 100%;
+      height: 16.5rem;
+    }
+    .slider__profile__container {
+      display: block;
+      width:100%;
+      height: 6rem;
+    }
+  }
 }

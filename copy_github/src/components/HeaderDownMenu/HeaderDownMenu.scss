@@ -52,3 +52,9 @@ $common-padding: .5rem;
     color: $oc-gray-6;
   }
 }
+
+@media only screen and (max-width: 1011px) {
+  .header__downmenu {
+    padding: 1.2rem 0 .4rem 0
+  } 
+}

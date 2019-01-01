@@ -45,6 +45,13 @@ const menuModel = {
 export default function(props) {
   const element =  document.querySelector('.HeaderDownButton');
   element.innerHTML = renderUtils.template(HeaderDownButton, props);
+  element.querySelector('.header__downbutton__label').onclick = function (e) {
+    const input = document.querySelector(`#${e.target.htmlFor}`);
+    if(input.checked)  {
+      e.preventDefault();
+      input.checked = false;
+    }
+  }
   HeaderDownMenu(menuModel[props.menuName]);
   element.className = "header__downbutton__wrapper";
 }

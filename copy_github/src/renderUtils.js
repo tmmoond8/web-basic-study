@@ -5,7 +5,8 @@ const el = (tag, attr = {}) => Object.entries(attr).reduce((accum, v) => {
 
 const template = (template, model) => {
   if(!model) return template;
-  return Object.keys(model).reduce((accum, key) => accum.replace('${' + key + '}', model[key]), template)
+  new RegExp("")
+  return Object.keys(model).reduce((accum, key) => accum.replace(new RegExp('\\$\{' + key + '\}', 'g'), model[key]), template)
 }
 
 export default {

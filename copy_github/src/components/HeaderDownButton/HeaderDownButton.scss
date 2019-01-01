@@ -34,6 +34,52 @@
     font-size: 1rem;
     font-weight: 400;
     outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
   }
-  
+  .header__signup__container {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 1011px) {
+  .header__downbutton {
+    padding: 1rem 0;
+    color: $oc-gray-7;
+    border-bottom: 1px solid $oc-gray-3;
+    &:hover {
+      color: $oc-gray-7;
+    }
+    &:hover .header__button__arrow {
+      color: $oc-gray-6;
+    }
+    .header__button__arrow {
+      color: $oc-gray-6;
+      position: absolute;
+      right: 0;
+    }
+
+    .header__downmenu__wrapper {
+      position: static;
+      display: none;
+      visibility: visible;
+    }
+
+    .header__downbutton__label {
+      display: block;
+      position: relative;
+    }
+
+    .header__buttonname:checked  + .header__downmenu__wrapper {
+      display: block;
+    }
+    .header__buttonname {
+      display: none;
+    }
+  }
+  .header__signup__container {
+    display: block;
+    height: 2rem;
+  }
 }

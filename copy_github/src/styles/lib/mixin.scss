@@ -6,3 +6,15 @@
   -webkit-user-select: none;
   -ms-user-select: none;
 }
+
+@mixin responsive() {
+  margin: 0 auto;
+  width: 100%;
+  transition: .3s ease-in-out;
+  @include media("<huge") {
+    width: 1012px;
+  }
+  @include media("<large") {
+    width: 100%;
+  }
+}
