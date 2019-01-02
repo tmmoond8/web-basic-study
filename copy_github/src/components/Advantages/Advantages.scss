@@ -75,3 +75,18 @@
     }
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .advantages {
+    .advantages__mainimage {
+      width: 100%;
+    }
+    .advantages__cards__container {
+      .advantages__image__code,
+      .advantages__image__chaos,
+      .advantages__image__tools {
+        display: none;
+      }
+    }
+  }
+}

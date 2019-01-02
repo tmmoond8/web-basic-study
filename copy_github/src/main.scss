@@ -20,13 +20,6 @@
   background-size:$dottedSize $dottedSize;
 }
 
-.enterprise__propose {
-  background: white;
-  max-width: 54rem;
-  padding: 3rem 5rem;
-  margin: 0 auto;
-}
-
 .enterprise__propose__wrapper {
   @include dotted();
 }
@@ -46,7 +39,7 @@
   width: 100%;
   max-width: 88rem;
   margin: 0 auto;
-  padding: 0rem 5rem;
+  padding: 0rem 5rem 8rem 5rem;
 }
 
 .security__wrapper {
@@ -56,8 +49,8 @@
   margin: 0 auto;
 }
 .effectbox__wrapper {
-  width: 100%;
-  margin: 1.4rem auto 6rem auto;
+  max-width: 36rem;
+  margin: 3rem auto 8rem auto;
 }
 
 .badges__wrapper {
@@ -90,6 +83,7 @@
 .siteinfo__wrapper {
   display: block;
 }
+
 @media only screen and (max-width: 1011px) {
   .advantages__wrapper {
     padding: 0 3rem;
@@ -111,10 +105,34 @@
       height: 23rem;
     }
   } 
-  .effectbox__wrapper {
-    margin: 1.4rem auto;
-  }
   .marketplace__wrapper {
     margin: 2rem auto;
   }
+}
+
+@media only screen and (max-width: 670px) {
+  .effectbox__wrapper {
+    margin: 3rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .business__orgs__wrapper {
+    padding: 1rem;
+  }
+  .articlep__wrapper {
+    padding: 2.4rem 1rem;
+  }
+  .bottom__signup {
+    .signupform__input__wrapper,
+    .signupform__password__wrapper,
+    .button__wrapper {
+      width: 90%;
+      max-width: 90%;
+    }
+  }
+  .footer__container {
+    padding-bottom: 3rem;
+  }
+  
 }
