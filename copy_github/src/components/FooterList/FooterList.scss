@@ -2,9 +2,9 @@
 
 .footer__list {
   display: inline-block;
-  width: 10rem;
   vertical-align: top;
   .footer__list__head {
+    font-size: 1rem;
     color: $oc-gray-6;
     letter-spacing: 1px;
     line-height: 2.4rem;

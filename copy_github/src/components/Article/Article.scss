@@ -27,3 +27,14 @@
     display: inline-block;
   }
 }
+
+@media only screen and (max-width: 480px) {
+  .article {
+    .article__keyword {
+      font-size: 2.4rem;
+    }
+    .article__contents {
+      padding: 0 1rem;
+    }
+  } 
+}

@@ -20,7 +20,7 @@
 
     .siteinfo__terms,
     .siteinfo__privacy {
-      padding-left: 1rem;
+      padding-left: 1.2rem;
       &:hover {
         color: $oc-blue-7;
         text-decoration: underline;
@@ -40,6 +40,14 @@
     }
     .siteinfo__link__container + .siteinfo__link__container {
       padding-left: .8rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .siteinfo {
+    .siteinfo__links {
+      float: left;
     }
   }
 }

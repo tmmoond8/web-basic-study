@@ -26,14 +26,12 @@
 @mixin effectCommon() {
   @include dotted();
   display: inline-block;
-  position: absolute;
+  position: relative;
   width: 12rem;
   height: 12rem;
+  margin-bottom: -12rem;
 }
 
-.effectbox:hover {
-  box-shadow: 0px 4px 7px 1px RGBA(200,200,200,.3)
-}
 
 .effectbox:hover > .effectbox__effect__left {
   transform: translate(-1.3rem, -1.3rem);
@@ -45,43 +43,36 @@
   transition: 0.4s;
 }
 
-.effectbox {
-  display: inline-block;
-  position: relative;
-  width: 36rem;
-  height: 15rem;
-  left: 50%;
-  transform: translateX(calc(-50% - 1.3rem));
-  z-index: 1;
-  background: white;
-  border: 1px solid $oc-gray-3;
-  border-radius: 3px;
-  margin: 2rem;
-}
 
 .effectbox__container {
-  margin: 1px 0;
-  position: absolute;
-  background:white;
-  padding: 1.6rem 0;
+  display: inline-block;
+  position: relative;
   z-index: 1;
+  background: white;
+  border: 1px solid #dee2e6;
+  border-radius: 3px;
+  &:hover {
+    box-shadow: 0px 4px 7px 1px RGBA(200,200,200,.3)
+  }
 }
 
 .effectbox__image {
   width: 20%;
   float: left;
+  padding-top: 1.7rem;
   text-align: center;
 }
 
 .effectbox__text {
   float: right;
   width: 80%;
+  padding: 1.6rem 7% 1.6rem .4rem;
 }
 
 .effectbox__contents {
   font-size: .9rem;
   line-height: 1.6rem;
-  padding: .4rem 7% 1rem 0;
+  padding: .4rem 0 1rem 0;
   color: $oc-gray-7;
 }
 
@@ -118,12 +109,11 @@
 
 .effectbox__effect__left {
   @include effectCommon();
-  top: 0;
-  left: 0;
+  top: .2rem;
 }
 
 .effectbox__effect__right {
   @include effectCommon();
-  bottom: 0;
-  right: 0;
+  float: right;
+  top: -12.2rem;
 }
