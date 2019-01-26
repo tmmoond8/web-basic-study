@@ -19,8 +19,7 @@
 <body>
   <div id="markdown"></div>
   <script>
-
-    const converter = new showdown.Converter({tables: true});
+    const converter = new showdown.Converter({ tables: true });
 
     const xhr = new XMLHttpRequest();
     xhr.onreadystatechange = () => {
@@ -28,13 +27,20 @@
         if (xhr.status === 200 || xhr.status === 201) {
           const html = converter.makeHtml(xhr.responseText);
           document.querySelector('#markdown').innerHTML = html;
+          if(window.location.host.indexOf('github.io') !== -1) {
+              document.querySelectorAll('a').forEach(a => {
+                a.href = a.href.replace('github.io', 'github.io/web-basic-study')
+            })
+          }
         } else {
           console.error(xhr.responseText);
         }
       }
     };
     const text = '# hello, markdown!';
-    xhr.open('GET', `${window.location.origin}/README.md`);
+    const url = window.location.href.split("/");
+    url.pop();
+    xhr.open('GET', `${url.join('/')}/README.md`);
     xhr.send(null);
   </script>
 </body>
