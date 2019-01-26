@@ -1,0 +1,42 @@
+<!DOCTYPE >
+<html>
+
+<head>
+  <title>tamm's COPY pages</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width" , initial-scale="1">
+  <meta name="description" content="잘 정돈된 웹 페이지를 따라해보면서 html, css 를 공부해보았습니다.">
+  <meta name="subject" content="웹페이지 카피하기(copy webpages)">
+  <meta name="keywords" content="html, css">
+  <script src="https://cdn.rawgit.com/showdownjs/showdown/1.8.7/dist/showdown.min.js"></script>
+  <style>
+    #markdown {
+      padding: 5%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="markdown"></div>
+  <script>
+
+    const converter = new showdown.Converter({tables: true});
+
+    const xhr = new XMLHttpRequest();
+    xhr.onreadystatechange = () => {
+      if (xhr.readyState === XMLHttpRequest.DONE) {
+        if (xhr.status === 200 || xhr.status === 201) {
+          const html = converter.makeHtml(xhr.responseText);
+          document.querySelector('#markdown').innerHTML = html;
+        } else {
+          console.error(xhr.responseText);
+        }
+      }
+    };
+    const text = '# hello, markdown!';
+    xhr.open('GET', `${window.location.origin}/README.md`);
+    xhr.send(null);
+  </script>
+</body>
+
+</html>

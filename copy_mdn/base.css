@@ -138,11 +138,9 @@ input, select {
   background: #eee;
 }
 
-<<<<<<< HEAD
 #community_join_box {
     background: #E4F0F5;
 }
-=======
 .content_label_wapper {
   padding: 1.5rem 0 0 0;
 }
@@ -162,4 +160,3 @@ input, select {
   display: inline-block;
   -webkit-transform: rotate(45deg); 
 }
->>>>>>> 29f988822c149b5540984f463931c9db5eb2846b
