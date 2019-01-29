@@ -31,9 +31,9 @@ import SiteInfo from './components/SiteInfo';
 
 Article({key: 'community'});
 HeaderLogo();
-HeaderDownButton(({ menuName: 'Why GitHub?'}));
-HeaderDownButton(({ menuName: 'Explore'}));
-HeaderDownButton(({ menuName: 'Pricing'}));
+HeaderDownButton(({ menuName: 'Why GitHub?', id: 'why_github' }));
+HeaderDownButton(({ menuName: 'Explore', id: 'explore'}));
+HeaderDownButton(({ menuName: 'Pricing', id: 'pricing'}));
 HeaderSearch();
 HeaderSignButton({ buttonName: 'Sign in', modifier: 'default'});
 HeaderSignButton({ buttonName: 'Sign up', modifier: 'outline'});
