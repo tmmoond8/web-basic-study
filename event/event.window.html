@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>event window</title>
+</head>
+<body>
+  <div onclick="abc()" style="background-color: red; width: 100px; height: 100px;"></div>
+  <div style="background-color: gray; width: 100px; height: 100px;">asdfdfdsf</div>
+  <input type="text" value="dsdsdsds">
+  <div contenteditable="true" style="background-color: greenyellow; width: 100px; height: 100px;">asdfdfdsf</div>
+  <script>
+    window.onload = function() {
+      console.log('onload')
+    }
+    window.onunload = function() {
+      console.log('onunload')
+    }
+
+    window.onerror = function() {
+      console.log('onerror')
+    }
+
+    window.onselect = function() {
+      console.log('onselect')
+    }
+  </script>
+</body>
+</html>

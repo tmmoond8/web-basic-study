@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>event clipboard</title>
+</head>
+<body>
+  <input type="text" id="input1">
+  <button id="copy">복사</button>
+  <button id="cut">잘라내기</button>
+  <button id="paste">붙여넣기</button>
+
+  <script>
+    document.querySelector('#copy').addEventListener('click', function() {
+      document.querySelector('#input1').select();
+      document.execCommand('copy');
+    })
+    document.querySelector('#cut').addEventListener('click', function() {
+      document.querySelector('#input1').select();
+      document.execCommand('cut');
+    })
+    document.querySelector('#paste').addEventListener('click', function() {
+      document.querySelector('#input1').select();
+      console.log(document.execCommand('paste'));
+    })
+  </script>
+  </body>
+</html>

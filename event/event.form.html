@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>event form</title>
+</head>
+<body>
+  <form action="" onsubmit="submit()">
+    <input id="text" type="text">
+    <div id="contenteditable" contenteditable="true"></div>
+      <select id="select1">
+        <option value="aaa">aaa</option>
+        <option value="bbb">ddd</option>
+      </select>
+      <select id="select2">
+        <option value="aaa">aaa</option>
+        <option value="bbb">ddd</option>
+      </select>
+      <input type="checkbox" id="pig" name="pig">
+      <label for="pig">pig</label>
+      <input type="checkbox" id="dog" name="dog">
+      <label for="dog">dog</label>
+    </div>
+    <div>
+      <input id="oninput_onchange" type="text">
+      <button id="oninput_onchange_btn">oninput_onchange</button>
+    </div>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+
+  <script>
+    document.querySelector('#text').oninput = function() {
+      console.log('oninput');
+    }
+    document.querySelector('#contenteditable').oninput = function() {
+      console.log('oninput');
+    }
+    document.querySelector('#select1').oninput = function(e) {
+      console.dir(e.target.value);
+    }
+    document.querySelector('#select2').onchange = function(e) {
+      console.dir(e.target.value);
+    }
+    document.querySelector('#pig').onchange = function(e) {
+      console.dir(e.target.value);
+    }
+    document.querySelector('#dog').oninput = function(e) {
+      console.dir(e.target.value);
+    }
+    
+    document.querySelector('#oninput_onchange').oninput = function(e) {
+      console.dir('oninput');
+    }
+    document.querySelector('#oninput_onchange').onchange = function(e) {
+      console.dir('onchange');
+    }
+
+    document.querySelector('#oninput_onchange_btn').onclick = function(e) {
+      e.preventDefault();
+      document.querySelector('#oninput_onchange').value = '123';
+    }
+
+    function submit(e) {
+      e.preventDefault();
+      console.log('submit')
+    }
+
+    document.querySelector('form').onsubmit = submit;
+    // document.querySelector('form').addEventListener('submit', function(e) {
+    //   e.preventDefault();
+    //   console.log('submit');
+    // }
+
+    // window.addEventListener('submit', function() {
+    //   console.log('window submit')
+    // })
+  </script>
+  </body>
+</html>

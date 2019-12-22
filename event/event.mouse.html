@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>click event</title>
+</head>
+<body>
+    <div id="rec1" style="width: 100px; height: 100px; background-color: red;"></div>
+    <div id="rec2" style="width: 100px; height: 100px; background-color: greenyellow;"></div>
+    <div onclick="console.log('div')" style="height: 100px; background-color: purple;">
+      <span onclick="console.log('span')">bubble</span>
+    </div>
+  <script>
+    window.onclick = function() {
+      console.log('onclick');
+    }
+    window.ondblclick = function() {
+      console.log('ondblclick');
+    }
+
+    window.onmousedown = function() {
+      console.log('onmousedown');
+    }
+
+    window.onmouseup = function() {
+      console.log('onmouseup');
+    }
+
+    window.onmousemove = function() {
+      console.log('onmousemove');
+    }
+
+    document.querySelector('#rec1').onmouseover = function() {
+      console.log('onmouse over');
+    }
+
+    document.querySelector('#rec1').onmouseout = function() {
+      console.log('onmouse out');
+    }
+
+    document.querySelector('#rec2').onclick = function() {
+      console.log('onclick');
+    }
+
+    document.querySelector('#rec2').addEventListener('click', function() {
+      console.log('add event 1');
+    })
+
+    document.querySelector('#rec2').addEventListener('click', function(e) {
+      console.log('add event 2');
+    })
+
+    window.onclick = function() {
+      console.log('window onclick')
+    }
+
+
+  </script></body>
+</html>

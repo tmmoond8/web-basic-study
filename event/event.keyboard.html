@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>keyboard event</title>
+</head>
+<body style="position: relative;">
+  <div id="rec1" style="position: absolute; width: 100px; height: 100px; background-color: red;"></div>
+  <div id="rec2" style="position: absolute; width: 100px; height: 100px; background-color: green;"></div>
+  <div id="rec3" style="position: absolute; width: 100px; height: 100px; background-color: blue;"></div>
+  <div style="position: absolute; top: 200px"><input id="even_number_keydown"></div>
+  <div style="position: absolute; top: 300px"><input id="even_number_keyup"></div>
+  <div style="position: absolute; top: 400px"><input id="even_number_keypress"></div>
+  <script>
+    function log(text) {
+      if (window.LOG) console.log(text);
+    }
+    window.onkeydown = function() {
+      log('keydown');
+      document.querySelector('#rec1').style.left = (Number.parseInt(document.querySelector('#rec1').style.left || 0) + 10) + 'px';
+    }
+    window.onkeyup = function() {
+      log('keyup');
+      document.querySelector('#rec2').style.left = (Number.parseInt(document.querySelector('#rec2').style.left || 0) + 10) + 'px';
+    }
+    window.onkeypress = function() {
+      log('keypress');
+      document.querySelector('#rec3').style.left = (Number.parseInt(document.querySelector('#rec3').style.left || 0) + 10) + 'px';
+    }
+
+    function evenNumber (e) {
+      console.log(e.target.value);
+      const match = e.code.match(/Digit[0-9]/);
+      if (!match || Number(match[0].replace("Digit", "")) % 2 === 1) {
+        e.preventDefault();
+      }
+    }
+
+    document.querySelector('#even_number_keydown').onkeydown = evenNumber;
+    document.querySelector('#even_number_keyup').onkeyup = evenNumber;
+    document.querySelector('#even_number_keypress').onkeypress = evenNumber;
+  </script>
+  </body>
+</html>
