@@ -8,13 +8,21 @@
   <title>event object</title>
 </head>
 <body>
-  <div id="rec1" style="position: absolute; width: 100px; height: 100px; background-color: red;">
-    <p>abcde</p>
-  </div>
+  <aside id="rec1" style="position: absolute; width: 100px; height: 100px; background-color: red;">
+    <div style="position: absolute; width: 50px; hegiht: 50px;">
+      <p>abcde</p>
+    </div>
+  </aside>
   <script>
     document.querySelector('#rec1').addEventListener('click', function(e) {
       console.log(e.target);
       console.log(e.currentTarget);
+      console.log(this);
+    })
+    document.querySelector('#rec1 > div').addEventListener('click', function(e) {
+      console.log(e.target);
+      console.log(e.currentTarget);
+      console.log(this);
     })
   </script>
   </body>

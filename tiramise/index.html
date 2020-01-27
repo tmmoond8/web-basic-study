@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id="data"></div>
+  <script src="./tiramise.js"></script>
+  <script>
+    var tiramise = new Tiramise(function(resolve, reject) {
+      const xhr = new XMLHttpRequest(),
+      method = "GET",
+      url = "https://gist.githubusercontent.com/tmmoond8/c1d77f4c9ad3cfde0815a4ad24272c6c/raw/c0596fd68fb719c25fa3742e81081b5a5add70ba/mysql_01.sql";
+
+      xhr.open(method, url, true);
+      xhr.onreadystatechange = function () {
+        if(xhr.readyState === XMLHttpRequest.DONE) {
+          if(xhr.status === 200) {
+            resolve(xhr.responseText);
+          } else {
+            reject('failure reason');
+          }
+        };
+        }
+      xhr.send();
+    })
+    var afterTiramise = tiramise.then(function(value) {
+      console.log('resolved', value);
+    }, function(reason) {
+      console.log('rejected', reason);
+    })
+    console.log(tiramise);
+    console.log(afterTiramise);
+    
+  </script>
+</body>
+</html>

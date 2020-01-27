@@ -13,12 +13,18 @@
   <div tabindex="0" style="background-color: gold; width: 100px; height: 100px;">asdfdfdsf</div>
   <div contenteditable="true" style="background-color: greenyellow; width: 100px; height: 100px;">asdfdfdsf</div>
   <script>
+    window.onreadystatechange = function(e) {
+      console.log(e)
+    }
     window.onload = function() {
       console.log('onload')
     }
     window.onunload = function() {
       console.log('onunload')
     }
+    window.addEventListener('DOMContentLoaded', (event) => {
+      console.log('DOM fully loaded and parsed');
+    });
 
     window.onerror = function() {
       console.log('onerror')
