@@ -29,12 +29,63 @@
   <button id="btn-quick">quick</button>
   <img id="icon-basic" src="https://res.cloudinary.com/dgggcrkxq/image/upload/v1566951043/noticon/mwlnqwvswaln1qpz43b6.png"/>
   <img id="icon-quick" src="https://res.cloudinary.com/dgggcrkxq/image/upload/v1566951043/noticon/mwlnqwvswaln1qpz43b6.png"/>
-  <script src="./basic-event.js"/>
-  <script src="./quick-event.js"/>
+  <script src="./basic-event.js" ></script>
+  <script src="./quick-event.js"></script>
   <script>
     const btnBasic = document.querySelector('#btn-basic');
     const btnQuick = document.querySelector('#btn-quick');
-    // btnBasic.className = "active";
+    const kangarooBasic = document.querySelector('#icon-basic');
+    const kangarooQuick = document.querySelector('#icon-quick');
+
+    class KangarooMover {
+      constructor(kangarooElement, switchElement) {
+        this.kangaroo = kangarooElement;
+        this.switch = switchElement;
+      }
+
+      activate() {
+        this.switch.className = 'active';
+        this.kangaroo.style.display = 'block';
+        this.kangaroo.style.top = `${this.kangaroo.offsetTop}px`;
+        this.kangaroo.style.left = `${this.kangaroo.offsetLeft}px`;
+      }
+
+      hide() {
+        this.switch.className = '';
+        this.kangaroo.style.display = 'none';
+      }
+    }
+
+    const basicKangarooMover = new KangarooMover(kangarooBasic, btnBasic);
+    const quickKangarooMover = new KangarooMover(kangarooQuick, btnQuick);
+    
+    class Toggle {
+      constructor({ basicKangarooMover, quickKangarooMover}) {
+        this.isActiveBasic = true;
+        this.basicKangarooMover = basicKangarooMover;
+        this.quickKangarooMover = quickKangarooMover;
+        this.basicKangarooMover.switch.addEventListener('click', (event) => {
+          this.toggle(true);
+        });
+        this.quickKangarooMover.switch.addEventListener('click', (event) => {
+          this.toggle(false);
+        });
+      }
+
+      toggle(isActiveBasic) {
+        this.isActiveBasic = isActiveBasic;
+        if(this.isActiveBasic) {
+          this.basicKangarooMover.activate();
+          this.quickKangarooMover.hide();
+        } else {
+          this.basicKangarooMover.hide();
+          this.quickKangarooMover.activate();
+        }
+      }
+    }
+
+    const toggle = new Toggle({basicKangarooMover, quickKangarooMover});
+    toggle.toggle(true);
   </script>
 </body>
 </html>
