@@ -1,4 +1,4 @@
-const iconEl = document.querySelector('#icon');
+const iconEl = document.querySelector('#icon-quick');
 var keyState = {};
 iconEl.style.top = `${iconEl.offsetTop}px`;
 iconEl.style.left = `${iconEl.offsetLeft}px`;

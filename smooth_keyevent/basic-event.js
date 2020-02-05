@@ -1,4 +1,4 @@
-const iconEl = document.querySelector('#icon');
+const iconEl = document.querySelector('#icon-basic');
 document.addEventListener('keydown', (e) => {
   if (!e.code.includes('Arrow')) {
     return;
