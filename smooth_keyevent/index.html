@@ -31,6 +31,7 @@
   <img id="icon-quick" src="https://res.cloudinary.com/dgggcrkxq/image/upload/v1566951043/noticon/mwlnqwvswaln1qpz43b6.png"/>
   <script src="./basic-event.js" ></script>
   <script src="./quick-event.js"></script>
+  <script src="./missile.js"></script>
   <script>
     const btnBasic = document.querySelector('#btn-basic');
     const btnQuick = document.querySelector('#btn-quick');
@@ -86,6 +87,13 @@
 
     const toggle = new Toggle({basicKangarooMover, quickKangarooMover});
     toggle.toggle(true);
+
+
+    const missile = new Missile();
+    missile.render(document.querySelector('body'));
+    setTimeout(() => {
+      missile.move();
+    }, 1000)
   </script>
 </body>
 </html>
