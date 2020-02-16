@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+    .a {
+      color: red;
+    }
+    .b {
+      color: blue;
+    }
+    .z > .a {
+      color: yellow;
+    }
+    .a.b {
+      color: pink;
+    }
+    .z > .c {
+      color: fuchsia;
+    }
+    .z .b {
+      color:lightgreen;
+    }
+    p {
+      color: green;
+    }
+
+    #k {
+      color: darkcyan;
+    }
+    .q.w.e.r.t.a.s.d.f.g.h.z.x.c.v {
+      color: violet;
+    }
+
+    #parent .c-m {
+      background-color: teal;
+    }
+
+
+
+    .z #m {
+      background-color: tomato;
+    }
+
+    #m[title] {
+      background-color:brown;
+    }
+    
+    a {
+      color: grey;
+    }
+
+    .z a {
+      color: green;
+    }
+    
+    a:visited {
+      color: blue;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="z" id="parent">
+    <p class="a b c">aaa</p>
+    <p class="a b">bbb</p>
+    <p class="a">ccc</p>
+    <p>ddd</p>
+    <p id="k" class="q w e r t a s d f g h z x c v">qwertasdf</p>
+    <p id="m" class="c-m">qwertasdf</p>
+    <p id="m" class="c-m" title="title">aoao</p>
+    <a href="https://naver.com">https://naver.com</a>
+  </div>
+</body>
+</html>
