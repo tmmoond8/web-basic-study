@@ -1,4 +1,6 @@
-/copy_github/node_modules
 /copy_github/dist
 /copy_github/package-lock.json
 package-lock.json
+
+**/node_modules
+**/dist
