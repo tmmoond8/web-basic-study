@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    div {
+      display: inline-block;
+      width: 150px;
+      height: 150px;
+      padding: 10px;
+      margin: 40px;
+      border-radius: 6px;
+      border-color: gray;
+      border-style: dotted;
+      vertical-align: top;
+      /*overflow: hidden;*/
+    }
+    .normal { white-space: normal; }
+    .nowrap { white-space: nowrap; }
+    .pre    { white-space: pre; }
+    .pre-wrap { white-space: pre-wrap; }
+    .pre-line { white-space: pre-line; }
+    .overflow {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  </style>
+</head>
+<body>
+  <h1>white-space</h1>
+  <div class="normal"><h3>normal</h3>Lorem   ipsum
+
+    dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+  <div class="nowrap overflow"><h3>nowrap</h3>Lorem   ipsum
+
+    dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+  <div class="pre overflow"><h3>pre</h3>Lorem   ipsum
+
+      dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+  <div class="pre-wrap"><h3>pre-wrap</h3>Lorem   ipsum
+
+    dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+  <div class="pre-line"><h3>pre-line</h3>Lorem   ipsum
+
+    dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+</body>
+</html>
