@@ -8,7 +8,9 @@ export function power(x, y) {
 // ES6 클래스
 export class Foo {
   // stage 3: 클래스 필드 정의 제안
-  #private = 10;
+  constructor() {
+    this.private = 10;
+  }
 
   foo() {
     // stage 4: 객체 Rest/Spread 프로퍼티
@@ -17,6 +19,6 @@ export class Foo {
   }
 
   bar() {
-    return this.#private;
+    return this.private;
   }
 }
