@@ -1,7 +1,12 @@
-import { sayHello } from './util';
+import React from 'react';
+import ReactDom from 'react-dom';
 
-function myFunc() {
-  sayHello('mike');
-  console.log('myFunc');
+function App() {
+  return (
+    <div className="container">
+      <h3 className="title">webpack sample</h3>
+    </div>
+  )
 }
-myFunc();
+
+ReactDom.render(<App />, document.getElementById('root'));
