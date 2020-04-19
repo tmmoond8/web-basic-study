@@ -2,4 +2,4 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import App from './App';
 
-ReactDom.render(<App page="page" />, document.querySelector('#root'));
+ReactDom.hydrate(<App page="home" />, document.querySelector('#root'));

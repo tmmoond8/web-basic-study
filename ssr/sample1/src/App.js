@@ -1,6 +1,6 @@
 import React from 'react';
-import Home from './src/Home';
-import About from './src/About';
+import Home from './pages/Home';
+import About from './pages/About';
 
 class App extends React.Component {
   state = {
