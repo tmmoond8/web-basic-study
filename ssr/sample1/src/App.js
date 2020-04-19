@@ -1,6 +1,12 @@
 import React from 'react';
+import styled from 'styled-components';
 import Home from './pages/Home';
 import About from './pages/About';
+
+const Container = styled.div`
+  background-color: #aaa;
+  border: 1px solid blue;
+`;
 
 class App extends React.Component {
   state = {
@@ -23,7 +29,7 @@ class App extends React.Component {
     const { page } = this.state;
     const PageComponent = page === 'home' ? Home : About;
     return (
-      <div className="container">
+      <Container className="container">
         <button data-page="home" onClick={this.onChangePage}>
           Home
         </button>
@@ -31,7 +37,7 @@ class App extends React.Component {
           About
         </button>
         <PageComponent />
-      </div>
+      </Container>
     )
   }
 }
