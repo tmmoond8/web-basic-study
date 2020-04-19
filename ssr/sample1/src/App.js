@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Home from './pages/Home';
 import About from './pages/About';
+import Icon from './kangaroo-c.png';
 
 const Container = styled.div`
   background-color: #aaa;
@@ -36,6 +37,7 @@ class App extends React.Component {
         <button data-page="about" onClick={this.onChangePage}>
           About
         </button>
+        <img src={Icon}/>
         <PageComponent />
       </Container>
     )

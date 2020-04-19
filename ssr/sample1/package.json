@@ -4,9 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build-server": "babel src --out-dir dist-server --config-file ./.babelrc.server.js",
-    "build": "yarn webpack && yarn build-server",
-    "start": "node dist-server/server.js"
+    "build": "yarn webpack",
+    "start": "node dist-server/server.bundle.js"
   },
   "dependencies": {
     "express": "^4.17.1",
@@ -23,8 +22,10 @@
     "@babel/preset-react": "^7.9.4",
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^3.0.0",
+    "file-loader": "^6.0.0",
     "html-webpack-plugin": "^4.2.0",
     "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "webpack-cli": "^3.3.11",
+    "webpack-node-externals": "^1.7.2"
   }
 }
