@@ -4,6 +4,14 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Icon from './kangaroo-c.png';
 
+function fetchUsername() {
+  const usernames = ['mike', 'june', 'jamie'];
+  return new Promise((resolve) => {
+    const username = usernames[Math.floor(Math.random() * 3)];
+    setTimeout(() => resolve(username), 100);
+  })
+}
+
 const Container = styled.div`
   background-color: #aaa;
   border: 1px solid blue;
@@ -18,6 +26,7 @@ class App extends React.Component {
     window.onpopstate = event => {
       this.setState({ page: event.state });
     };
+    fetchUsername().then(username => this.setState({ username }));
   }
 
   onChangePage = e => {
@@ -27,7 +36,7 @@ class App extends React.Component {
   };
 
   render() {
-    const { page } = this.state;
+    const { page, username } = this.state;
     const PageComponent = page === 'home' ? Home : About;
     return (
       <Container className="container">
@@ -38,7 +47,7 @@ class App extends React.Component {
           About
         </button>
         <img src={Icon}/>
-        <PageComponent />
+        <PageComponent username={username}/>
       </Container>
     )
   }
