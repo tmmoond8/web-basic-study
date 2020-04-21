@@ -3,11 +3,11 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const nodeExternals = require('webpack-node-externals');
 
-function getConfig(isServer) {
+function getConfig(isServer, entry) {
   return {
-    entry: isServer 
-      ? { server: path.resolve(__dirname, 'src/server.js')}
-      : { main: path.resolve(__dirname, 'src/index.js')},
+    entry: {
+      [entry]: path.resolve(__dirname, `src/${entry}.js`),
+    },
     output: {
       filename: isServer ? '[name].bundle.js' : '[name].[chunkhash].js',
       path: isServer ? path.resolve(__dirname, 'dist-server') : path.resolve(__dirname, 'dist'),
@@ -58,4 +58,4 @@ function getConfig(isServer) {
   }
 }
 
-module.exports = [ getConfig(false), getConfig(true)];
+module.exports = [ getConfig(false, 'index'), getConfig(true, 'server'), getConfig(true, 'prerender')];

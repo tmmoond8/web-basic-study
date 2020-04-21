@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "build": "yarn webpack",
+    "build": "webpack && node dist-server/prerender.bundle.js",
     "start": "node dist-server/server.bundle.js"
   },
   "dependencies": {
