@@ -8,6 +8,22 @@ import { ServerStyleSheet } from 'styled-components';
 import React from 'react';
 import App from './App';
 import { renderToNodeStream } from 'react-dom/server';
+import { Transform } from 'stream';
+
+function createCacheStream(cacheKey, prefix, postfix) {
+  const chunks = [];
+  return new Transform({
+    transform(data, _, callback) {
+      chunks.push(data);
+      callback(null, data);
+    },
+    flush(callback) {
+      const data = [prefix, Buffer.concat(chunks).toString(), postfix];
+      ssrCache.set(cacheKey, data.join(''));
+      callback();
+    },
+  })
+}
 
 const ssrCache = new LruCache({
   max: 100,
@@ -55,7 +71,9 @@ app.get('*', (req, res) => {
     const sheet = new ServerStyleSheet();
     const reactElement = sheet.collectStyles(<App page={page} />);
     const renderStream = sheet.interleaveWithNodeStream(renderToNodeStream(reactElement),);
-    renderStream.pipe(res, { end: false });
+    const cacheStream = createCacheStream(cacheKey, prefix, postfix);
+    cacheStream.pipe(res);
+    renderStream.pipe(cacheStream, { end: false });
     renderStream.on('end', () => {
       res.end(postfix);
     });
