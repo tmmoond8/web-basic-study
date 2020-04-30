@@ -3,7 +3,12 @@ import fs from 'fs';
 import path from 'path';
 import url from 'url';
 import { renderPage, prerenderPages } from './common';
+import LruCache from 'lru-cache';
 
+const ssrCache = new LruCache({
+  max: 100,
+  maxAge: 1000 * 60,
+});
 const app = express();
 
 const prerenderHtml = {};
@@ -19,6 +24,12 @@ app.use('/dist', express.static('dist'));
 app.get('/favicon.ico', (req, res) => res.sendStatus(204));
 app.get('*', (req, res) => {
   const parseURL = url.parse(req.url, true);
+  const cacheKey = parseURL.path;
+  if (ssrCache.has(cacheKey)) {
+    console.log('캐시 사용');
+    res.send(ssrCache.get(cacheKey));
+    return;
+  }
   const page = parseURL.pathname ? parseURL.pathname.substr(1) : 'home';
   const initialData = { page };
 
@@ -28,6 +39,7 @@ app.get('*', (req, res) => {
 
   const result = pageHtml
     .replace('__DATA_FROM_SERVER__', JSON.stringify(initialData))
+  ssrCache.set(cacheKey, result);
   res.send(result);
 });
 
