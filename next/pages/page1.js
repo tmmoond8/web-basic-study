@@ -1,10 +1,14 @@
 import Head from 'next/head';
 import kangaroo from '../static/kangaroo-c.png';
+import Link from 'next/Link';
 
 export default function Page1() {
   return (
     <div>
       <p>This is home page</p>
+      <Link href="/page2" passHref >
+        <a>page2로 이동</a>
+      </Link>
       <img src={kangaroo}/>
       <Head>
         <title>page1</title>

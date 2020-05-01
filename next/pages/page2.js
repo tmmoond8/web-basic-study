@@ -1,4 +1,5 @@
 import { callApi } from '../src/api.js';
+import Router from 'next/Router';
 
 export default class Page2 extends React.Component {
   static async getInitialProps({ query, req }) {
@@ -12,6 +13,10 @@ export default class Page2 extends React.Component {
     return result
   }
 
+  onClick = () => {
+    Router.push('/page1');
+  }
+
   render() {
     const { text, data, userAgent } = this.props;
     return (
@@ -20,6 +25,7 @@ export default class Page2 extends React.Component {
         <p>{`text: ${text}`}</p>
         <p>{`data is ${data}`}</p>
         <p>{`userAgent is ${userAgent}`}</p>
+        <button onClick={this.onClick}>page 1</button>
       </div>
     )
   }
