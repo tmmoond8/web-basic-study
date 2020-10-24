@@ -1,8 +1,7 @@
 ol {
-  margin: 100px auto;
-}
-li {
+  /* margin: 100px auto; */
   list-style: none;
+  padding: 0;
 }
 
 .container {
@@ -11,11 +10,14 @@ li {
   height: 200px;
   grid-template-rows: 100px 100px;
   grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 10px;
+  /* gap: 20px 10px; */
+  overflow: hidden;
 }
 
 .item {
   text-align: center;
-  line-height: 100px;
 }
 
 .item:nth-of-type(1) {
