@@ -9,8 +9,8 @@ li {
   display: grid;
   width: 300px;
   height: 200px;
-  grid-template-rows: 100px 100px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: [first] 100px [second] 100px [third];
+  grid-template-columns: [c1-start] 50px [c1-end] 50px [c2-end] 50px [c3-end];
 }
 
 .item {
