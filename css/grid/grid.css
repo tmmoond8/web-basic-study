@@ -1,5 +1,6 @@
 ol {
   margin: 100px auto;
+  padding: 0;
 }
 li {
   list-style: none;
@@ -7,10 +8,8 @@ li {
 
 .container {
   display: grid;
-  width: 300px;
-  height: 200px;
-  grid-template-rows: [first] 100px [second] 100px [third];
-  grid-template-columns: [c1-start] 50px [c1-end] 50px [c2-end] 50px [c3-end];
+  height: 100px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
 }
 
 .item {
