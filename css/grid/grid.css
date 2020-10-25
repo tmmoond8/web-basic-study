@@ -1,41 +1,36 @@
 ol {
-  margin: 10px auto 0 auto;
+  margin: 100px auto 0 auto;
   list-style: none;
   padding: 0;
   font-size: 30px;
 }
 
-p {
-  margin-top: 20px;
-  font-size: 40px;
-  text-align: center;
-}
-
 .container {
   display: grid;
-  width: 500px;
-  height: 500px;
-  grid-template-rows: repeat(3, 1fr);
+  width: 300px;
+  height: 400px;
+  grid-template-rows: repeat(4, 100px);
   grid-template-columns: repeat(3, 1fr);
-  justify-items: end;
+  grid-auto-flow: column dense;
   border: 1px solid grey;
 }
 
 .item {
-  width: 100px;
-  height: 100px;
   text-align: center;
   line-height: 100px;
 }
 
 .item:nth-of-type(1) {
   background: tomato;
+  grid-column: 1 / 4;
 }
 .item:nth-of-type(2) {
   background: orange;
+  grid-column: 1;
 }
 .item:nth-of-type(3) {
   background: limegreen;
+  grid-column: 1 / 4;
 }
 .item:nth-of-type(4) {
   background: dodgerblue;
@@ -54,6 +49,10 @@ p {
 }
 .item:nth-of-type(9) {
   background: lawngreen;
+}
+
+.item:nth-of-type(10) {
+  background: aqua;
 }
 
 /* tomato, orange, limegreen, dodgerblue, hotpink, darkgray, crimson, orangered, lawngreen, aqua, royalblue, wheat, brown, gray, salmon, deeppink, gold, springgreen, slateblue, darkslategray */
