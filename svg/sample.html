@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <html>
+
+  <head></head>
+
+  <body>
+    <a href="https://developer.mozilla.org/ko/docs/Web/SVG/Tutorial/Introduction">
+      <h2>MDN Tutorial Introduction</h2>
+    </a>
+    <svg version="1.1" baseProfile="full" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+      <rect width="100%" height="100%" fill="red" />
+      <circle cx="150" cy="100" r="80" fill="green" />
+      <text x="150" y="125" font-size="60" text-anchor="middle" fill="white">SVG</text>
+    </svg>
+    <svg width="200" height="250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+
+      <rect x="10" y="10" width="30" height="30" stroke="black" fill="transparent" stroke-width="5" />
+      <rect x="60" y="10" rx="50" ry="10" width="30" height="30" stroke="black" fill="transparent" stroke-width=1 />
+
+      <circle cx="25" cy="75" r="20" stroke="red" fill="transparent" stroke-width="5" />
+      <ellipse cx="75" cy="75" rx="20" ry="5" stroke="red" fill="transparent" stroke-width="5" />
+
+      <line x1="10" x2="50" y1="110" y2="150" stroke="orange" stroke-width="5" />
+      <polyline points="60 110 65 120 70 115 75 130 80 125 85 140
+                      90 135 95 150 100 145" stroke="orange" fill="transparent" stroke-width="5" />
+      <polygon points="25 160 30 180 45 180 35 190 40 205 25 195
+                        10 205 15 190 5 180 20 180" stroke="green" fill="blue" stroke-width="5" />
+      <polygon points="75 170 90 195.98 60 195.98" stroke="green" fill="blue" stroke-width="5" />
+      <polygon points="75 205.98 90 180 60 180" stroke="green" fill="blue" stroke-width="5" />
+      <path d="M20,230 Q40,205 50,230 T90,230" fill="none" stroke="blue" stroke-width="5" />
+    </svg>
+    <svg width="190" height="160" xmlns="http://www.w3.org/2000/svg">
+      <path d="M10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80" stroke="black" fill="transparent" />
+    </svg>
+    <svg style="stroke-dasharray:132; stroke-dashoffset: 6" width="100" height="100" class="circular-loader"
+      viewBox="25 25 50 50">
+      <circle class="loader-path" cx="50" cy="50" r="20" fill="none" stroke="#70c542" stroke-width="2" />
+    </svg>
+    <svg width="350" height="60" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <style type="text/css">
+          #MyText {
+            font: 20px;
+          }
+
+          #MyText:hover {
+            stroke: red;
+            fill: red;
+          }
+        </style>
+      </defs>
+      <path id="my_path" d="M 20,20 C 80,60 100,40 120,20" fill="transparent" />
+      <text>
+        <textPath id="MyText" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#my_path" font="40px">
+          A curved text.
+        </textPath>
+      </text>
+    </svg>
+  </body>
+
+  </html>
+</body>
+
+</html>
