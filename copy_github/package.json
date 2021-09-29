@@ -25,7 +25,7 @@
     "webpack-dev-server": "^3.1.14"
   },
   "dependencies": {
-    "i": "^0.3.6",
+    "i": "^0.3.7",
     "include-media": "^1.4.9",
     "npm": "^6.5.0"
   }
