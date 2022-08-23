@@ -1,48 +1,62 @@
 <!DOCTYPE >
 <html>
-
-<head>
-  <title>tamm's COPY pages</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width" , initial-scale="1">
-  <meta name="description" content="잘 정돈된 웹 페이지를 따라해보면서 html, css 를 공부해보았습니다.">
-  <meta name="subject" content="웹페이지 카피하기(copy webpages)">
-  <meta name="keywords" content="html, css">
-  <script src="https://cdn.rawgit.com/showdownjs/showdown/1.8.7/dist/showdown.min.js"></script>
-  <style>
-    #markdown {
-      padding: 5%;
-    }
-  </style>
-</head>
-
-<body>
-  <div id="markdown"></div>
-  <script>
-    const converter = new showdown.Converter({ tables: true });
-
-    const xhr = new XMLHttpRequest();
-    xhr.onreadystatechange = () => {
-      if (xhr.readyState === XMLHttpRequest.DONE) {
-        if (xhr.status === 200 || xhr.status === 201) {
-          const html = converter.makeHtml(xhr.responseText);
-          document.querySelector('#markdown').innerHTML = html;
-          if(window.location.host.indexOf('github.io') !== -1) {
-              document.querySelectorAll('a').forEach(a => {
-                a.href = a.href.replace('github.io', 'github.io/web-basic-study')
-            })
-          }
-        } else {
-          console.error(xhr.responseText);
-        }
+  <head>
+    <title>tamm's COPY pages</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1" />
+    <meta
+      name="description"
+      content="잘 정돈된 웹 페이지를 따라해보면서 html, css 를 공부해보았습니다."
+    />
+    <meta name="subject" content="웹페이지 카피하기(copy webpages)" />
+    <meta name="keywords" content="html, css" />
+    <script src="https://cdn.rawgit.com/showdownjs/showdown/1.8.7/dist/showdown.min.js"></script>
+    <style>
+      #markdown {
+        padding: 5%;
       }
-    };
-    const text = '# hello, markdown!';
-    const url = window.location.href.split("/");
-    url.pop();
-    xhr.open('GET', `${url.join('/')}/README.md`);
-    xhr.send(null);
-  </script>
-</body>
+    </style>
+  </head>
 
+  <body>
+    <div id="markdown"></div>
+    <video autoplay muted loop playsinline>
+      <source
+        src="https://user-images.githubusercontent.com/11402468/186066803-b71183f3-2442-42eb-ac0c-26426a84dade.webm"
+        type="video/webm"
+      />
+      <source
+        src="https://user-images.githubusercontent.com/11402468/186066789-a480368c-04d1-4f99-a591-00df296fd9a6.mp4"
+        type="video/mp4"
+      />
+    </video>
+    <script>
+      const converter = new showdown.Converter({ tables: true });
+
+      const xhr = new XMLHttpRequest();
+      xhr.onreadystatechange = () => {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+          if (xhr.status === 200 || xhr.status === 201) {
+            const html = converter.makeHtml(xhr.responseText);
+            document.querySelector("#markdown").innerHTML = html;
+            if (window.location.host.indexOf("github.io") !== -1) {
+              document.querySelectorAll("a").forEach((a) => {
+                a.href = a.href.replace(
+                  "github.io",
+                  "github.io/web-basic-study"
+                );
+              });
+            }
+          } else {
+            console.error(xhr.responseText);
+          }
+        }
+      };
+      const text = "# hello, markdown!";
+      const url = window.location.href.split("/");
+      url.pop();
+      xhr.open("GET", `${url.join("/")}/README.md`);
+      xhr.send(null);
+    </script>
+  </body>
 </html>
